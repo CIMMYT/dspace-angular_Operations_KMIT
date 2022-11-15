@@ -79,7 +79,7 @@ export class RegisterEmailFormComponent implements OnInit {
     this.form = this.formBuilder.group({
       email: new FormControl('', {
         validators: [Validators.required,
-          Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')
+          Validators.pattern('^[a-z0-9._%+-]+@cgiar.org$')
         ],
       })
     });
