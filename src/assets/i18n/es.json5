@@ -7822,5 +7822,17 @@
   // "admin.system-wide-alert.title": "System-wide Alerts",
   "admin.system-wide-alert.title": "Alertas del sistema",
 
+  // Personalización CIMMYT 
+
+  "item.page.ISO": "Cita ISO",
+  "item.page.APA": "Cita APA",
+  "item.page.type": "Tipo",
+  "item.page.rights": "Copyright",
+  "item.page.doi": "URL DOI",
+  "item.page.journal":"Revista",
+  "item.page.volume":"Volumen de la Revista",
+  "item.page.art":"Número de artículo",
+  "item.page.coverageplace":"Lugar de publicación",
+  "item.page.issue":"No de Revista"
 
 }

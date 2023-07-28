@@ -5216,4 +5216,18 @@
 
   "access-control-option-end-date-note": "Select the date until which the related access condition is applied",
 
+  // Personalización CIMMYT 
+  
+  "item.page.ISO": "ISO citation",
+  "item.page.APA": "APA citation",
+  "item.page.type": "Type",
+  "item.page.rights": "Copyright",
+  "item.page.doi": "DOI",
+  "item.page.journal":"Journal",
+  "item.page.volume":"Journal volume",
+  "item.page.art":"Article number",
+  "item.page.coverageplace":"Place of Publication",
+  "item.page.issue":"Journal issue"
+  
+
 }
