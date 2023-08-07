@@ -2,7 +2,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": ["grecaptcha"]
+    "types": ["grecaptcha", 
+    "jquery"]
   },
   "files": [
     "src/main.browser.ts",

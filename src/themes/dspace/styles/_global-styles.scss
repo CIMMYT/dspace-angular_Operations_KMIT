@@ -98,3 +98,18 @@ nav.navbar[_ngcontent-dspace-angular-c338] {
 .navbar-brand{
   width: 20%;
 }
+
+div.owl-carousel-collections .owl-item {
+  border: 1px solid silver;
+  width: auto;
+  height: 100px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+div.owl-carousel-collections .owl-item:hover {
+  background-color: #77bd43;
+  h5{
+    color:#fff
+  }
+}

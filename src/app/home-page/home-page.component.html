@@ -1,9 +1,73 @@
-<ds-themed-home-news></ds-themed-home-news>
+<!-- <ds-themed-home-news></ds-themed-home-news> -->
+
+<div class="background-image-container">
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="d-flex flex-wrap">
+        <div>
+          <h1 class="display-3">CIMMYT Publications Repository</h1>
+          <p class="lead">Seeding innovation ... Nourishing hope</p>
+        </div>
+      </div>
+    </div>
+    <div class="owl-carousel-header owl-carousel owl-theme">
+      <div class="item">
+        <picture class="background-image">
+          <img [src]="'assets/dspace/images/maize_background.jpg'" alt="Random first slide" />
+        </picture>
+      </div>
+      <div class="item">
+        <picture class="background-image">
+          <img [src]="'assets/dspace/images/wheat_background.jpg'" alt="Random first slide" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 <div class="container">
   <ng-container *ngIf="(site$ | async) as site">
     <ds-view-tracker [object]="site"></ds-view-tracker>
   </ng-container>
   <ds-themed-search-form [inPlaceSearch]="false" [searchPlaceholder]="'home.search-form.placeholder' | translate"></ds-themed-search-form>
-  <ds-themed-top-level-community-list></ds-themed-top-level-community-list>
+  <!--<ds-themed-top-level-community-list></ds-themed-top-level-community-list> -->
+  <ng-container>
+    <h2>
+      {{'home.top-level-communities.head' | translate}}
+    </h2>
+    <p class="lead">{{'home.top-level-communities.help' | translate}}</p>
+
+    <div class="owl-carousel-collections owl-carousel owl-theme">
+      <div class="item">
+        <a href="/search?scope=43e28b1a-1f87-4838-aaa9-ae5f7ec60be5&spc.page=1&spc.sf=dc.date.issued&spc.sd=DESC"><h5>Genetic Resources</h5></a>
+      </div>
+      <div class="item">
+        <a href="/search?scope=cd56f966-1e0d-4d5e-b7fe-9c1813e1702c&spc.page=1&spc.sf=dc.date.issued&spc.sd=DESC"><h5>Institutional</h5></a>
+      </div>
+      <div class="item">
+        <a href="/search?scope=487c77d1-c9c3-440f-a4fd-0a686da949f0&spc.page=1&spc.sf=dc.date.issued&spc.sd=DESC"><h5>Maize</h5></a>
+      </div>
+      <div class="item">
+        <a href="/search?scope=0479b845-6b16-49f5-8474-b46800a440ea&spc.page=1&spc.sf=dc.date.issued&spc.sd=DESC"><h5>Socioeconomics</h5></a>
+      </div>
+      <div class="item">
+        <a href="/search?scope=51eaeaea-ce74-4be6-8791-ba5f8e7ccbb8&spc.page=1&spc.sf=dc.date.issued&spc.sd=DESC"><h5>Sustainable Agrifood Systems</h5></a>
+      </div>
+      <div class="item">
+        <a href="/search?scope=3c0398bc-a85a-436d-bbe5-a6f0d6f03f52&spc.page=1&spc.sf=dc.date.issued&spc.sd=DESC"><h5>Sustainable Intensification</h5></a>
+      </div>
+      <div class="item">
+        <a href="/search?scope=31067e15-9668-4c18-9c36-c266e0fdc751&spc.page=1&spc.sf=dc.date.issued&spc.sd=DESC"><h5>Wheat</h5></a>
+      </div>
+      <div class="item">
+        <a href="/search?scope=e176d0a2-6f3b-4747-b733-e7504a93a943&spc.page=1&spc.sf=dc.date.issued&spc.sd=DESC"><h5>Photography</h5></a>
+      </div>
+      <div class="item">
+        <a href="/search?scope=68b55bc1-4b44-4b25-84cf-6ff2bc09e486&spc.page=1&spc.sf=dc.date.issued&spc.sd=DESC"><h5>Video</h5></a>
+      </div>
+    </div>
+  </ng-container>
   <ds-recent-item-list *ngIf="recentSubmissionspageSize>0"></ds-recent-item-list>
 </div>

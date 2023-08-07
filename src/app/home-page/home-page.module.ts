@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 import { HomeNewsComponent } from './home-news/home-news.component';
 import { HomePageRoutingModule } from './home-page-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HomePageComponent } from './home-page.component';
 import { TopLevelCommunityListComponent } from './top-level-community-list/top-level-community-list.component';
@@ -31,7 +32,8 @@ const DECLARATIONS = [
     JournalEntitiesModule.withEntryComponents(),
     ResearchEntitiesModule.withEntryComponents(),
     HomePageRoutingModule,
-    StatisticsModule.forRoot()
+    StatisticsModule.forRoot(),
+    NgbModule
   ],
   declarations: [
     ...DECLARATIONS,

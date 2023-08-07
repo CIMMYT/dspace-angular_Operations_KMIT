@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 const sass = require('sass');
 const JSON5 = require('json5');
+const webpack = require('webpack');
 
 export const copyWebpackOptions = {
   patterns: [
@@ -78,6 +79,11 @@ const SCSS_LOADERS = [
 export const commonExports = {
   plugins: [
     new CopyWebpackPlugin(copyWebpackOptions),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
   ],
   module: {
     rules: [
