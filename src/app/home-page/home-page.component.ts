@@ -29,6 +29,8 @@ export class HomePageComponent implements OnInit {
     $('.owl-carousel-collections').owlCarousel({ 
       center: true,
       margin: 10,
+      autoplay: true,
+      autoplayTimeout: 6500,
       responsiveClass:true,
       responsive:{
         0:{
