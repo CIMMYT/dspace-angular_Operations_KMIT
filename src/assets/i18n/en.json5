@@ -5227,7 +5227,19 @@
   "item.page.volume":"Journal volume",
   "item.page.art":"Article number",
   "item.page.coverageplace":"Place of Publication",
-  "item.page.issue":"Journal issue"
+  "item.page.issue":"Journal issue",
+  "search.filters.filter.subject_agrovoc.head":"Agrovoc",
+  "search.filters.filter.subject_keywords.head":"Keywords",
+  "search.filters.filter.region_item.head":"Region",
+  "search.filters.filter.initiative.head":"CGIAR Initiative",
+  "search.filters.filter.impactarea.head":"CGIAR Impact Area",
+  "search.filters.filter.actionarea.head":"CGIAR Action Area",
+  "search.filters.filter.fundername.head":"CGIAR Donor or Funder",
+  "dc.creator.corporate":"Corporate author",
+  "dc.contributor.editor":"Editor",
+  "dc.contributor.illustrator":"Illustrator",
+  "dc.contributor.other":"Contributor",
+  "search.filters.filter.authorcorporate.head":"Corporate author",
+  "sorting.dc.date.available.DESC":"Available date",
   
-
 }

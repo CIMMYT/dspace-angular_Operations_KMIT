@@ -7833,6 +7833,19 @@
   "item.page.volume":"Volumen de la Revista",
   "item.page.art":"Número de artículo",
   "item.page.coverageplace":"Lugar de publicación",
-  "item.page.issue":"No de Revista"
+  "item.page.issue":"No de Revista",
+  "search.filters.filter.subject_agrovoc.head":"Agrovoc",
+  "search.filters.filter.subject_keywords.head":"Keywords",
+  "search.filters.filter.region_item.head":"Region",
+  "search.filters.filter.initiative.head":"CGIAR Initiative",
+  "search.filters.filter.impactarea.head":"CGIAR Impact Area",
+  "search.filters.filter.actionarea.head":"CGIAR Action Area",
+  "search.filters.filter.fundername.head":"CGIAR Donor or Funder",
+  "dc.creator.corporate":"Autor corporativo",
+  "dc.contributor.editor":"Editor",
+  "dc.contributor.illustrator":"Ilustrador",
+  "dc.contributor.other":"Contribuidor",
+  "search.filters.filter.authorcorporate.head":"Autor corporativo",
+  "sorting.dc.date.available.DESC":"Fecha de deposito",
 
 }
