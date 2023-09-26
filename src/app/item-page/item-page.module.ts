@@ -90,6 +90,7 @@ const DECLARATIONS = [
   ItemPageAPAFieldComponent,
   ItemPageISOFieldComponent,
   ItemPageUriCustomFieldComponent,
+  ItemPageUriCustomFieldComponent,
   ItemPageUriFieldComponent,
   ItemPageFieldComponent,
   CollectionsComponent,

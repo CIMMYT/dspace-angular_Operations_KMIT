@@ -1,0 +1,14 @@
+<div [ngSwitch]="type">
+    <div *ngSwitchCase="'donut'">
+        <div class='altmetric-embed' data-badge-type='donut' [attr.data-doi]="uniqueDoi"></div>
+    </div>
+    <div *ngSwitchCase="'bar'">
+      <div class='altmetric-embed' data-badge-type='bar' [attr.data-doi]="uniqueDoi"></div>
+    </div>
+    <div *ngSwitchCase="'medium-donut'">
+      <div class='altmetric-embed' data-badge-type='medium-donut' [attr.data-doi]="uniqueDoi"></div>
+    </div>
+    <div *ngSwitchDefault>
+      <div class='altmetric-embed' [attr.data-doi]="uniqueDoi"></div>
+    </div>
+  </div>

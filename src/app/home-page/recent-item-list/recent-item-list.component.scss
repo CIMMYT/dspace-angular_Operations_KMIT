@@ -1,5 +1,9 @@
 .my-4{
     border: 1px solid #ddd;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
+}
+
+.my-4:hover{
+    box-shadow: 0 0 4px 1px #e1e1e1;
 }
