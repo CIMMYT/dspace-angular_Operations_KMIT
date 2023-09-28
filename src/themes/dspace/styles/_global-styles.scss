@@ -95,9 +95,13 @@ ds-search ds-item-search-result-list-element .col-9 {
     margin-bottom: 5px;
     padding: 5px 10px;
     min-width: 80px;
-    /*float: right;*/
 }
 
+@media only screen and (max-width: 600px) {
+  .badge-info {
+    float: right;
+  }
+}
 
 .btn-primary, .btn-outline-secondary {
     color: #003b49;
