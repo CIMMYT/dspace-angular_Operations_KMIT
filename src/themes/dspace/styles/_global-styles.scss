@@ -93,7 +93,7 @@ ds-search ds-item-search-result-list-element .col-9 {
     color: #003B49;
     background-color: #bdecb680;
     margin-bottom: 5px;
-    padding: 5px 10px;
+    padding: 5px 5px;
     min-width: 80px;
 }
 
@@ -103,7 +103,7 @@ ds-search ds-item-search-result-list-element .col-9 {
   }
 }
 
-.btn-primary, .btn-outline-secondary {
+.btn-primary, .btn-outline-secondary, .btn-outline-primary, .btn-secondary{
     color: #003b49;
     background-color: #fff;
     border-color: #003b49;
@@ -112,7 +112,7 @@ ds-search ds-item-search-result-list-element .col-9 {
     transition: 0.5s;
 }
 
-.btn-primary:hover, .btn-outline-secondary:hover{
+.btn-primary:hover, .btn-outline-secondary:hover, .btn-outline-primary:hover, .btn-secondary:hover{
   color: #fff;
   background-color: #279A82;
 }
@@ -139,7 +139,7 @@ div.owl-carousel-collections .owl-item:hover {
 
 ds-pagination ds-listable-object-component-loader  {
   border: 1px solid #ddd;
-  padding: 5px;
+  padding: 10px 15px;
   border-radius: 5px;
 }
 
@@ -184,6 +184,7 @@ li.breadcrumb-item{
 
 img.collection-img{
   width: 75% !important;
+  margin-top: 10px;
 }
 
 h4.section-header-text.mb-0.ng-tns-c202-1 {
@@ -193,4 +194,35 @@ h4.section-header-text.mb-0.ng-tns-c202-1 {
 ds-item-list-element altmetric-badge a{
   width: 125px !important;
   height: 25px !important;
+}
+
+ds-person-search-result-list-element .col-9.col-md-10, ds-collection-search-result-list-element .col-9, ds-community-search-result-list-element .col-9{
+  max-width: 37rem;
+  display: block;
+}
+
+ds-item-search-result-list-element .col-9{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ds-person-search-result-list-element, ds-collection-search-result-list-element, ds-community-search-result-list-element{
+  .row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.item-page-title-field {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+#collapsingNav {
+  padding-left: 30px;
+}
+
+.dropdown-toggle.dropdownLogin.px-1.ng-tns-c90-8 {
+  font-weight: bold;
 }

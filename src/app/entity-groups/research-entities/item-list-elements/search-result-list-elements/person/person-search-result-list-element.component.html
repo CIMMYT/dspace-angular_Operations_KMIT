@@ -18,7 +18,6 @@
     </span>
   </div>
   <div [ngClass]="showThumbnails ? 'col-9 col-md-10' : 'col-12'">
-    <ds-themed-badges *ngIf="showLabel" [object]="dso" [context]="context"></ds-themed-badges>
     <ds-truncatable [id]="dso.id">
       <a *ngIf="linkType != linkTypes.None" [target]="(linkType == linkTypes.ExternalLink) ? '_blank' : '_self'"
          [attr.rel]="(linkType == linkTypes.ExternalLink) ? 'noopener noreferrer' : null"
@@ -39,5 +38,9 @@
   </span>
     </ds-truncatable>
   </div>
+  <div class="d-flex">
+    <ds-themed-badges *ngIf="showLabel" [object]="dso" [context]="context"></ds-themed-badges>
+  </div>
+  
 </div>
 
