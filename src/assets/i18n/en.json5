@@ -5257,5 +5257,12 @@
   "search.filters.filter.fundername.placeholder":"CGIAR Donor or Funder",
   "search.filters.filter.actionarea.label":"Search CGIAR Action Area",
   "search.filters.filter.actionarea.placeholder":"CGIAR Action Area",
+  "search.filters.applied.f.subject_agrovoc":"AGROVOC",
+  "search.filters.applied.f.subject_keywords":"Keyword",
+  "search.filters.applied.f.initiative":"CGIAR Initiative",
+  "search.filters.applied.f.impactarea":"CGIAR Impact Area",
+  "search.filters.applied.f.actionarea":"CGIAR Action Area",
+  "search.filters.applied.f.fundername":"CGIAR Donor or Founder",
+  "search.filters.applied.f.region_item":"Region",
   
 }

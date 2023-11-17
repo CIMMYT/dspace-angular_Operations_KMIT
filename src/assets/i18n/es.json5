@@ -7863,5 +7863,12 @@
   "search.filters.filter.fundername.placeholder":"Nombre del donador o financiador",
   "search.filters.filter.actionarea.label":"Busqueda por área de acción",
   "search.filters.filter.actionarea.placeholder":"Nombre del área de acción",
+  "search.filters.applied.f.subject_agrovoc":"Termino AGROVOC",
+  "search.filters.applied.f.subject_keywords":"Palabra clave",
+  "search.filters.applied.f.initiative":"Iniciativa CGIAR",
+  "search.filters.applied.f.impactarea":"Área de imparto CGIAR",
+  "search.filters.applied.f.actionarea":"Área de acción CGIAR",
+  "search.filters.applied.f.fundername":"Donante o financiador CGIAR",
+  "search.filters.applied.f.region_item":"Región",
   "":"",
 }
