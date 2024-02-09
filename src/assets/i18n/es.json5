@@ -7870,5 +7870,8 @@
   "search.filters.applied.f.actionarea":"Área de acción CGIAR",
   "search.filters.applied.f.fundername":"Donante o financiador CGIAR",
   "search.filters.applied.f.region_item":"Región",
+  "item.page.uridataset": "Datasets relacionados",
+  "item.page.uridataset.linkname": "Enlace al conjunto de datos",
+  "person.orcid.label":"Identificador ORCID",
   "":"",
 }

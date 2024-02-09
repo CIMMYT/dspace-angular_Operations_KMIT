@@ -152,6 +152,12 @@
     </ds-item-page-uri-custom-field>
 
 
+    <ds-item-page-uri-linktext [item]="object"
+      [fields]="['dc.relation.dataset']"
+      [label]="'item.page.uridataset'"
+      [linktext]="'item.page.uridataset.linkname' | translate">
+    </ds-item-page-uri-linktext>
+
     <ds-item-page-collections [item]="object"></ds-item-page-collections>
     <div>
       <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']" role="button">

@@ -5264,5 +5264,8 @@
   "search.filters.applied.f.actionarea":"CGIAR Action Area",
   "search.filters.applied.f.fundername":"CGIAR Donor or Founder",
   "search.filters.applied.f.region_item":"Region",
-  
+  "item.page.uridataset": "Related Datasets",
+  "item.page.uridataset.linkname": "Link to the dataset",
+  "person.orcid.label":"ORCID ID",
+  "":"",
 }

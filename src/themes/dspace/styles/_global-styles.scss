@@ -85,7 +85,7 @@ nav.navbar[_ngcontent-dspace-angular-c338] {
   color: #144F20;
 }
 
-ds-search ds-item-search-result-list-element .col-9 {
+ds-search ds-item-search-result-list-element .col-9, ds-item-search-result-list-element .col-9{
   max-width: 72%;
 }
 
@@ -101,6 +101,10 @@ ds-search ds-item-search-result-list-element .col-9 {
   .badge-info {
     float: right;
   }
+}
+
+.item-list-title{
+  font-weight: bold;
 }
 
 .btn-primary, .btn-outline-secondary, .btn-outline-primary, .btn-secondary{
@@ -123,11 +127,15 @@ ds-search ds-item-search-result-list-element .col-9 {
 
 div.owl-carousel-collections .owl-item {
   width: auto;
-  height: 100px;
+  height: 115px;
   padding: 10px;
   transition: background-color 0.3s ease;
   background-color: rgba(189, 236, 182, 0.5);
   color: #003B49;
+}
+
+.owl-carousel-collections.owl-carousel.owl-theme.owl-loaded.owl-drag{
+  margin-top: 1.5rem;
 }
 
 div.owl-carousel-collections .owl-item:hover {
@@ -212,6 +220,15 @@ ds-person-search-result-list-element, ds-collection-search-result-list-element, 
     margin-bottom: 10px;
   }
 }
+ds-truncatable  .text-muted{
+  color: #2E2E2E !important;
+}
+
+.btn-link{
+  color: #003b49;
+  margin: 15px 0px;
+}
+
 
 .item-page-title-field {
   border-bottom: 1px solid #e1e1e1;
@@ -236,4 +253,75 @@ ds-person-search-result-list-element, ds-collection-search-result-list-element, 
 
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
   background-color: #003b49;
+}
+
+.form-group {
+  margin-bottom: 2.2rem;
+  margin-top: 2.2rem;
+}
+
+.my-1.align-self-stretch.filter-checkbox{
+  margin-top: 0px !important;
+}
+
+.float-right.badge.badge-secondary.badge-pill.mt-1.ml-1{
+    background-color: #003b49;
+    margin-left: 10px;
+    padding: 4px 6px;
+    border-radius: 9px ;
+    margin-top: 0px;
+    min-width: 30px;
+}
+
+.font-weight-bold{
+  font-weight: bold !important;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+ds-filter-input-suggestions .form-control{
+  margin-top: 1rem;
+}
+
+.toggle-more-filters a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #003b49;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ds-search-range-filter{
+  .form-group{
+    margin-top: 0px;
+  }
+  a{
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: left;
+  }
+  .float-right.badge.badge-secondary.badge-pill.mt-1.ml-1 {
+    background-color: #003b49;
+    margin-left: 10px;
+    padding: 4px 6px;
+    border-radius: 9px;
+    margin-top: 0px;
+    min-width: 30px;
+  }
+}
+
+footer .container.p-4{
+  padding: 3.1rem 1.5rem !important;
+}
+
+ds-untyped-item{
+  .altmetric-embed img, .altmetric-embed a{
+    margin: 1.8rem 0 !important;
+  }
+}
+
+ds-item-page-uri-linktext, ds-item-page-collections{
+  h5{
+    border-bottom: 1px solid #e1e1e1;
+  }
 }

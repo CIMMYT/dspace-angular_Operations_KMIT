@@ -24,6 +24,9 @@ import {
 import {
   ItemPageUriCustomFieldComponent
 } from './simple/field-components/specific-field/uri-custom/item-page-uri-custom-field.component';
+import {
+  ItemPageUriLinktextComponent
+} from './simple/field-components/specific-field/uri-linktext/item-page-uri-linktext.component';
 import { ItemPageUriFieldComponent } from './simple/field-components/specific-field/uri/item-page-uri-field.component';
 import { ItemPageFieldComponent } from './simple/field-components/specific-field/item-page-field.component';
 import { CollectionsComponent } from './field-components/collections/collections.component';
@@ -90,7 +93,7 @@ const DECLARATIONS = [
   ItemPageAPAFieldComponent,
   ItemPageISOFieldComponent,
   ItemPageUriCustomFieldComponent,
-  ItemPageUriCustomFieldComponent,
+  ItemPageUriLinktextComponent,
   ItemPageUriFieldComponent,
   ItemPageFieldComponent,
   CollectionsComponent,
