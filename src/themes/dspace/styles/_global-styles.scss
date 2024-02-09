@@ -195,6 +195,10 @@ img.collection-img{
   margin-top: 10px;
 }
 
+ds-search-navbar button {
+  margin: 0px 0px !important;
+}
+
 h4.section-header-text.mb-0.ng-tns-c202-1 {
   color: #fff;
 }
@@ -204,8 +208,13 @@ ds-item-list-element altmetric-badge a{
   height: 25px !important;
 }
 
-ds-person-search-result-list-element .col-9.col-md-10, ds-collection-search-result-list-element .col-9, ds-community-search-result-list-element .col-9{
-  max-width: 37rem;
+ds-person-search-result-list-element .col-9.col-md-10{
+  max-width: 51rem !important;
+  display: block;
+}
+
+ds-collection-search-result-list-element .col-9, ds-community-search-result-list-element .col-9{
+  max-width: 38rem;
   display: block;
 }
 
@@ -311,7 +320,7 @@ ds-search-range-filter{
 }
 
 footer .container.p-4{
-  padding: 3.1rem 1.5rem !important;
+  padding: 6rem 1.5rem !important;
 }
 
 ds-untyped-item{
