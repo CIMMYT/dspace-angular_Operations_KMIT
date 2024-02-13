@@ -207,6 +207,10 @@ ds-item-list-element altmetric-badge a{
   width: 125px !important;
   height: 25px !important;
 }
+ds-search-results ds-person-search-result-list-element .col-9.col-md-10{
+  max-width: 37rem !important;
+  display: block;
+}
 
 ds-person-search-result-list-element .col-9.col-md-10{
   max-width: 51rem !important;
