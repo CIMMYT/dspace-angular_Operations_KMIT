@@ -285,6 +285,7 @@ import {
 import { BitstreamListItemComponent } from './object-list/bitstream-list-item/bitstream-list-item.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { AltmetricComponent } from './object-list/search-result-list-element/item-search-result/item-types/item/almetric/altmetric.component';
+import { CitationsComponent } from './object-list/search-result-list-element/item-search-result/item-types/item/citations/citations.component';
 
 const MODULES = [
   CommonModule,
@@ -403,7 +404,8 @@ const COMPONENTS = [
   EpersonSearchBoxComponent,
   GroupSearchBoxComponent,
   ThemedItemPageTitleFieldComponent,
-  AltmetricComponent
+  AltmetricComponent,
+  CitationsComponent
 ];
 
 const ENTRY_COMPONENTS = [

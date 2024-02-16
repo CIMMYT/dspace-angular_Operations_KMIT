@@ -27,6 +27,7 @@
     <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
 
     <altmetric-badge [uniqueDoi]="object?.firstMetadataValue('dc.identifier.doi')" [type]="'donut'"></altmetric-badge>
+    <citations-badge [uniqueDoi]="object?.firstMetadataValue('dc.identifier.doi')" [type]="'circle'"></citations-badge>
 
     <!-- dc.type-->
     <ds-generic-item-page-field [item]="object"

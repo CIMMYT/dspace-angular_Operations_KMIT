@@ -97,7 +97,7 @@ export class ItemPageComponent implements OnInit, OnDestroy {
 
     this.isAdmin$ = this.authorizationService.isAuthorized(FeatureID.AdministratorOf);
     this.loadExternalScript('https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js');
-
+    this.loadExternalScript('https://badge.dimensions.ai/badge.js');
   }
 
   /**

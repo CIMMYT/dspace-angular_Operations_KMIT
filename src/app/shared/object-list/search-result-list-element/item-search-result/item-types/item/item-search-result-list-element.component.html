@@ -38,8 +38,10 @@
         </ds-truncatable-part>
       </div>
     </ds-truncatable>
-    <!-- <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/nature.2012.9872"></div> -->
-    <altmetric-badge [uniqueDoi]="firstMetadataValue('dc.identifier.doi')"></altmetric-badge>
+    <div class="d-flex">
+      <altmetric-badge [uniqueDoi]="dso.firstMetadataValue('dc.identifier.doi')"></altmetric-badge>
+      <citations-badge [uniqueDoi]="dso.firstMetadataValue('dc.identifier.doi')" [type]="'rectangle'"></citations-badge>
+    </div>
   </div>
   <div class="d-flex">
     <ds-themed-badges *ngIf="showLabel" [object]="dso" [context]="context" [showAccessStatus]="true"></ds-themed-badges>
