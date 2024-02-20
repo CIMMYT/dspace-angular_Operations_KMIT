@@ -26,33 +26,5 @@ export class ItemSearchResultListElementComponent extends SearchResultListElemen
     super.ngOnInit();
     this.showThumbnails = this.showThumbnails ?? this.appConfig.browseBy.showThumbnails;
     this.itemPageRoute = getItemPageRoute(this.dso);
-    this.loadExternalScripts(['https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js', 'https://badge.dimensions.ai/badge.js']);
-  }
-
-  loadExternalScripts(scriptUrls: string[]): void {
-    const loadScript = (url: string) => {
-      return new Promise<void>((resolve, reject) => {
-        const script = document.createElement('script');
-        script.src = url;
-        script.async = true;
-        script.onload = () => resolve();
-        script.onerror = (error) => reject(error);
-        document.head.appendChild(script);
-      });
-    };
-  
-    const loadAllScripts = async () => {
-      for (const url of scriptUrls) {
-        await loadScript(url);
-      }
-    };
-  
-    loadAllScripts().then(() => {
-      console.log('Todos los scripts se han cargado correctamente.');
-      // Puedes realizar acciones adicionales aquí después de cargar todos los scripts
-    }).catch((error) => {
-      console.error('Se produjo un error al cargar los scripts:', error);
-    });
-  }
-    
+  } 
 }

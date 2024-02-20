@@ -25,8 +25,10 @@
     </div>
     <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
 
-    <altmetric-badge [uniqueDoi]="object?.firstMetadataValue('dc.identifier.doi')" [type]="'donut'"></altmetric-badge>
-    <citations-badge [uniqueDoi]="object?.firstMetadataValue('dc.identifier.doi')" [type]="'circle'"></citations-badge>
+    <div class="d-flex">
+      <altmetric-badge [uniqueDoi]="object?.firstMetadataValue('dc.identifier.doi')" [type]="'donut'"></altmetric-badge>
+      <citations-badge [uniqueDoi]="object?.firstMetadataValue('dc.identifier.doi')" [type]="'circle'"></citations-badge>
+    </div>
 
     <!-- dc.type-->
       <ds-generic-item-page-field [item]="object"

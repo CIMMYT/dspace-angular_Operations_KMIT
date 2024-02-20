@@ -328,8 +328,8 @@ footer .container.p-4{
 }
 
 ds-untyped-item{
-  .altmetric-embed img, .altmetric-embed a{
-    margin: 1.8rem 0 !important;
+  altmetric-badge {
+    margin-right: 1.5rem;
   }
 }
 
@@ -339,9 +339,6 @@ ds-item-page-uri-linktext, ds-item-page-collections{
   }
 }
 
-citations-badge .__dimensions_badge_embed__ {
-  margin-bottom: 3rem;
-}
 
 ds-item-search-result-list-element citations-badge .__dimensions_badge_embed__{
   margin-bottom: 0rem;
