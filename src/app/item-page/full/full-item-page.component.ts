@@ -84,4 +84,19 @@ export class FullItemPageComponent extends ItemPageComponent implements OnInit, 
   ngOnDestroy() {
     this.subs.filter((sub) => hasValue(sub)).forEach((sub) => sub.unsubscribe());
   }
+  arrayHideMetadata: string[] = ['dc.title', 'dc.date.accessioned',
+  'dc.date.available',
+  'dc.rights.accesslevel',
+  'dc.type.publicationversion',
+  'dc.subject.other',
+  'dc.audience',
+  'dc.peertube',
+  'dc.subject.program'
+  ]
+  dctermsRegExp: RegExp = /dcterms.[a-z]+/; 
+
+
+  HideMetadata(metadatKey: string): boolean {
+    return (this.arrayHideMetadata.includes(metadatKey) || this.dctermsRegExp.test(metadatKey));
+  }
 }
