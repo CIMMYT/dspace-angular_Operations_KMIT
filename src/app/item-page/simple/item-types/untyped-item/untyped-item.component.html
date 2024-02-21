@@ -84,6 +84,12 @@
       [fields]="['journalvolume.identifier.name']"
       [label]="'item.page.volume-title'">
     </ds-generic-item-page-field>
+
+    <ds-item-page-rights [item]="object"
+      [fields]="['dc.rights.accesslevel']"
+      [label]="'dc.rights.accesslevel' | translate">
+    </ds-item-page-rights>
+
   </div>
   <div class="col-xs-12 col-md-6">
     <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>

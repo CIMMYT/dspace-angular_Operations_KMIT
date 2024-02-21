@@ -87,6 +87,11 @@
       [fields]="['dc.publisher']"
       [label]="'publication.page.publisher'">
     </ds-generic-item-page-field>
+    
+    <ds-item-page-rights [item]="object"
+      [fields]="['dc.rights.accesslevel']"
+      [label]="'dc.rights.accesslevel' | translate">
+    </ds-item-page-rights>
   </div>
   <div class="col-xs-12 col-md-7">
     <ds-related-items

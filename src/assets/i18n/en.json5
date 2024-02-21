@@ -5267,5 +5267,7 @@
   "item.page.uridataset": "Related Datasets",
   "item.page.uridataset.linkname": "Link to the dataset",
   "person.orcid.label":"ORCID ID",
+  "dc.rights.accesslevel":"Access Rights",
+  "":"",
   "":"",
 }

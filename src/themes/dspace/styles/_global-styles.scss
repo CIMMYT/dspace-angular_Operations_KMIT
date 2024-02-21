@@ -324,7 +324,11 @@ ds-search-range-filter{
 }
 
 footer .container.p-4{
-  padding: 6rem 1.5rem !important;
+  padding: 6rem 1rem 1.5rem !important;
+}
+
+footer .bottom-footer{
+  border-bottom: #336C6D 5rem solid;
 }
 
 ds-untyped-item{
@@ -342,4 +346,8 @@ ds-item-page-uri-linktext, ds-item-page-collections{
 
 ds-item-search-result-list-element citations-badge .__dimensions_badge_embed__{
   margin-bottom: 0rem;
+}
+
+.openaccess-img{
+  max-width: 10rem;
 }

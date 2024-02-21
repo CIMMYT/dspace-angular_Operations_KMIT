@@ -1,0 +1,16 @@
+<div class="item-page-field">
+  <div *ngIf="validateRightsValue(item?.allMetadata(fields)); else elseBlock">
+    <!-- Contenido que se muestra cuando la condición es verdadera -->
+    <h5 class="simple-view-element-header" *ngIf="label">{{ label }}</h5>
+    <img class="openaccess-img" src="assets/dspace/images/open-access.svg" />
+  </div>
+  
+  <ng-template #elseBlock>
+    <!-- Contenido que se muestra cuando la condición es falsa -->
+    <ds-generic-item-page-field [item]="item"
+      [fields]="fields"
+      [label]="label">
+    </ds-generic-item-page-field>
+  </ng-template>
+
+</div>
