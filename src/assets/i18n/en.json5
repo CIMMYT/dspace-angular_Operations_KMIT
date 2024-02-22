@@ -5268,6 +5268,11 @@
   "item.page.uridataset.linkname": "Link to the dataset",
   "person.orcid.label":"ORCID ID",
   "dc.rights.accesslevel":"Access Rights",
-  "":"",
+  "item.page.cgiar-initiative":"CGIAR Initiatives",
+  "dc.relation.CGIARinitiative":"Initiative",
+  "dc.relation.impactArea":"Impact Area",
+  "dc.relation.actionArea":"Action Area",
+  "dc.relation.funderName":"Donor or Funder",
+  "dc.relation.cgspaceuri":"CGSpace URL",
   "":"",
 }

@@ -7874,6 +7874,11 @@
   "item.page.uridataset.linkname": "Enlace al conjunto de datos",
   "person.orcid.label":"Identificador ORCID",
   "dc.rights.accesslevel":"Derechos de acceso",
-  "":"",
+  "item.page.cgiar-initiative":"Iniciativas del CGIAR",
+  "dc.relation.CGIARinitiative":"Iniciativa",
+  "dc.relation.impactArea":"Área de impacto",
+  "dc.relation.actionArea":"Área de acción",
+  "dc.relation.funderName":"Donante o financiador",
+  "dc.relation.cgspaceuri":"URL en CGSpace",
   "":"",
 }

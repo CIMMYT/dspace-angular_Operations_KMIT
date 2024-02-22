@@ -343,6 +343,24 @@ ds-item-page-uri-linktext, ds-item-page-collections{
   }
 }
 
+ds-item-page-cgiar{
+  .item-page-field.cgiar-initiative{
+    margin-top: 5rem;
+  }
+  h3{
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+ds-item-page-collections{
+  .simple-view-element{
+    margin-top: 5rem;
+  }
+}
+
+.dont-break-out.preserve-line-breaks{
+  font-size: 15px;
+}
 
 ds-item-search-result-list-element citations-badge .__dimensions_badge_embed__{
   margin-bottom: 0rem;

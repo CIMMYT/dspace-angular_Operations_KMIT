@@ -1,0 +1,23 @@
+<div class="item-page-field cgiar-initiative" *ngIf="validateCGIARMetadataContent()">
+    <h3>{{"item.page.cgiar-initiative" | translate}}</h3>
+    <ds-generic-item-page-field [item]="item"
+      [fields]="['dc.relation.CGIARinitiative']"
+      [label]="'dc.relation.CGIARinitiative'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="item"
+      [fields]="['dc.relation.impactArea']"
+      [label]="'dc.relation.impactArea'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="item"
+      [fields]="['dc.relation.actionArea']"
+      [label]="'dc.relation.actionArea'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="item"
+      [fields]="['dc.relation.funderName']"
+      [label]="'dc.relation.funderName'">
+    </ds-generic-item-page-field>
+    <ds-item-page-uri-field [item]="item"
+      [fields]="['dc.relation.cgspaceuri']"
+      [label]="'dc.relation.cgspaceuri'">
+    </ds-item-page-uri-field>
+  </div>

@@ -30,6 +30,9 @@ import {
 import {
   ItemPageRightsComponent
 } from './simple/field-components/specific-field/rights/item-page-rights.component';
+import {
+  ItemPageCGIARComponent
+} from './simple/field-components/specific-field/cgiar/item-page-cgiar.component';
 import { ItemPageUriFieldComponent } from './simple/field-components/specific-field/uri/item-page-uri-field.component';
 import { ItemPageFieldComponent } from './simple/field-components/specific-field/item-page-field.component';
 import { CollectionsComponent } from './field-components/collections/collections.component';
@@ -98,6 +101,7 @@ const DECLARATIONS = [
   ItemPageUriCustomFieldComponent,
   ItemPageUriLinktextComponent,
   ItemPageRightsComponent,
+  ItemPageCGIARComponent,
   ItemPageUriFieldComponent,
   ItemPageFieldComponent,
   CollectionsComponent,
