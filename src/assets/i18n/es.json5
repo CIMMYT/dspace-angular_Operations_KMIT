@@ -7880,5 +7880,6 @@
   "dc.relation.actionArea":"Área de acción",
   "dc.relation.funderName":"Donante o financiador",
   "dc.relation.cgspaceuri":"URL en CGSpace",
-  "":"",
+  "item.page.social.header":"Compartir",
+  "":""
 }

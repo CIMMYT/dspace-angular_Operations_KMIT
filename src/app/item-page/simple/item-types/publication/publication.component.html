@@ -92,8 +92,11 @@
       [fields]="['dc.rights.accesslevel']"
       [label]="'dc.rights.accesslevel' | translate">
     </ds-item-page-rights>
+
+    <ds-item-page-social [item]="object"></ds-item-page-social>
   </div>
   <div class="col-xs-12 col-md-7">
+    <ds-item-page-social [item]="object"></ds-item-page-social>
     <ds-related-items
       [parentItem]="object"
       [relationType]="'isProjectOfPublication'"
