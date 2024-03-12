@@ -369,3 +369,38 @@ ds-item-search-result-list-element citations-badge .__dimensions_badge_embed__{
 .openaccess-img{
   max-width: 10rem;
 }
+
+ds-log-in-container button.btn.btn-lg.btn-primary.btn-block.mt-2.text-white{
+  background-color: #003b49;
+}
+
+i.fa-brands.fa-2x.pr-1 {
+  margin-bottom: 25px;
+}
+
+li.admin-menu-header h4 {
+  color: #FFF;
+}
+
+ds-item-page altmetric-badge {
+  margin-bottom: 33px;
+}
+
+/* No estoy segura que también oculte el tipo de las entidades, tendríamos que probar */
+@media (max-width: 990px) {
+  ds-item-search-result-list-element, ds-person-search-result-list-element {
+      ds-themed-type-badge{
+        visibility: hidden;
+      }
+    }
+}
+
+
+.submit-icon,
+.dropdown-toggle,
+.loginLink,
+.dropdownLogin,
+.logoutLink,
+.dropdownLogout{
+    color: #003b49;
+}

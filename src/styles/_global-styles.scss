@@ -50,7 +50,8 @@ ds-admin-sidebar {
 ngx-gallery-preview.ngx-gallery-active {
     right: 0;
     left: auto;
-    width: calc(100% - 53px);
+    width: calc(100% - 95px);
+    top: 95px !important;
 }
 
 .ds-submission-reorder-dragging {
