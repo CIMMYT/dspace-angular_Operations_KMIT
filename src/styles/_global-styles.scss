@@ -44,13 +44,7 @@ ds-admin-sidebar {
     z-index: 0;
 }
 
-.media-viewer
-.change-gallery
-.ngx-gallery
-ngx-gallery-preview.ngx-gallery-active {
-    right: 0;
-    left: auto;
-    width: calc(100% - 95px);
+.ngx-gallery-active {
     top: 95px !important;
 }
 

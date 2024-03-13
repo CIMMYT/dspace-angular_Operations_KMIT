@@ -404,3 +404,12 @@ ds-item-page altmetric-badge {
 .dropdownLogout{
     color: #003b49;
 }
+
+.ngx-gallery-active {
+  top: 95px !important;
+}
+
+
+img.ngx-gallery-preview-img.ngx-gallery-center.animation.ng-star-inserted.ngx-gallery-active {
+top: -95px !important
+}
