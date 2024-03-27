@@ -36,7 +36,10 @@ import {
 import {
   ItemPageSocialComponent
 } from './simple/field-components/specific-field/social/item-page-social.component';
-import { ItemPageUriFieldComponent } from './simple/field-components/specific-field/uri/item-page-uri-field.component';
+import { ItemPageUriFieldComponent } 
+from './simple/field-components/specific-field/uri/item-page-uri-field.component';
+import { ItemPageUriSearchComponent }
+from './simple/field-components/specific-field/uri-search-field/item-page-uri-search-field.component';
 import { ItemPageFieldComponent } from './simple/field-components/specific-field/item-page-field.component';
 import { CollectionsComponent } from './field-components/collections/collections.component';
 import { FullItemPageComponent } from './full/full-item-page.component';
@@ -107,6 +110,7 @@ const DECLARATIONS = [
   ItemPageCGIARComponent,
   ItemPageSocialComponent,
   ItemPageUriFieldComponent,
+  ItemPageUriSearchComponent,
   ItemPageFieldComponent,
   CollectionsComponent,
   FullFileSectionComponent,
