@@ -63,18 +63,21 @@
       [metadataFields]="['dc.creator.corporate']"
       [label]="'dc.creator.corporate' | translate">
     </ds-themed-metadata-representation-list>
+
     <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
       [itemType]="'Person'"
       [metadataFields]="['dc.contributor.editor']"
       [label]="'dc.contributor.editor' | translate">
     </ds-themed-metadata-representation-list>
+
     <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
       [itemType]="'Person'"
       [metadataFields]="['dc.contributor.illustrator']"
       [label]="'dc.contributor.illustrator' | translate">
     </ds-themed-metadata-representation-list>
+
     <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
       [itemType]="'Person'"
@@ -86,10 +89,12 @@
       [fields]="['journal.title']"
       [label]="'item.page.journal-title'">
     </ds-generic-item-page-field>
+
     <ds-generic-item-page-field [item]="object"
       [fields]="['journal.identifier.issn']"
       [label]="'item.page.journal-issn'">
     </ds-generic-item-page-field>
+
     <ds-generic-item-page-field [item]="object"
       [fields]="['journalvolume.identifier.name']"
       [label]="'item.page.volume-title'">
@@ -99,10 +104,13 @@
       [fields]="['dc.rights.accesslevel']"
       [label]="'dc.rights.accesslevel' | translate">
     </ds-item-page-rights>
+
+        <!--Social banner -->
+    <ds-item-page-social [item]="object"></ds-item-page-social>
   </div>
   <div class="col-xs-12 col-md-6">
-    <ds-item-page-social [item]="object"></ds-item-page-social>
     <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>
+    
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.description']"
       [label]="'item.page.description'">

@@ -60,6 +60,7 @@
       [metadataFields]="['dc.creator.corporate']"
       [label]="'dc.creator.corporate' | translate">
     </ds-themed-metadata-representation-list>
+
     <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
       [itemType]="'Person'"
@@ -84,23 +85,27 @@
       [fields]="['journal.title']"
       [label]="'publication.page.journal-title'">
     </ds-generic-item-page-field>
+
     <ds-generic-item-page-field [item]="object"
       [fields]="['journal.identifier.issn']"
       [label]="'publication.page.journal-issn'">
     </ds-generic-item-page-field>
+
     <ds-generic-item-page-field [item]="object"
       [fields]="['journalvolume.identifier.name']"
       [label]="'publication.page.volume-title'">
     </ds-generic-item-page-field>
+    
     <ds-item-page-rights [item]="object"
       [fields]="['dc.rights.accesslevel']"
       [label]="'dc.rights.accesslevel' | translate">
     </ds-item-page-rights>
-
+    <!--Social banner -->
     <ds-item-page-social [item]="object"></ds-item-page-social>
+
   </div>
   <div class="col-xs-12 col-md-7">
-    <ds-item-page-social [item]="object"></ds-item-page-social>
+  <!--
     <ds-related-items
       [parentItem]="object"
       [relationType]="'isProjectOfPublication'"
@@ -116,6 +121,7 @@
       [relationType]="'isJournalIssueOfPublication'"
       [label]="'relationships.isJournalIssueOf' | translate">
     </ds-related-items>
+  -->
     <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.description']"
