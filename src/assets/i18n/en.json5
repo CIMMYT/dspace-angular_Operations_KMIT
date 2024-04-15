@@ -2772,11 +2772,11 @@
 
   "login.form.oidc": "Log in with OIDC",
 
-  "login.form.orcid": "Log in with ORCID",
+  "login.form.orcid": " Connect your Orcid account",
 
   "login.form.password": "Password",
 
-  "login.form.shibboleth": "Log in with Shibboleth",
+  "login.form.shibboleth": "CIMMYT staff access",
 
   "login.form.submit": "Log in",
 

@@ -4175,13 +4175,13 @@
   "login.form.oidc": "Iniciar sesión con OIDC",
 
   // "login.form.orcid": "Log in with ORCID",
-  "login.form.orcid": "Iniciar sesión con ORCID",
+  "login.form.orcid": "Conecta tu cuenta ORCID",
 
   // "login.form.password": "Password",
   "login.form.password": "Contraseña",
 
   // "login.form.shibboleth": "Log in with Shibboleth",
-  "login.form.shibboleth": "Iniciar sesión con Shibboleth",
+  "login.form.shibboleth": "Acceso al staff de CIMMYT",
 
   // "login.form.submit": "Log in",
   "login.form.submit": "Iniciar sesión",
