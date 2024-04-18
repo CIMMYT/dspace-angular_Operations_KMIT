@@ -5276,10 +5276,10 @@
   "dc.relation.cgspaceuri":"CGSpace URL",
   "item.page.social.header":"Share",
   "relationships.isPhotographerOf.Person":"Photographer (Person)",
-  "relationships.isProductorOf.Person ":"Productor (Person)",
+  "relationships.isProductorOf.Person":"Productor (Person)",
   "relationships.isEditorOf.Person":"Editor (Person)",
   "relationships.isIllustratorOf.Person":"Illustrator (Person)",
-  " relationships.isOtherContributorOf.Person":"Other Contributor (Person)",
+  "relationships.isOtherContributorOf.Person":"Other Contributor (Person)",
   "":"",
   "":"",
 }

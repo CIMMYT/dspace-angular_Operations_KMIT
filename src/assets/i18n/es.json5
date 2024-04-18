@@ -7882,10 +7882,10 @@
   "dc.relation.cgspaceuri":"URL en CGSpace",
   "item.page.social.header":"Compartir",
   "relationships.isPhotographerOf.Person":"Fotografo (Persona)",
-  "relationships.isProductorOf.Person ":"Productor (Persona)",
+  "relationships.isProductorOf.Person":"Productor (Persona)",
   "relationships.isEditorOf.Person":"Editor (Persona)",
   "relationships.isIllustratorOf.Person":"Ilustrador (Persona)",
-  " relationships.isOtherContributorOf.Person":"Otros Contribuidores (Persona)",
+  "relationships.isOtherContributorOf.Person":"Otros Contribuidores (Persona)",
   "":"",
   "":"",
 }
