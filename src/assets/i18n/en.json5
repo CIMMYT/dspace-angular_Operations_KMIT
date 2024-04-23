@@ -5280,6 +5280,9 @@
   "relationships.isEditorOf.Person":"Editor (Person)",
   "relationships.isIllustratorOf.Person":"Illustrator (Person)",
   "relationships.isOtherContributorOf.Person":"Other Contributor (Person)",
+  "search.filters.filter.region.head":"Serie",
+  "search.filters.filter.region.label":"Search for Serie",
+  "search.filters.filter.region.placeholder":"Serie name",
   "":"",
   "":"",
 }

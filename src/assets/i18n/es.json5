@@ -7886,6 +7886,12 @@
   "relationships.isEditorOf.Person":"Editor (Persona)",
   "relationships.isIllustratorOf.Person":"Ilustrador (Persona)",
   "relationships.isOtherContributorOf.Person":"Otros Contribuidores (Persona)",
+  "search.filters.filter.region.head":"Nombre de la serie",
+  "search.filters.filter.region.label":"Buscar por serie",
+  "search.filters.filter.region.placeholder":"Nombre de la serie",
+  "search.filters.filter.region.head":"Nombre de serie",
+  "search.filters.filter.region.label":"Buscar por nombre de serie",
+  "search.filters.filter.region.placeholder":"Nombre de serie",
   "":"",
-  "":"",
+  "":""
 }
