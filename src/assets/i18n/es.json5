@@ -7892,6 +7892,7 @@
   "search.filters.filter.region.head":"Nombre de serie",
   "search.filters.filter.region.label":"Buscar por nombre de serie",
   "search.filters.filter.region.placeholder":"Nombre de serie",
-  "":"",
+  "dc.contributor.producer":"Productor",
+  "dc.contributor.photographer":"Fotografo",
   "":""
 }

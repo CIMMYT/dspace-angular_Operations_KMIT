@@ -5283,6 +5283,8 @@
   "search.filters.filter.region.head":"Serie",
   "search.filters.filter.region.label":"Search for Serie",
   "search.filters.filter.region.placeholder":"Serie name",
+  "dc.contributor.producer":"Producer",
+  "dc.contributor.photographer":"Photographer",
   "":"",
-  "":"",
+  "":""
 }

@@ -81,6 +81,20 @@
     <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
       [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.producer']"
+      [label]="'dc.contributor.producer' | translate">
+    </ds-themed-metadata-representation-list>
+
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.photographer']"
+      [label]="'dc.contributor.photographer' | translate">
+    </ds-themed-metadata-representation-list>
+    
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
       [metadataFields]="['dc.contributor.other']"
       [label]="'dc.contributor.other' | translate">
     </ds-themed-metadata-representation-list>
