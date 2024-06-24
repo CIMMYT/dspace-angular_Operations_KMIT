@@ -67,7 +67,7 @@ export class RecentItemListComponent implements OnInit {
 
     this.itemRD$ = this.searchService.search(
       new PaginatedSearchOptions({
-        query: "dspace.entity.type:Publication OR NOT exist(dspace.entity.type)",
+        query: "entityType:Publication",
         pagination: this.paginationConfig,
         dsoTypes: [DSpaceObjectType.ITEM],
         sort: this.sortConfig,
