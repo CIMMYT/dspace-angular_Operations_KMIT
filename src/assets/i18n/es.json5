@@ -7894,5 +7894,9 @@
   "search.filters.filter.region.placeholder":"Nombre de serie",
   "dc.contributor.producer":"Productor",
   "dc.contributor.photographer":"Fotografo",
+  "relationships.isWriterOf.Person":"Guionista (Persona)",
+  "relationships.isTranslatorOf.Person":"Traductor (Persona)",
+  "dc.contributor.writer":"Guionista",
+  "dc.contributor.translator":"Traductor",
   "":""
 }
