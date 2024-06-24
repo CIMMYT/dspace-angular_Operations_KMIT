@@ -96,6 +96,20 @@
       [label]="'dc.contributor.other' | translate">
     </ds-themed-metadata-representation-list>
 
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.writer']"
+      [label]="'dc.contributor.writer' | translate">
+    </ds-themed-metadata-representation-list>
+
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.translator']"
+      [label]="'dc.contributor.translator' | translate">
+    </ds-themed-metadata-representation-list>
+
     <ds-generic-item-page-field [item]="object"
       [fields]="['journal.title']"
       [label]="'publication.page.journal-title'">

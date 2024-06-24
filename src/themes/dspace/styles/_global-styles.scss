@@ -429,3 +429,28 @@ ds-edit-relationship {
     border-radius: 0px;
   }
 }
+
+/* -------------------------------------------------------- */
+/* no mostrar publicacion o person en la pagina del item */
+ds-themed-item-page-title-field ds-item-page-title-field h2.item-page-title-field .d-inline.ng-star-inserted {
+  visibility: hidden;
+  display: none !important;
+}
+
+/* -------------------------------------------------------- */
+/*centrar el bagde 'Non-discoverable' */
+ds-themed-badges.ng-star-inserted {
+  text-align: center;
+  margin-left: 5%;
+}
+
+span.badge.badge-danger {
+  padding: .35em .4em;
+  margin-bottom: 5px;
+}
+
+/* -------------------------------------------------------- */
+/* actualizar CSS, no se muestra el navbar */ 
+main.main-content {
+  margin-top: 125px;
+}

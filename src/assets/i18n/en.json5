@@ -5285,6 +5285,12 @@
   "search.filters.filter.region.placeholder":"Serie name",
   "dc.contributor.producer":"Producer",
   "dc.contributor.photographer":"Photographer",
-  "":"",
+  "relationships.isTranslatorOf.Person":"Translator (Person)",
+  "dc.contributor.writer":"Writer",
+  "dc.contributor.translator":"Translator",
+  "relationships.isWriterOf.Person":"Guionista (Persona)",
+  "relationships.isTranslatorOf.Person":"Traductor (Persona)",
+  "dc.contributor.writer":"Guionista",
+  "dc.contributor.translator":"Traductor",
   "":""
 }
