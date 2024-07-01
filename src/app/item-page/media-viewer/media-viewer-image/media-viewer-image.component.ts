@@ -39,6 +39,7 @@ export class MediaViewerImageComponent implements OnChanges, OnInit {
       {
         preview: this.preview !== undefined ? this.preview : true,
         image: true,
+        imageDescription: true,
         imageSize: 'contain',
         thumbnails: true,
         imageArrows: true,
@@ -49,6 +50,7 @@ export class MediaViewerImageComponent implements OnChanges, OnInit {
         previewZoom: true,
         previewRotate: true,
         previewFullscreen: true,
+        previewDescription: true,
         width: '600px',
         height: '400px',
       },
@@ -87,6 +89,7 @@ export class MediaViewerImageComponent implements OnChanges, OnInit {
             ? image.thumbnail
             : this.thumbnailPlaceholder,
           big: image.bitstream._links.content.href,
+          description: image.bitstream.firstMetadataValue('dc.description'),
         });
       }
     }

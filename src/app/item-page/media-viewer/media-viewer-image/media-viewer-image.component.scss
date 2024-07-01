@@ -17,4 +17,9 @@
     display: block;
     content: '';
   }
+
+  .ngx-gallery-preview-text{
+    top: -100px !important;
+    position: relative;
+  }
 }

@@ -137,6 +137,12 @@
     <ds-item-page-social [item]="object"></ds-item-page-social>
   </div>
   <div class="col-xs-12 col-md-6">
+
+    <!-- Citations -->
+    <ds-item-page-apa-field [item]="object"> </ds-item-page-apa-field>
+    <ds-item-page-iso-field [item]="object"> </ds-item-page-iso-field>
+    <!-- Citations -->
+    
     <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>
     
     <ds-generic-item-page-field [item]="object"
@@ -153,11 +159,6 @@
       [fields]="['dc.identifier.citation']"
       [label]="'item.page.citation'">
     </ds-generic-item-page-field>
-
-    <!-- Citations -->
-    <ds-item-page-apa-field [item]="object"> </ds-item-page-apa-field>
-    <ds-item-page-iso-field [item]="object"> </ds-item-page-iso-field>
-    <!-- Citations -->
 
     <ds-item-page-uri-field [item]="object"
       [fields]="['dc.identifier.uri']"
