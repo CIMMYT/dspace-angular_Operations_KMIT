@@ -33,7 +33,7 @@
         <span class="text-muted">
           <span *ngIf="dso.allMetadata(['person.identifier.orcid']).length > 0"
             class="item-list-job-title">
-              <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD icon" style="width: 1em; margin-bottom: .1em; margin-left: 1em;">
+            <img [src]="'assets/dspace/images/orcid.svg'"  alt="ORCID iD icon" style="width: 1em; margin-bottom: .1em; margin-left: 1em;">
               <span *ngFor="let value of allMetadataValues(['person.identifier.orcid']); let last=last;">
                   <span [innerHTML]="value"><span [innerHTML]="value"></span></span>
               </span>
