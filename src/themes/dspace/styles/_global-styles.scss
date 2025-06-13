@@ -382,8 +382,10 @@ li.admin-menu-header h4 {
   color: #FFF;
 }
 
-ds-item-page altmetric-badge {
-  margin-bottom: 33px;
+ds-item-page {
+  altmetric-ebadge,citations-badge{
+    margin-bottom: 0px;
+  }
 }
 
 /* No estoy segura que también oculte el tipo de las entidades, tendríamos que probar */

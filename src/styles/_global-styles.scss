@@ -262,3 +262,18 @@ ul.dso-edit-menu-dropdown > li .nav-item.nav-link {
 .table td {
   vertical-align: middle;
 }
+
+ds-themed-file-download-link.btn.btn-outline-primary {
+    background-color: #336C6D;
+    margin-bottom: .2rem
+    a.dont-break-out {
+        color: #fff;
+    }
+}
+ds-themed-file-download-link.btn.btn-outline-primary:hover {
+    background-color: #279A82;
+    margin-bottom: .2rem
+    a.dont-break-out {
+        color: #fff;
+    }
+}

@@ -62,7 +62,7 @@
               }
             ],
             "scripts": [],
-            "baseHref": "/"
+            "baseHref": "/ui-pub/"
           },
           "configurations": {
             "development": {
