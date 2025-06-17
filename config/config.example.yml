@@ -53,9 +53,9 @@ ssr:
 # NOTE: these settings define which (publicly available) REST API to use. They are usually
 # 'synced' with the 'dspace.server.url' setting in your backend's local.cfg.
 rest:
-  ssl: true
-  host: sandbox.dspace.org
-  port: 443
+  ssl: false
+  host: localhost
+  port: 8080
   # NOTE: Space is capitalized because 'namespace' is a reserved string in TypeScript
   nameSpace: /server
   # Provide a different REST url to be used during SSR execution. It must contain the whole url including protocol, server port and
@@ -165,7 +165,7 @@ submission:
     metadata: []
     # NOTE: after how many time (milliseconds) submission is saved automatically
     # eg. timer: 5 * (1000 * 60); // 5 minutes
-    timer: 0
+    timer: 5
   # Always show the duplicate detection section if enabled, even if there are no potential duplicates detected
   # (a message will be displayed to indicate no matches were found)
   duplicateDetection:
@@ -232,79 +232,79 @@ languages:
     active: true
   - code: ar
     label: العربية
-    active: true
+    active: false
   - code: bn
     label: বাংলা
-    active: true
+    active: false
   - code: ca
     label: Català
-    active: true
+    active: false
   - code: cs
     label: Čeština
-    active: true
+    active: false
   - code: de
     label: Deutsch
-    active: true
+    active: false
   - code: el
     label: Ελληνικά
-    active: true
+    active: false
   - code: es
     label: Español
     active: true
   - code: fi
     label: Suomi
-    active: true
+    active: false
   - code: fr
     label: Français
-    active: true
+    active: false
   - code: gd
     label: Gàidhlig
-    active: true
+    active: false
   - code: hi
     label: हिंदी
-    active: true
+    active: false
   - code: hu
     label: Magyar
-    active: true
+    active: false
   - code: it
     label: Italiano
-    active: true
+    active: false
   - code: kk
     label: Қазақ
-    active: true
+    active: false
   - code: lv
     label: Latviešu
-    active: true
+    active: false
   - code: nl
     label: Nederlands
-    active: true
+    active: false
   - code: pl
     label: Polski
-    active: true
+    active: false
   - code: pt-PT
     label: Português
-    active: true
+    active: false
   - code: pt-BR
     label: Português do Brasil
-    active: true
+    active: false
   - code: sr-lat
     label: Srpski (lat)
-    active: true
+    active: false
   - code: sr-cyr
     label: Српски
-    active: true
+    active: false
   - code: sv
     label: Svenska
-    active: true
+    active: false
   - code: tr
     label: Türkçe
-    active: true
+    active: false
   - code: uk
     label: Yкраї́нська
-    active: true
+    active: false
   - code: vi
     label: Tiếng Việt
-    active: true
+    active: false
 
 
 # Browse-By Pages
@@ -335,16 +335,16 @@ homePage:
   topLevelCommunityList:
     # No. of communities to list per page on the home page
     # This will always round to the nearest number from the list of page sizes. e.g. if you set it to 7 it'll use 10
-    pageSize: 5
+    pageSize: 10
   # Enable or disable the Discover filters on the homepage
-  showDiscoverFilters: false
+  showDiscoverFilters: true
 
 # Item Config
 item:
   edit:
     undoTimeout: 10000 # 10 seconds
   # Show the item access status label in items lists
-  showAccessStatuses: false
+  showAccessStatuses: true
   bitstream:
     # Number of entries in the bitstream list in the item view page.
     # Rounded to the nearest size in the list of selectable sizes on the
@@ -433,22 +433,22 @@ bundle:
 # For images, this enables a gallery viewer where you can zoom or page through images.
 # For videos, this enables embedded video streaming
 mediaViewer:
-  image: false
-  video: false
+  image: true
+  video: true
 
 # Whether the end user agreement is required before users use the repository.
 # If enabled, the user will be required to accept the agreement before they can use the repository.
 # And whether the privacy statement/COAR notify support page should exist or not.
 info:
-  enableEndUserAgreement: true
-  enablePrivacyStatement: true
-  enableCOARNotifySupport: true
+  enableEndUserAgreement: false
+  enablePrivacyStatement: false
+  enableCOARNotifySupport: false
 
 # Whether to enable Markdown (https://commonmark.org/) and MathJax (https://www.mathjax.org/)
 # display in supported metadata fields. By default, only dc.description.abstract is supported.
 markdown:
-  enabled: false
-  mathjax: false
+  enabled: true
+  mathjax: true
 
 # Which vocabularies should be used for which search filters
 # and whether to show the filter in the search sidebar
@@ -456,7 +456,7 @@ markdown:
 vocabularies:
   - filter: 'subject'
     vocabulary: 'srsc'
-    enabled: true
+    enabled: false
 
 # Default collection/community sorting order at Advanced search, Create/update community and collection when there are not a query.
 comcolSelectionSort:
