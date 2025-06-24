@@ -91,7 +91,11 @@ export class FullItemPageComponent extends ItemPageComponent implements OnInit, 
   'dc.subject.other',
   'dc.audience',
   'dc.peertube',
-  'dc.subject.program'
+  'dc.subject.program',
+  'relation.isAuthorOfPublication',
+  'relation.isAuthorOfPublication.latestForDiscovery',
+  'dspace.entity.type',
+  'dc.creator.aux'
   ]
   dctermsRegExp: RegExp = /dcterms.[a-z]+/; 
 

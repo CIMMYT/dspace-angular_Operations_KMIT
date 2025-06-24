@@ -20,7 +20,7 @@
             <ng-container *ngFor="let mdEntry of (metadata$ | async) | keyvalue">
               <tr *ngFor="let mdValue of mdEntry.value">
                 <ng-container *ngIf="!HideMetadata(mdEntry.key)">
-                  <td>{{mdEntry.key}}</td>
+                  <td>{{ mdEntry.key | translate }}</td>
                   <td>{{mdValue.value}}</td>
                   <!--<td>{{mdValue.language}}</td>-->
                 </ng-container>
