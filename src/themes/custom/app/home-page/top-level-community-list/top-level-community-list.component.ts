@@ -10,6 +10,9 @@ import { ErrorComponent } from '../../../../../app/shared/error/error.component'
 import { ThemedLoadingComponent } from '../../../../../app/shared/loading/themed-loading.component';
 import { ObjectCollectionComponent } from '../../../../../app/shared/object-collection/object-collection.component';
 import { VarDirective } from '../../../../../app/shared/utils/var.directive';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { ButtonModule } from 'primeng/button';
+import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'ds-themed-top-level-community-list',
@@ -18,7 +21,7 @@ import { VarDirective } from '../../../../../app/shared/utils/var.directive';
   // templateUrl: './top-level-community-list.component.html'
   templateUrl: '../../../../../app/home-page/top-level-community-list/top-level-community-list.component.html',
   standalone: true,
-  imports: [VarDirective, NgIf, ObjectCollectionComponent, ErrorComponent, ThemedLoadingComponent, AsyncPipe, TranslateModule],
+  imports: [VarDirective, NgIf, ObjectCollectionComponent, ErrorComponent, ThemedLoadingComponent, AsyncPipe, TranslateModule, NgbCarouselModule, ButtonModule, CarouselModule],
 })
 
 export class TopLevelCommunityListComponent extends BaseComponent {}

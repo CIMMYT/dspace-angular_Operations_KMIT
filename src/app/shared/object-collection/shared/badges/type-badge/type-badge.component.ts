@@ -32,6 +32,8 @@ export class TypeBadgeComponent {
   @Input() set object(object: DSpaceObject) {
     this._object = object;
 
+    this._typeMessage = this._object.firstMetadataValue('dc.type') || '';
+    /*
     const renderTypes = this._object.getRenderTypes();
     if (!isEmpty(renderTypes.length)) {
       const renderType = renderTypes[0];
@@ -46,6 +48,7 @@ export class TypeBadgeComponent {
         this._typeMessage = `${renderType.toLowerCase()}.listelement.badge`;
       }
     }
+    */
   }
 
   get object(): DSpaceObject {

@@ -1,6 +1,7 @@
 import {
   AsyncPipe,
   NgIf,
+  NgFor,
 } from '@angular/common';
 import {
   ChangeDetectionStrategy,
@@ -10,6 +11,7 @@ import {
   OnInit,
 } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import {
   BehaviorSubject,
   combineLatest as observableCombineLatest,
@@ -37,7 +39,8 @@ import { ThemedLoadingComponent } from '../../shared/loading/themed-loading.comp
 import { ObjectCollectionComponent } from '../../shared/object-collection/object-collection.component';
 import { PaginationComponentOptions } from '../../shared/pagination/pagination-component-options.model';
 import { VarDirective } from '../../shared/utils/var.directive';
-
+import { ButtonModule } from 'primeng/button';
+import { CarouselModule } from 'primeng/carousel';
 /**
  * this component renders the Top-Level Community list
  */
@@ -48,7 +51,7 @@ import { VarDirective } from '../../shared/utils/var.directive';
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [fadeInOut],
   standalone: true,
-  imports: [VarDirective, NgIf, ObjectCollectionComponent, ErrorComponent, ThemedLoadingComponent, AsyncPipe, TranslateModule],
+  imports: [VarDirective, NgIf, NgFor, NgbCarouselModule, ButtonModule, ObjectCollectionComponent, ErrorComponent, ThemedLoadingComponent, AsyncPipe, TranslateModule, CarouselModule],
 })
 
 export class TopLevelCommunityListComponent implements OnInit, OnDestroy {
@@ -56,7 +59,6 @@ export class TopLevelCommunityListComponent implements OnInit, OnDestroy {
    * A list of remote data objects of all top communities
    */
   communitiesRD$: BehaviorSubject<RemoteData<PaginatedList<Community>>> = new BehaviorSubject<RemoteData<PaginatedList<Community>>>({} as any);
-
   /**
    * The pagination configuration
    */
@@ -77,6 +79,10 @@ export class TopLevelCommunityListComponent implements OnInit, OnDestroy {
    */
   currentPageSubscription: Subscription;
 
+  images = [700, 533, 807, 124].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  responsiveOptions: any[] | undefined;
+
+
   constructor(
     @Inject(APP_CONFIG) protected appConfig: AppConfig,
     private cds: CommunityDataService,
@@ -91,6 +97,28 @@ export class TopLevelCommunityListComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.initPage();
+        this.responsiveOptions = [
+            {
+                breakpoint: '1400px',
+                numVisible: 2,
+                numScroll: 1
+            },
+            {
+                breakpoint: '1199px',
+                numVisible: 3,
+                numScroll: 1
+            },
+            {
+                breakpoint: '767px',
+                numVisible: 2,
+                numScroll: 1
+            },
+            {
+                breakpoint: '575px',
+                numVisible: 1,
+                numScroll: 1
+            }
+        ];
   }
 
 
@@ -130,5 +158,4 @@ export class TopLevelCommunityListComponent implements OnInit, OnDestroy {
     this.unsubscribe();
     this.paginationService.clearPagination(this.config.id);
   }
-
 }

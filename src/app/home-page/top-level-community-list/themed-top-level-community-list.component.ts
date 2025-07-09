@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 
 import { ThemedComponent } from '../../shared/theme-support/themed.component';
 import { TopLevelCommunityListComponent } from './top-level-community-list.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'ds-top-level-community-list',
   styleUrls: [],
   templateUrl: '../../shared/theme-support/themed.component.html',
   standalone: true,
-  imports: [TopLevelCommunityListComponent],
+  imports: [TopLevelCommunityListComponent, NgbCarouselModule],
 })
 export class ThemedTopLevelCommunityListComponent extends ThemedComponent<TopLevelCommunityListComponent> {
   protected inAndOutputNames: (keyof TopLevelCommunityListComponent & keyof this)[];

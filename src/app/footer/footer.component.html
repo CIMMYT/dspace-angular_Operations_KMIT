@@ -1,5 +1,5 @@
 <footer class="text-lg-start">
-  <div *ngIf="showTopFooter" class="top-footer">
+  <div class="top-footer bottom-footer p-1 d-flex justify-content-center align-items-center text-white">
     <!-- Grid container -->
     <div class=" container p-4">
       <!--Grid row-->
@@ -7,43 +7,36 @@
 
         <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase">Footer Content</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a routerLink="./" class="">Lorem ipsum</a>
-            </li>
-            <li>
-              <a routerLink="./" class="">Ut facilisis</a>
-            </li>
-            <li>
-              <a routerLink="./" class="">Aenean sit</a>
-            </li>
-          </ul>
+          <a href="https://www.cimmyt.org/">
+            <img src="../../assets/images/Horizontal-CIMMYT_logo_white.svg" alt="">
+          </a>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase">Footer Content</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a routerLink="./" class="">Suspendisse potenti</a>
-            </li>
-          </ul>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
         <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Footer Content</h5>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-            voluptatem veniam, est atque cumque eum delectus sint!
-          </p>
+          <li class="social_cimmyt">
+            <ul class="social_item">
+              <a href="https://www.facebook.com/CIMMYT " role="button"><i class="fab fa-facebook-f fa-lg"></i></a>
+            </ul>
+            <ul class="social_item">
+              <a href="https://twitter.com/CIMMYT" role="button"><i class="fab fa-twitter fa-lg"></i></a>
+            </ul>
+            <ul class="social_item">
+              <a href="https://www.youtube.com/CimmytOrg" role="button"><i class="fab fa-youtube fa-lg"></i></a>
+            </ul>
+            <ul class="social_item">
+              <a href="https://www.flickr.com/CIMMYT" role="button"><i class="fab fa-flickr fa-lg"></i></a>
+            </ul>
+            <ul class="social_item">
+              <a href="https://www.linkedin.com/company/cimmyt" role="button"><i class="fab fa-linkedin fa-lg"></i></a>
+            </ul>
+          </li>
         </div>
         <!--Grid column-->
       </div>
@@ -62,31 +55,24 @@
         <a class="text-white"
            href="https://www.lyrasis.org/">{{ 'footer.link.lyrasis' | translate}}</a>
       </p>
-      <ul class="footer-info list-unstyled d-flex justify-content-center mb-0">
+      <ul class="footer-info list-unstyled small d-flex justify-content-center mb-0">
         <li>
-          <button class="btn btn-link text-white" type="button" (click)="showCookieSettings()">
-            {{ 'footer.link.cookies' | translate}}
-          </button>
+            <a class="text-white" href="javascript:void(0);"
+             (click)="showCookieSettings()">{{ 'footer.link.cookies' | translate}}</a>
         </li>
         <li *ngIf="showPrivacyPolicy">
-          <a class="btn text-white"
+          <a class="text-white"
              routerLink="info/privacy">{{ 'footer.link.privacy-policy' | translate}}</a>
         </li>
         <li *ngIf="showEndUserAgreement">
-          <a class="btn text-white"
+          <a class="text-white"
              routerLink="info/end-user-agreement">{{ 'footer.link.end-user-agreement' | translate}}</a>
         </li>
         <li *ngIf="showSendFeedback$ | async">
-          <a class="btn text-white"
+          <a class="text-white"
              routerLink="info/feedback">{{ 'footer.link.feedback' | translate}}</a>
         </li>
       </ul>
-    </div>
-    <div *ngIf="coarLdnEnabled$ | async" class="notify-enabled text-white">
-      <a class="coar-notify-support-route" routerLink="info/coar-notify-support">
-        <img class="n-coar" src="assets/images/n-coar.svg" [attr.alt]="'menu.header.image.logo' | translate" />
-        {{ 'footer.link.coar-notify-support' | translate }}
-      </a>
     </div>
   </div>
   <!-- Copyright -->
