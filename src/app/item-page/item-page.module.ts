@@ -34,6 +34,9 @@ import {
   ItemPageCGIARComponent
 } from './simple/field-components/specific-field/cgiar/item-page-cgiar.component';
 import {
+  ItemPageDonorComponent
+} from './simple/field-components/specific-field/donor/item-page-donor.component';
+import {
   ItemPageSocialComponent
 } from './simple/field-components/specific-field/social/item-page-social.component';
 import { ItemPageUriFieldComponent } 
@@ -108,6 +111,7 @@ const DECLARATIONS = [
   ItemPageUriLinktextComponent,
   ItemPageRightsComponent,
   ItemPageCGIARComponent,
+  ItemPageDonorComponent,
   ItemPageSocialComponent,
   ItemPageUriFieldComponent,
   ItemPageUriSearchComponent,

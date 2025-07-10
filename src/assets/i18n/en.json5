@@ -3490,11 +3490,11 @@
 
   "relationships.isFundingAgencyOf.OrgUnit": "Funder",
 
-  "repository.image.logo": "Repository logo",
+  "repository.image.logo": "CIMMYT Publications Repository logo",
 
-  "repository.title": "DSpace Repository",
+  "repository.title": "CIMMYT Publications Repository",
 
-  "repository.title.prefix": "DSpace Repository :: ",
+  "repository.title.prefix": "CIMMYT Publications Repository :: ",
 
   "resource-policies.add.button": "Add",
 
@@ -5268,7 +5268,7 @@
   "item.page.uridataset.linkname": "Link to the dataset",
   "person.orcid.label":"ORCID ID",
   "dc.rights.accesslevel":"Access Rights",
-  "item.page.cgiar-initiative":"CGIAR Initiatives",
+  "item.page.cgiar-initiative":"CGIAR",
   "dc.relation.CGIARinitiative":"Initiative",
   "dc.relation.impactArea":"Impact Area",
   "dc.relation.actionArea":"Action Area",
@@ -5307,6 +5307,20 @@
   "dc.coverage.place":"Place of Publication",
   "dc.subject.keywords":"Keyword",
   "dc.relation.dataset":"Relation Dataset",
+  "dc.relation.programAccelerator":"Program or Accelerator",
+  "person.alternateName":"Name",
+  "person.familyName":"Last Name",
+  "person.givenName":"First Name",
+  "person.identifier.orcid":"ORCID",
+  "dc.description.pages":"Pages",
+  "dc.title.alternative":"Title Alternartive",
+  "search.filters.filter.ProgramAccelerator.head":"Program or Accelerator",
+  "search.filters.filter.ProgramAccelerator.label":"Program or Accelerator",
+  "search.filters.filter.ProgramAccelerator.placeholder":"Program or Accelerator",
+  "person.affiliation.name":"Affiliation ",
+  "person.identifier":"Identifier",
+  "person.description.note":"Note",
+  "":"",
   "":"",
   "":""
 }

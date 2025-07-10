@@ -5291,13 +5291,13 @@
 
 
   // "repository.image.logo": "Repository logo",
-  "repository.image.logo": "Logotipo del repositorio",
+  "repository.image.logo": "CIMMYT Publications Repository",
 
   // "repository.title.prefix": "DSpace Angular :: ",
-  "repository.title.prefix": "DSpace Angular :: ",
+  "repository.title.prefix": "CIMMYT Publications Repository :: ",
 
   // "repository.title.prefixDSpace": "DSpace Angular ::",
-  "repository.title.prefixDSpace": "DSpace Angular ::",
+  "repository.title.prefixDSpace": "CIMMYT Publications Repository ::",
 
 
   // "resource-policies.add.button": "Add",
@@ -7874,7 +7874,7 @@
   "item.page.uridataset.linkname": "Enlace al conjunto de datos",
   "person.orcid.label":"Identificador ORCID",
   "dc.rights.accesslevel":"Derechos de acceso",
-  "item.page.cgiar-initiative":"Iniciativas del CGIAR",
+  "item.page.cgiar-initiative":"CGIAR",
   "dc.relation.CGIARinitiative":"Iniciativa",
   "dc.relation.impactArea":"Área de impacto",
   "dc.relation.actionArea":"Área de acción",
@@ -7916,6 +7916,20 @@
   "dc.coverage.place":"Lugar de Publicación",
   "dc.subject.keywords":"Palabra clave",
   "dc.relation.dataset":"Datasets relacionados",
+  "dc.relation.programAccelerator":"Programa o Acelerador",
+  "person.alternateName":"Nombre",
+  "person.familyName":"Apellido",
+  "person.givenName":"Nombre de pila",
+  "person.identifier.orcid":"ORCID",
+  "dc.description.pages":"Páginas",
+  "dc.title.alternative	":"Subtítulo",
+  "search.filters.filter.ProgramAccelerator.head":"Programa o Acelerador",
+  "search.filters.filter.ProgramAccelerator.label":"Programa o Acelerador",
+  "search.filters.applied.f.ProgramAccelerator":"Programa o Acelerador",
+  "search.filters.filter.ProgramAccelerator.placeholder":"Programa o Acelerador",
+  "person.affiliation.name":"Afiliación",
+  "person.description.note":"Notas",
+  "":"",
   "":"",
   "":""
 }

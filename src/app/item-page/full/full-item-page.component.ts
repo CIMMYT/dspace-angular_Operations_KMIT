@@ -92,15 +92,16 @@ export class FullItemPageComponent extends ItemPageComponent implements OnInit, 
   'dc.audience',
   'dc.peertube',
   'dc.subject.program',
-  'relation.isAuthorOfPublication',
-  'relation.isAuthorOfPublication.latestForDiscovery',
   'dspace.entity.type',
-  'dc.creator.aux'
+  'dc.creator.aux',
+  'person.additionalType',
+  'person.name.variant',
+  'dc.relation.cgspacestatus'
   ]
   dctermsRegExp: RegExp = /dcterms.[a-z]+/; 
-
-
+  relationRegExp: RegExp = /relation\.(is[A-Za-z]+)(\.latestForDiscovery)?/;
+  
   HideMetadata(metadatKey: string): boolean {
-    return (this.arrayHideMetadata.includes(metadatKey) || this.dctermsRegExp.test(metadatKey));
+    return (this.arrayHideMetadata.includes(metadatKey) || this.dctermsRegExp.test(metadatKey) || this.relationRegExp.test(metadatKey));
   }
 }
