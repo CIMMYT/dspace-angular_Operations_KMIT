@@ -4202,11 +4202,11 @@
 
   "relationships.isFundingAgencyOf.OrgUnit": "Funder",
 
-  "repository.image.logo": "Repository logo",
+  "repository.image.logo": "Digital Assets Management Repository",
 
-  "repository.title": "DSpace Repository",
+  "repository.title": "Digital Assets Management Repository",
 
-  "repository.title.prefix": "DSpace Repository :: ",
+  "repository.title.prefix": "Digital Assets Management Repository :: ",
 
   "resource-policies.add.button": "Add",
 
@@ -6793,4 +6793,37 @@
   "live-region.ordering.dropped": "{{ itemName }}, dropped at position {{ index }} of {{ length }}.",
 
   "dynamic-form-array.sortable-list.label": "Sortable list",
+  "dc.creator.director":"Director",
+  "dc.creator.architect":"Architect",
+  "dc.contributor.designer":"Designer",
+  "dc.contributor.editor":"Editor",
+  "dc.contributor.ilustrator":"Ilustrator",
+  "dc.contributor.partnership":"Partnership",
+  "dc.contributor.photographer":"Photographer",
+  "dc.contributor.translator":"Translator",
+  "cimmyt.client":"Client",
+  "cimmyt.program":"Program",
+  "cimmyt.ticket.teamwork":"Teamwork Ticket",
+  "cimmyt.architectureoffice":"Company",
+  "cimmyt.approverby":"Approver by",
+  "search.filters.filter.language.head":"Language",
+  "search.filters.filter.language.label":"Language",
+  "search.filters.filter.language.placeholder":"Language",
+  "search.filters.applied.f.language":"Language",
+  "search.filters.filter.unit.head":"Unit",
+  "search.filters.filter.unit.label":"Unit",
+  "search.filters.filter.unit.placeholder":"Unit",
+  "search.filters.applied.f.unit":"Unit",
+  "search.filters.filter.client.head":"Client",
+  "search.filters.filter.client.label":"Client",
+  "search.filters.filter.client.placeholder":"Client",
+  "search.filters.applied.f.client":"Client",
+  "search.filters.filter.status.head":"Status",
+  "search.filters.filter.status.label":"Status",
+  "search.filters.filter.status.placeholder":"Status",
+  "search.filters.applied.f.status":"Status",
+  "search.filters.filter.program.head":"Program",
+  "search.filters.filter.program.label":"Program",
+  "search.filters.filter.program.placeholder":"Program",
+  "search.filters.applied.f.program":"Program",
 }

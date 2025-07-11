@@ -25,12 +25,103 @@
     </div>
     <ds-item-page-file-section [item]="object"></ds-item-page-file-section>
     <ds-item-page-date-field [item]="object"></ds-item-page-date-field>
+    
+    <!-- Author names -->
     <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
       [itemType]="'Person'"
       [metadataFields]="['dc.contributor.author', 'dc.creator']"
       [label]="'relationships.isAuthorOf' | translate">
     </ds-metadata-representation-list>
+
+    <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.creator.director']"
+      [label]="'dc.creator.director' | translate">
+    </ds-metadata-representation-list>
+
+    <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.creator.architect']"
+      [label]="'dc.creator.architect' | translate">
+    </ds-metadata-representation-list>
+
+    <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.designer']"
+      [label]="'dc.contributor.designer' | translate">
+    </ds-metadata-representation-list>
+
+    <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.editor']"
+      [label]="'dc.contributor.editor' | translate">
+    </ds-metadata-representation-list>
+
+    <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.ilustrator']"
+      [label]="'dc.contributor.ilustrator' | translate">
+    </ds-metadata-representation-list>
+
+    <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.partnership']"
+      [label]="'dc.contributor.partnership' | translate">
+    </ds-metadata-representation-list>
+
+    <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.photographer']"
+      [label]="'dc.contributor.photographer' | translate">
+    </ds-metadata-representation-list>
+
+    <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.translator']"
+      [label]="'dc.contributor.translator' | translate">
+    </ds-metadata-representation-list>
+    <!-- Author names -->
+
+    <!-- Legal Information -->
+
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.client']"
+      [label]="'cimmyt.client' | translate">
+    </ds-generic-item-page-field>
+
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.program']"
+      [label]="'cimmyt.program' | translate">
+    </ds-generic-item-page-field>
+
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.ticket.teamwork']"
+      [label]="'cimmyt.ticket.teamwork' | translate">
+    </ds-generic-item-page-field>
+
+    <!-- Legal Information -->
+
+    <!-- facilities information -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.architectureoffice']"
+      [label]="'cimmyt.architectureoffice' | translate">
+    </ds-generic-item-page-field>
+
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.approverby']"
+      [label]="'cimmyt.approverby' | translate">
+    </ds-generic-item-page-field>
+    
+    <!-- facilities information -->
     <ds-generic-item-page-field [item]="object"
       [fields]="['journal.title']"
       [label]="'publication.page.journal-title'">
