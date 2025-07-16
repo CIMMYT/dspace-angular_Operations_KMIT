@@ -12,11 +12,10 @@
     [hideGear]="true">
   </ds-viewable-collection>
   -->
-	<p-carousel [value]="communitiesRD?.payload?.page" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" autoplayInterval="3000" >
+	<p-carousel [value]="communitiesRD?.payload?.page" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" >
 		<ng-template pTemplate="item" let-community>
 			<a href="communities/{{ community.id }}" class="flex flex-col items-center">
-				<div class="flex flex-col items-center justify-center border border-surface rounded-border m-2 p-4 text-center">
-					<img class="annexImage" src="https://www.cimmyt.org/content/uploads/2023/12/whoMaize-1.svg" alt="50% of maize and wheat icon">
+				<div class="flex flex-col items-center justify-center border border-surface rounded-border m-2 p-4">
 					<div class="mb-4 font-medium">{{ community._name }}</div>
 				</div>
 			</a>
