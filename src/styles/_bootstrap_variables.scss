@@ -35,7 +35,7 @@ $enable-shadows: true !default;
 
 // Override semantic colors
 $primary:   #f29657 !default;               // Blue gray
-$secondary: #495057 !default;               // As Bootstrap $gray-700
+$secondary: #919191 !default;               // As Bootstrap $gray-700
 $success:   #94ba65 !default;               // Lime
 $info:      #006666 !default;               // Blue green
 $warning:   #ec9433 !default;               // Orange
@@ -73,8 +73,8 @@ $ds-header-icon-color: $link-color !default;
 $ds-header-icon-color-hover: $link-hover-color !default;
 
 $ds-navbar-bg: #003B49 !default;
-$ds-navbar-dropdown-bg: #fff !default;
-$ds-expandable-navbar-bg: #fff !default;
+$ds-navbar-dropdown-bg: #003B49 !default;
+$ds-expandable-navbar-bg: #003B49 !default;
 $ds-navbar-link-color: $link-color !default;
 $ds-navbar-link-color-hover: #{darken($ds-navbar-link-color, 15%)} !default;
 

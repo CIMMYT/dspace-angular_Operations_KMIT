@@ -49,6 +49,7 @@ ds-base-thumbnail{
     img{
     max-width: 110%;
     margin-bottom: 1pc;
+    margin-left: 15px;
   }
 }
 
@@ -89,4 +90,45 @@ ds-base-lang-switch{
     text-decoration: none;
     background-color: #ffffff;
   }
+}
+
+.item-list-title{
+    line-height: 1;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #003b49;
+}
+
+.text-muted {
+    color: #2e2e2e !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.collapseButton{
+  margin-bottom: 10px
+}
+
+ds-badges {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    ds-type-badge{
+      color: #003b49;
+      background-color: #bdecb680;
+    }
+    ds-access-status-badge{
+      color: #000;
+      background-color:#919191;
+    }
+  }
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #003B49;
+  border-color: #003B49;
+}
+
+a:hover {
+  transition: 0.5s;
+  text-decoration: none;
 }
