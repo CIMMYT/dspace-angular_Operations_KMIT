@@ -120,8 +120,8 @@
       [fields]="['cimmyt.approverby']"
       [label]="'cimmyt.approverby' | translate">
     </ds-generic-item-page-field>
-    
     <!-- facilities information -->
+
     <ds-generic-item-page-field [item]="object"
       [fields]="['journal.title']"
       [label]="'item.page.journal-title'">
@@ -138,9 +138,128 @@
       [fields]="['dc.publisher']"
       [label]="'item.page.publisher'">
     </ds-generic-item-page-field>
+    <!--DIM-archive-->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.affiliation']"
+      [label]="'cimmyt.affiliation'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.sender']"
+      [label]="'cimmyt.sender'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.coverage.countryfocus']"
+      [label]="'dc.coverage.countryfocus'">
+    </ds-generic-item-page-field>
+    <!--DIM-archive-->
+    <!-- DIM-subject -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.subject.agrovoc']"
+      [separator]="', '"
+      [label]="'dc.subject.agrovoc'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.subject.keywords']"
+      [separator]="', '"
+      [label]="'dc.subject.keywords'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.subject.program']"
+      [separator]="', '"
+      [label]="'dc.subject.program'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.subject.project']"
+      [separator]="', '"
+      [label]="'dc.subject.project'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.subject.cimmyt']"
+      [separator]="', '"
+      [label]="'dc.subject.cimmyt'">
+    </ds-generic-item-page-field>
+    <!-- DIM-subject -->
   </div>
   <div class="col-xs-12 col-md-6">
     <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>
+   
+    <!-- cimmyt.unit -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.unit']"
+      [label]="'cimmyt.unit'">
+    </ds-generic-item-page-field>
+    <!-- cimmyt.unit -->
+    <!-- dc.type.version -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.type.version']"
+      [label]="'dc.type.version'">
+    </ds-generic-item-page-field>
+    <!-- dc.type.version -->
+    <!-- cimmyt.company -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.company']"
+      [label]="'cimmyt.company'">
+    </ds-generic-item-page-field>
+    <!-- cimmyt.company -->
+    <!-- Legal Department metadata -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.status']"
+      [label]="'cimmyt.status'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.icc']"
+      [label]="'cimmyt.icc'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cimmyt.contractnumber']"
+      [label]="'cimmyt.contractnumber'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.coverage.country']"
+      [label]="'dc.coverage.country'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.coverage.city']"
+      [label]="'dc.coverage.city'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.coverage.placeservice']"
+      [label]="'dc.coverage.placeservice'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.coverage.region']"
+      [label]="'dc.coverage.region'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.language']"
+      [label]="'dc.language'">
+    </ds-generic-item-page-field>
+    <!-- Legal Department metadata -->
+    <!-- Signer -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.contributor.signer']"
+      [label]="'dc.contributor.signer'">
+    </ds-generic-item-page-field>
+    <!-- Signer -->
+
+    <ds-item-page-uri-field [item]="object"
+      [fields]="['dc.identifier.uri']"
+      [label]="'dc.identifier.uri'">
+    </ds-item-page-uri-field>
+    <!-- DOI -->
+    <!-- DOI -->
+    <!-- ISBN -->
+    <ds-item-page-uri-field [item]="object"
+      [fields]="['dc.identifier.isbn']"
+      [label]="'dc.identifier.isbn'">
+    </ds-item-page-uri-field>
+    <!-- ISBN -->
+    <!-- ISSN -->
+    <ds-item-page-uri-field [item]="object"
+      [fields]="['dc.identifier.issn']"
+      [label]="'dc.identifier.issn'">
+    </ds-item-page-uri-field>
+    <!-- ISSN -->
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.description']"
       [label]="'item.page.description'">
@@ -155,10 +274,6 @@
       [fields]="['dc.identifier.citation']"
       [label]="'item.page.citation'">
     </ds-generic-item-page-field>
-    <ds-item-page-uri-field [item]="object"
-      [fields]="['dc.identifier.uri']"
-      [label]="'item.page.uri'">
-    </ds-item-page-uri-field>
     <ds-item-page-collections [item]="object"></ds-item-page-collections>
     <ds-item-page-uri-field [item]="object"
       [fields]="['coar.notify.endorsedBy']"
