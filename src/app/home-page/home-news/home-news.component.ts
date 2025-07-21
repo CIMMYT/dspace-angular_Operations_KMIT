@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'ds-base-home-news',
   styleUrls: ['./home-news.component.scss'],
   templateUrl: './home-news.component.html',
+  imports: [NgbCarouselModule],
   standalone: true,
 })
 

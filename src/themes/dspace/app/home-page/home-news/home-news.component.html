@@ -9,7 +9,16 @@
     </div>
   </div>
   <picture class="background-image">
-    <img alt="" [src]="'assets/dspace/images/maize.jpg'"/><!-- without the []="''" Firefox downloads both the fallback and the resolved image -->
+    @if (images) {
+      <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators" interval = 7000>
+        @for (image of images; track image) {
+          <ng-template ngbSlide >
+            <div class="picsum-img-wrapper">
+              <img [src]="image" />
+            </div>
+          </ng-template>
+        }
+      </ngb-carousel>
+    }
   </picture>
-  <small class="credits">Photo by <a href="https://www.pexels.com/@inspiredimages">&#64;inspiredimages</a></small>
 </div>

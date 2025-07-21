@@ -132,3 +132,34 @@ a:hover {
   transition: 0.5s;
   text-decoration: none;
 }
+
+ds-themed-home-news {
+  margin-bottom: 3pc;
+}
+
+#main-site-header {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: solid #279A82 3px;
+}
+
+ds-breadcrumbs{
+  margin-top: 75px; // Account for fixed header height
+}
+
+@media only screen and (max-width: 600px) {
+  ds-breadcrumbs{
+    margin-top: 90px; // Account for fixed header height
+  }
+}
+
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;;
+  font-size: 12px;
+  font-weight: 500; 
+}
