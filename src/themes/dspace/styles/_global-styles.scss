@@ -69,6 +69,20 @@ h2, .h4{
   border-color: rgb(229.5, 229.5, 229.5);
 }
 
+ds-edit-item-page {
+  .btn.btn-outline-primary {
+    color: #326670;
+    background-color: #ffffff;
+    border: 1px solid #326670;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: 5ms;
+  }
+  .btn.btn-outline-primary:hover {
+    color: #ffffff;
+    background-color: #326670;
+    border-color: rgb(229.5, 229.5, 229.5);
+  }
+}
 
 .btn-secondary {
   color: #fff;
@@ -146,20 +160,27 @@ ds-themed-home-news {
   border-bottom: solid #279A82 3px;
 }
 
-ds-breadcrumbs{
+ds-breadcrumbs,.ngx-gallery-active{
   margin-top: 75px; // Account for fixed header height
 }
 
 @media only screen and (max-width: 600px) {
-  ds-breadcrumbs{
+  ds-breadcrumbs,.ngx-gallery-active{
     margin-top: 90px; // Account for fixed header height
   }
 }
-
 
 .badge {
   display: inline-block;
   padding: 5px 10px;;
   font-size: 12px;
   font-weight: 500; 
+}
+
+ds-dso-edit-menu-section i{
+  color: #fff;
+}
+
+img.ngx-gallery-preview-img.ngx-gallery-center.animation.ng-star-inserted.ngx-gallery-active {
+    margin-top: 0px;
 }
