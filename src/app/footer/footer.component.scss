@@ -69,6 +69,29 @@
       }
     }
   }
+  li.social_cimmyt {
+    display: flex;
+  }
+  ul.social_item i {
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  ul.social_item i.fa-facebook-f:hover {
+    color: #3b5998;
+  }
+  ul.social_item i.fa-twitter:hover {
+    color: #55acee;
+  }
+  ul.social_item i.fa-youtube:hover {
+    color: #FF0000;
+  }
+  ul.social_item i.fa-flickr:hover {
+    color: #0063dc;
+  }
+  ul.social_item i.fa-linkedin:hover {
+    color: #0e76a8;
+  }
 }
 
 

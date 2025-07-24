@@ -4,7 +4,7 @@
 @import '../../../styles/_global-styles.scss';
 
 .facet-filter, .setting-option, .advanced-search {
-  background-color: var(--bs-light);
+  background-color: rgba(172, 183, 172, 0.2);
   border-radius: var(--bs-border-radius);
 
   &.p-3 {
@@ -14,10 +14,173 @@
   }
 
   .badge-secondary {
-    background-color: var(--bs-primary);
+    background-color: #326670;
   }
 
   h4, .h4 {
     font-size: 1.1rem
   }
+}
+
+ds-recent-item-list {
+  .my-4 {
+    border: 1px solid #ddd;
+  }
+  .my-4:hover{
+    box-shadow: 0 0 4px 1px #e1e1e1;
+  }
+
+}
+
+ds-search-results {
+  li.mt-4.mb-4{
+    border: 1px solid #ddd;
+  }
+  li.mt-4.mb-4:hover {
+    box-shadow: 0 0 4px 1px #e1e1e1;
+  }
+}
+
+ds-badges {
+  margin-right: .5pc;
+}
+
+ds-base-thumbnail{
+    img{
+    max-width: 110%;
+    margin-bottom: 1pc;
+    margin-left: 15px;
+  }
+}
+
+h2, .h4{
+  font-weight: bold;
+}
+
+.btn-primary {
+  color: #326670;
+  background-color: #ffffff;
+  border: 1px solid #326670;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #326670;
+  border-color: rgb(229.5, 229.5, 229.5);
+}
+
+ds-edit-item-page {
+  .btn.btn-outline-primary {
+    color: #326670;
+    background-color: #ffffff;
+    border: 1px solid #326670;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: 5ms;
+  }
+  .btn.btn-outline-primary:hover {
+    color: #ffffff;
+    background-color: #326670;
+    border-color: rgb(229.5, 229.5, 229.5);
+  }
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #326670;
+  border-color: #326670;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn-secondary:hover {
+  color: #326670;
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+ds-base-lang-switch{
+  .dropdown-item.active, .dropdown-item:active{
+    color: #003B49;
+    text-decoration: none;
+    background-color: #ffffff;
+  }
+}
+
+.item-list-title{
+    line-height: 1;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #003b49;
+}
+
+.text-muted {
+    color: #2e2e2e !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.collapseButton{
+  margin-bottom: 10px
+}
+
+ds-badges {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    ds-type-badge{
+      color: #003b49;
+      background-color: #bdecb680;
+    }
+    ds-access-status-badge{
+      color: #000;
+      background-color:#919191;
+    }
+  }
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #003B49;
+  border-color: #003B49;
+}
+
+a:hover {
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+ds-themed-home-news {
+  margin-bottom: 3pc;
+}
+
+#main-site-header {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: solid #279A82 3px;
+}
+
+ds-breadcrumbs,.ngx-gallery-active{
+  margin-top: 75px; // Account for fixed header height
+}
+
+@media only screen and (max-width: 600px) {
+  ds-breadcrumbs,.ngx-gallery-active{
+    margin-top: 90px; // Account for fixed header height
+  }
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;;
+  font-size: 12px;
+  font-weight: 500; 
+}
+
+ds-dso-edit-menu-section i{
+  color: #fff;
+}
+
+img.ngx-gallery-preview-img.ngx-gallery-center.animation.ng-star-inserted.ngx-gallery-active {
+    margin-top: 0px;
 }

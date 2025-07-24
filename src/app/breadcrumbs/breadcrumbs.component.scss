@@ -26,6 +26,10 @@ li.breadcrumb-item {
     a {
         color: var(--ds-breadcrumb-link-color);
     }
+    a:hover {
+        text-decoration: none;
+        color: #111;
+    }
 }
 
 li.breadcrumb-item.active {

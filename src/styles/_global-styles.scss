@@ -5,6 +5,9 @@ html {
 
 body {
     overflow-x: hidden;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 // Sticky Footer
@@ -448,6 +451,7 @@ ul.dso-edit-menu-dropdown>li .nav-item.nav-link {
 
     &.btn-primary:focus, &.btn-outline-primary:focus {
         outline-color: darken($primary, 5%);
+        border: solid 1px #111;
     }
 }
 
@@ -522,4 +526,40 @@ ngb-accordion {
   color: darken($link-color, 5%);
   // We use underline to discern link from text as we can't make color lighter on a white bg
   text-decoration: underline;
+}
+
+ds-untyped-item,ds-publication{
+    a.btn{
+        color: var(--ds-link-color);
+        text-decoration: none;
+        border: #003B49 1px solid;
+        &:hover {
+            color: #fff;
+            background-color: #003B49;
+        }
+    }
+    a.btn-dark {
+        color: var(--ds-link-color);
+        text-decoration: none;
+        border: #003B49 1px solid;
+        &:hover {
+            color: #fff;
+            background-color: #003B49;
+        }
+    }
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background-color: #279A82;
+}
+
+.top-footer.bottom-footer.p-1.d-flex.justify-content-center.align-items-center.text-white{
+    margin-top: 3pc;
+}
+
+.bottom-footer.p-1.d-flex.justify-content-center.align-items-center.text-white {
+    margin-bottom: 3pc;
+}
+ds-footer {
+    background-color: var(--ds-footer-bg);
 }

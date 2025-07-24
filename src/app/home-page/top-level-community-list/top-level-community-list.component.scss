@@ -1,0 +1,26 @@
+
+
+.mb-4.font-medium {
+  margin-top: 1pc;
+}
+
+p-carousel-item:hover {
+  cursor: pointer;
+  box-shadow: 0 0 4px 1px #e1e1e1;
+}
+
+.mb-4::before {
+  background-color: #77bd43;
+}
+.mb-4::before {
+  content: "";
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: 30px;
+}
+
+a:hover {
+  background-color: #326670;
+  transition: 0.5ms;
+}

@@ -76,4 +76,51 @@
   }
 }
 
+.display-3 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.picsum-img-wrapper img{
+    width: 100%;
+    max-height: 25pc;
+    object-fit: cover;
+}
 
+
+.background-image-container {
+  position: relative;
+}
+
+.jumbotron.jumbotron-fluid {
+  position: absolute;
+  top: 10pc;
+  left: 5pc;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8); /* Opcional: fondo semitransparente para mejor legibilidad */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .jumbotron.jumbotron-fluid {
+      .display-3 {
+        font-size: 20px;
+      }
+    position: absolute;
+    top: 10pc;
+    left: 11pc;
+    transform: translateX(-50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8); /* Opcional: fondo semitransparente para mejor legibilidad */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+}
+
+.background-image {
+  z-index: 1;
+}

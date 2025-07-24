@@ -4234,7 +4234,7 @@
   "item.page.edit": "Editar este ítem",
 
   // "item.page.files": "Files",
-  "item.page.files": "Archivos",
+  "item.page.files": "Descargas",
 
   // "item.page.filesection.description": "Description:",
   "item.page.filesection.description": "Descripción:",
@@ -6445,13 +6445,13 @@
   "relationships.isFundingAgencyOf.OrgUnit": "Financiador",
 
   // "repository.image.logo": "Repository logo",
-  "repository.image.logo": "Logotipo del repositorio",
+  "repository.image.logo": "Digital Assets Management Repository logo",
 
   // "repository.title": "DSpace Repository",
-  "repository.title": "Repositorio DSpace",
+  "repository.title": "Digital Assets Management Repository",
 
   // "repository.title.prefix": "DSpace Repository :: ",
-  "repository.title.prefix": "Repositorio DSpace :: ",
+  "repository.title.prefix": "Digital Assets Management Repository :: ",
 
   // "resource-policies.add.button": "Add",
   "resource-policies.add.button": "Agregar",
@@ -10406,30 +10406,64 @@
 
   // "search-facet-option.update.announcement": "The page will be reloaded. Filter {{ filter }} is selected.",
   "search-facet-option.update.announcement": "La página será recargada. Filtro {{ filter }} seleccionado.",
-
-  // "live-region.ordering.instructions": "Press spacebar to reorder {{ itemName }}.",
-  // TODO New key - Add a translation
-  "live-region.ordering.instructions": "Press spacebar to reorder {{ itemName }}.",
-
-  // "live-region.ordering.status": "{{ itemName }}, grabbed. Current position in list: {{ index }} of  {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
-  // TODO New key - Add a translation
-  "live-region.ordering.status": "{{ itemName }}, grabbed. Current position in list: {{ index }} of  {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
-
-  // "live-region.ordering.moved": "{{ itemName }}, moved to position {{ index }} of {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
-  // TODO New key - Add a translation
-  "live-region.ordering.moved": "{{ itemName }}, moved to position {{ index }} of {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
-
-  // "live-region.ordering.dropped": "{{ itemName }}, dropped at position {{ index }} of {{ length }}.",
-  // TODO New key - Add a translation
-  "live-region.ordering.dropped": "{{ itemName }}, dropped at position {{ index }} of {{ length }}.",
-
-  // "dynamic-form-array.sortable-list.label": "Sortable list",
-  // TODO New key - Add a translation
-  "dynamic-form-array.sortable-list.label": "Sortable list",
-
-  // "metadata-export-search.submit.error.limit-exceeded": "Only the first {{limit}} items will be exported",
-  // TODO New key - Add a translation
-  "metadata-export-search.submit.error.limit-exceeded": "Only the first {{limit}} items will be exported",
-
-
+  "dc.creator.director":"Director",
+  "dc.creator.architect":"Arquitecto",
+  "dc.contributor.designer":"Diseñador",
+  "dc.contributor.editor":"Editor",
+  "dc.contributor.ilustrator":"Ilustrador",
+  "dc.contributor.partnership":"Partnership",
+  "dc.contributor.photographer":"Fotografo",
+  "dc.contributor.translator":"Traductor",
+  "cimmyt.client":"Cliente",
+  "cimmyt.program":"Programa",
+  "cimmyt.ticket.teamwork":"Ticket de teamwork",
+  "cimmyt.architectureoffice":"Empresa",
+  "cimmyt.approverby":"Aprobo",
+  "search.filters.filter.language.head":"Idioma",
+  "search.filters.filter.language.label":"Idioma",
+  "search.filters.filter.language.placeholder":"Idioma",
+  "search.filters.applied.f.language":"Idioma",
+  "search.filters.filter.unit.head":"Unidad de CIMMYT",
+  "search.filters.filter.unit.label":"Unidad de CIMMYT",
+  "search.filters.filter.unit.placeholder":"Unidad de CIMMYT",
+  "search.filters.applied.f.unit":"Unidad de CIMMYT",
+  "search.filters.filter.client.head":"Cliente",
+  "search.filters.filter.client.label":"Cliente",
+  "search.filters.filter.client.placeholder":"Cliente",
+  "search.filters.applied.f.client":"Cliente",
+  "search.filters.filter.status.head":"Estado",
+  "search.filters.filter.status.label":"Estado",
+  "search.filters.filter.status.placeholder":"Estado",
+  "search.filters.applied.f.status":"Estado",
+  "search.filters.filter.program.head":"Programa",
+  "search.filters.filter.program.label":"Programa",
+  "search.filters.filter.program.placeholder":"Programa",
+  "search.filters.applied.f.program":"Programa",
+  "cimmyt.unit":"Unidad de CIMMYT",
+  "dc.type.version":"Versión",
+  "cimmyt.company":"Compañia",
+  "cimmyt.status":"Estado",
+  "cimmyt.icc":"ICC/Proyecto",
+  "cimmyt.contractnumber":"Número de contrato",
+  "dc.coverage.country":"País",
+  "dc.coverage.city":"Ciudad",
+  "dc.coverage.placeservice":"Lugar de servicio",
+  "dc.coverage.region":"Región",
+  "dc.language":"Idioma",
+  "dc.contributor.signer":"Signer",
+  "dc.identifier.isbn":"ISBN",
+  "dc.identifier.issn":"ISSN",
+  "dc.identifier.uri": "URI",
+  "dc.subject.agrovoc":"Agrovoc",
+  "dc.subject.keywords":"Palabras Clave",
+  "dc.subject.program":"Programa",
+  "dc.subject.project":"Proyecto",
+  "dc.subject.cimmyt":"Keywords",
+  "dc.coverage.countryfocus":"País de enfoque",
+  "cimmyt.sender":"Remitente",
+  "cimmyt.affiliation":"Afiliación",
+  "":"",
+  "":"",
+  "":"",
+  "":"",
 }
