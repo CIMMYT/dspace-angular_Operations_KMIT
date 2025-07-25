@@ -184,3 +184,37 @@ ds-dso-edit-menu-section i{
 img.ngx-gallery-preview-img.ngx-gallery-center.animation.ng-star-inserted.ngx-gallery-active {
     margin-top: 0px;
 }
+
+.dropdown-item.active, .dropdown-item:active{
+  color: rgb(22, 24, 27);
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: rgb(22, 24, 27);
+  text-decoration: none;
+  background-color: #e9ecef;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #003b49;
+  border-color: #003b49;
+  background-color: #003b49;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #111;
+  background-color: #ffffff;
+}
+
+#collectionControlsMenuButton, #dc_subject{
+  color: #111;
+  border: 1px solid #003b49 !important;
+}
+
+.text-primary {
+  color: #003b49 !important;
+}
+a.text-primary:hover, a.text-primary:focus {
+  color: rgb(216.75, 216.75, 216.75) !important;
+}
