@@ -53,17 +53,22 @@ export class MediaViewerImageComponent implements OnChanges, OnInit {
   ngOnChanges(): void {
     this.galleryOptions = [
       {
-        preview: this.preview !== undefined ? this.preview : true,
+        preview: this.preview !== undefined ? this.preview : false,
         image: true,
         imageSize: 'contain',
-        thumbnails: false,
-        imageArrows: false,
+        thumbnails: true,
+        imageArrows: true,
+        imageAutoPlay  : true,
+        imageAutoPlayInterval: 3000,
+        imageAutoPlayPauseOnHover: true,
         startIndex: 0,
         imageAnimation: NgxGalleryAnimation.Slide,
         previewCloseOnEsc: true,
         previewZoom: true,
         previewRotate: true,
-        previewFullscreen: true,
+        previewFullscreen: false,
+        imageInfinityMove: true,
+        thumbnailsColumns: 4,
       },
     ];
     if (this.image) {
