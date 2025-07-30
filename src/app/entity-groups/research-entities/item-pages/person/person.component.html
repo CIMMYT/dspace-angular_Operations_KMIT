@@ -49,6 +49,15 @@
       [fields]="['dc.title']"
       [label]="'person.page.name'">
     </ds-generic-item-page-field>
+    <!-- Este codigo es para añadir el link del ORCID al perfil del investigador -->
+    <div *ngIf="object?.firstMetadataValue('person.identifier.orcid')" class="simple-view-element">
+      <h5 _ngcontent-dspace-angular-c162="" class="simple-view-element-header ng-star-inserted">{{"person.orcid.label" | translate}}</h5>
+      <a href="https://orcid.org/{{ object?.firstMetadataValue('person.identifier.orcid')}}" target="_blank">
+        <img class="orcid-logo" [src]="'assets/dspace/images/share-id-icon.svg'"/>
+        {{ object?.firstMetadataValue('person.identifier.orcid')}}
+      </a>
+    </div>
+    <!-- Este codigo es para añadir el link del ORCID al perfil del investigador -->
     <div>
       <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']">
         {{"item.page.link.full" | translate}}

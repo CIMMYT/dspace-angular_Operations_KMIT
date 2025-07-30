@@ -31,7 +31,7 @@ const COMPONENTS = [
   GenericItemPageFieldComponent,
   MetadataRepresentationListComponent,
   ThemedMetadataRepresentationListComponent,
-  RelatedItemsComponent,
+  RelatedItemsComponent
 ];
 
 @NgModule({

@@ -102,9 +102,9 @@
   --ds-home-news-link-hover-color: #{darken($ds-home-news-link-color, 15%)};
   --ds-home-news-background-color: #{$gray-200};
 
-  --ds-breadcrumb-bg: #{$gray-200} !important;
-  --ds-breadcrumb-link-color: #{$ds-breadcrumb-link-color};
-  --ds-breadcrumb-link-active-color: #{$ds-breadcrumb-link-active-color};
+  --ds-breadcrumb-bg: #E7F1D8 !important;
+  --ds-breadcrumb-link-color: #2B6933;
+  --ds-breadcrumb-link-active-color: #{darken($cyan, 30%)};
   --ds-breadcrumb-max-length: 200px;
 
   --ds-slider-color: #{$ds-slider-color};

@@ -1,6 +1,10 @@
 <div class="flex-grow-1 ds-drop-list h-100" [class.disabled]="(draggingMdField$ | async) && (draggingMdField$ | async) !== mdField" cdkDropList (cdkDropListDropped)="drop($event)" role="table">
   <ds-dso-edit-metadata-value-headers role="presentation" [dsoType]="dsoType"></ds-dso-edit-metadata-value-headers>
-  <ds-dso-edit-metadata-value *ngFor="let mdValue of form.fields[mdField]; let idx = index" role="presentation"
+  <ds-dso-edit-metadata-value *ngFor="let mdValue of form.fields[mdField]; let idx = index" role="presentation"  
+                              [ngStyle]="{'pointer-events': (mdField === 'dc.description.provenance' || 
+                                      mdField === 'dc.identifier.uri' || 
+                                      mdField === 'dc.date.accessioned' || 
+                                      mdField === 'dc.date.available') ? 'none' : 'auto'}"
                               [dso]="dso"
                               [mdValue]="mdValue"
                               [dsoType]="dsoType"

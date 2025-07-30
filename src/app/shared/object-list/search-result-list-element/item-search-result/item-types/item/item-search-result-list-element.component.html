@@ -11,10 +11,6 @@
     </span>
   </div>
   <div [ngClass]="showThumbnails ? 'col-9' : 'col-md-12'">
-    <div class="d-flex">
-      <ds-themed-badges *ngIf="showLabel" [object]="dso" [context]="context" [showAccessStatus]="true"></ds-themed-badges>
-    </div>
-
     <ds-truncatable [id]="dso.id" *ngIf="object !== undefined && object !== null">
       <a *ngIf="linkType != linkTypes.None" [target]="(linkType == linkTypes.ExternalLink) ? '_blank' : '_self'" [attr.rel]="(linkType == linkTypes.ExternalLink) ? 'noopener noreferrer' : null"
          [routerLink]="[itemPageRoute]" class="lead item-list-title dont-break-out"
@@ -42,5 +38,12 @@
         </ds-truncatable-part>
       </div>
     </ds-truncatable>
+    <div class="d-flex">
+      <altmetric-badge [uniqueDoi]="dso.firstMetadataValue('dc.identifier.doi')"></altmetric-badge>
+      <citations-badge [uniqueDoi]="dso.firstMetadataValue('dc.identifier.doi')" [type]="'rectangle'"></citations-badge>
+    </div>
+  </div>
+  <div class="d-flex">
+    <ds-themed-badges *ngIf="showLabel" [object]="dso" [context]="context" [showAccessStatus]="true"></ds-themed-badges>
   </div>
 </div>

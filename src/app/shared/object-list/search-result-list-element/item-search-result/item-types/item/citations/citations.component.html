@@ -1,0 +1,11 @@
+<div [ngSwitch]="type">
+    <div *ngSwitchCase="'circle'">
+      <span class="__dimensions_badge_embed__" [attr.data-doi]="uniqueDoi" data-style="small_circle"></span>
+    </div>
+    <div *ngSwitchCase="'rectangle'">
+      <span class="__dimensions_badge_embed__" [attr.data-doi]="uniqueDoi" data-style="small_rectangle" ></span>
+    </div>
+    <div *ngSwitchDefault>
+      <span class="__dimensions_badge_embed__" [attr.data-doi]="uniqueDoi" data-hide-zero-citations="true"></span>
+    </div>
+  </div>

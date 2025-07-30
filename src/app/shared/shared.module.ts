@@ -282,6 +282,8 @@ import {
 } from '../item-page/simple/field-components/specific-field/title/themed-item-page-field.component';
 import { BitstreamListItemComponent } from './object-list/bitstream-list-item/bitstream-list-item.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { AltmetricComponent } from './object-list/search-result-list-element/item-search-result/item-types/item/almetric/altmetric.component';
+import { CitationsComponent } from './object-list/search-result-list-element/item-search-result/item-types/item/citations/citations.component';
 import { ThemedLangSwitchComponent } from './lang-switch/themed-lang-switch.component';
 import {ThemedUserMenuComponent} from './auth-nav-menu/user-menu/themed-user-menu.component';
 import { OrcidBadgeAndTooltipComponent } from './orcid-badge-and-tooltip/orcid-badge-and-tooltip.component';
@@ -408,6 +410,8 @@ const COMPONENTS = [
   GroupSearchBoxComponent,
   ThemedItemPageTitleFieldComponent,
   OrcidBadgeAndTooltipComponent,
+  AltmetricComponent,
+  CitationsComponent
 ];
 
 const ENTRY_COMPONENTS = [
