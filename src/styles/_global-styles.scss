@@ -78,13 +78,8 @@ p.purposes,
   background-color: var(--very-dark-cyan) !important;
 }
 
-.media-viewer
-.change-gallery
-.ngx-gallery
-ngx-gallery-preview.ngx-gallery-active {
-    right: 0;
-    left: auto;
-    width: calc(100% - 53px);
+.ngx-gallery-active {
+    top: 95px !important;
 }
 
 .ds-submission-reorder-dragging {
@@ -522,4 +517,19 @@ ngb-accordion {
 .disabled:focus {
     outline: none;
     box-shadow: none;
+}
+
+ds-themed-file-download-link.btn.btn-outline-primary {
+    background-color: #336C6D;
+    margin-bottom: .2rem;
+    a.dont-break-out {
+        color: #fff;
+    }
+}
+ds-themed-file-download-link.btn.btn-outline-primary:hover {
+    background-color: #279A82;
+    margin-bottom: .2rem;
+    a.dont-break-out {
+        color: #fff;
+    }
 }

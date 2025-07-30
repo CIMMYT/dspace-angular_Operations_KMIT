@@ -39,15 +39,20 @@ export class MediaViewerImageComponent implements OnChanges, OnInit {
       {
         preview: this.preview !== undefined ? this.preview : true,
         image: true,
+        imageDescription: true,
         imageSize: 'contain',
-        thumbnails: false,
-        imageArrows: false,
+        thumbnails: true,
+        imageArrows: true,
         startIndex: 0,
+        thumbnailsColumns: 4,
         imageAnimation: NgxGalleryAnimation.Slide,
         previewCloseOnEsc: true,
         previewZoom: true,
         previewRotate: true,
         previewFullscreen: true,
+        previewDescription: true,
+        width: '600px',
+        height: '400px',
       },
     ];
     if (this.image) {
@@ -84,6 +89,7 @@ export class MediaViewerImageComponent implements OnChanges, OnInit {
             ? image.thumbnail
             : this.thumbnailPlaceholder,
           big: image.bitstream._links.content.href,
+          description: image.bitstream.firstMetadataValue('dc.description'),
         });
       }
     }

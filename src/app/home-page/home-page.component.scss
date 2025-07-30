@@ -1,2 +1,113 @@
 :host {
+    display: block;
+    margin-top: calc(var(--ds-content-spacing) * -1);
+  
+    @media screen and (max-width: 768px) {
+
+      div.background-image-container {
+        height: 16pc !important;
+        div.jumbotron {
+          top: 1pc !important;
+        }
+      }
+      .badge-info{
+        float: right;
+      }
+    
+    }
+
+    div.background-image-container {
+      color: white;
+      position: relative;
+      height: 32pc;
+      margin-bottom: 1pc;
+  
+      .container {
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  
+        background-color: var(--ds-banner-text-background);
+
+        div.jumbotron {
+          padding: 10px;
+          position: absolute;
+          top: 10pc;
+          left: 2pc;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+  
+  
+      small.credits {
+        a {
+          color: inherit;
+        }
+  
+        opacity: 0.3;
+        position: absolute;
+        right: var(--bs-spacer);
+        bottom: 0;
+      }
+    }
+  
+    .jumbotron {
+      background-color: transparent;
+    }
+  
+    a {
+      color: var(--ds-home-news-link-color);
+  
+      @include hover {
+        color: var(--ds-home-news-link-hover-color);
+      }
+    }
+    h1, p {
+        color: #fff;
+    }
+
+    .owl-carousel-header {
+      position: absolute;
+      image-rendering: pixelated;
+      image-rendering: pixelated;
+      list-style: ethiopic-halehame;
+      list-style: ethiopic-halehame;
+      z-index: 1;
+      background-color: var(--bs-info);
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      overflow: hidden;
+  }
+  div.owl-carousel-collections .owl-item {
+      border: 1px solid silver;
+      width: auto;
+      height: 100px;
+      padding: 10px;
+    }
+  .collection-name{
+    margin-top: 15px;
+    line-height: 1;
+    font-weight: bold !important;
+  }
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #FF6B00;
+  }
 }
+  
+  
+  .badge-info {
+    color: #003B49;
+    background-color: #bdecb680;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    min-width: 88px;
+}
+
+.badge{
+  font-size: 70%;
+}
+

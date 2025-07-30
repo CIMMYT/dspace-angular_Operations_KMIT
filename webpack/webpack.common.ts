@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 const sass = require('sass');
 const JSON5 = require('json5');
+const webpack = require('webpack');
 
 export const copyWebpackOptions = {
   patterns: [
@@ -83,6 +84,11 @@ export const commonExports = {
       languageHashes: getFileHashes(path.join(__dirname, '..', 'src', 'assets', 'i18n'), /.*\.json5/g),
     }),
     new CopyWebpackPlugin(copyWebpackOptions),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
   ],
   module: {
     rules: [

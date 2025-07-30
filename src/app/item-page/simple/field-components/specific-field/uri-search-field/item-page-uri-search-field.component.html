@@ -1,0 +1,17 @@
+<ds-metadata-field-wrapper [label]="label | translate">
+  <div *ngIf="type === 'dc.type'">
+    <a class="dont-break-out" *ngFor="let mdValue of item?.allMetadata(fields); let last=last;" [href]="'/search?spc.page=1&f.itemtype=' + mdValue.value + ',equals'">
+      {{ mdValue.value }}<span *ngIf="!last" [innerHTML]="separator"></span>
+    </a>    
+  </div>
+  <div *ngIf="type === 'dc.subject.agrovoc'">
+    <a class="dont-break-out" *ngFor="let mdValue of item?.allMetadata(fields); let last=last;" [href]="'/search?spc.page=1&f.subject_agrovoc=' + mdValue.value + ',equals'">
+      {{ mdValue.value }}<span *ngIf="!last" [innerHTML]="separator"></span>
+    </a>    
+  </div>
+  <div *ngIf="type === 'dc.date.issued'">
+    <a class="dont-break-out" *ngFor="let mdValue of item?.allMetadata(fields); let last=last;" [href]="'/search?f.dateIssued.min=' + mdValue.value + '&f.entityType=Publication,equals&spc.page=1'">
+      {{ mdValue.value }}<span *ngIf="!last" [innerHTML]="separator"></span>
+    </a>    
+  </div>
+</ds-metadata-field-wrapper>

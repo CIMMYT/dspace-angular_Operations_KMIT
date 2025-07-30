@@ -21,3 +21,438 @@
     font-size: 1.1rem
   }
 }
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+
+.facet-filter, .setting-option {
+  background-color: var(--bs-light);
+  border-radius: var(--bs-border-radius);
+
+  &.p-3 {
+    // Needs !important because the original bootstrap class uses it
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  .badge-secondary {
+    background-color: var(--bs-primary);
+  }
+
+  h5 {
+    font-size: 1.1rem
+  }
+}
+
+header {
+  .navbar-navigation > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+a {
+  color: #003b49;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.5s;
+  line-height: 1;
+}
+
+a:hover {
+  color: #53852f;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #003b49;
+    font-weight: 500 !important;
+}
+
+
+
+nav.navbar[_ngcontent-dspace-angular-c338] {
+  border-top: 1px var(--ds-header-navbar-border-top-color) solid;
+  border-bottom: 5px var(--bs-green) solid;
+  align-items: baseline;
+  color: #144F20;
+}
+
+ds-search ds-item-search-result-list-element .col-9, ds-item-search-result-list-element .col-9{
+  max-width: 72%;
+}
+
+.badge-info {
+    color: #003B49;
+    background-color: #bdecb680;
+    margin-bottom: 5px;
+    padding: 5px 5px;
+    min-width: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .badge-info {
+    float: right;
+  }
+}
+
+.item-list-title{
+  font-weight: bold;
+}
+
+.btn-primary, .btn-outline-secondary, .btn-outline-primary, .btn-secondary{
+    color: #003b49;
+    background-color: #fff;
+    border-color: #003b49;
+    transition: background-color 0.3s ease;
+    box-shadow: inset 0 1px #ffffff26, 0 1px 1px #00000013;
+    transition: 0.5s;
+}
+
+.btn-primary:hover, .btn-outline-secondary:hover, .btn-outline-primary:hover, .btn-secondary:hover{
+  color: #fff;
+  background-color: #279A82;
+}
+
+.navbar-brand{
+  width: 20%;
+}
+
+div.owl-carousel-collections .owl-item {
+  width: auto;
+  height: 115px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  background-color: rgba(189, 236, 182, 0.5);
+  color: #003B49;
+}
+
+.owl-carousel-collections.owl-carousel.owl-theme.owl-loaded.owl-drag{
+  margin-top: 1.5rem;
+}
+
+div.owl-carousel-collections .owl-item:hover {
+  background-color: rgba(189, 236, 182, 1);
+  h5{
+    color:#fff
+  }
+}
+
+ds-pagination ds-listable-object-component-loader  {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+ds-item-search-result-grid-element ds-themed-type-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.list-group-item.active, .page-item.active .page-link{
+  border-color: #003b49;
+  background-color: #003b49;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.list-group-item, .page-link{
+  color: #279A82;
+  transition: 0.5s;
+}
+
+.clamp-default-1 {
+  margin: 5px 0;
+}
+
+main.main-content {
+  margin-top: 60px;
+}
+
+
+.dont-break-out {
+  text-align: justify;
+}
+
+li.breadcrumb-item{
+  align-items: center;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #FF6B00;
+}
+
+img.collection-img{
+  width: 75% !important;
+  margin-top: 10px;
+}
+
+ds-search-navbar button {
+  margin: 0px 0px !important;
+}
+
+h4.section-header-text.mb-0.ng-tns-c202-1 {
+  color: #fff;
+}
+
+ds-item-list-element altmetric-badge a{
+  width: 125px !important;
+  height: 25px !important;
+}
+ds-search-results ds-person-search-result-list-element .col-9.col-md-10{
+  max-width: 37rem !important;
+  display: block;
+}
+
+ds-person-search-result-list-element .col-9.col-md-10{
+  max-width: 51rem !important;
+  display: block;
+}
+
+ds-collection-search-result-list-element .col-9, ds-community-search-result-list-element .col-9{
+  max-width: 38rem;
+  display: block;
+}
+
+ds-item-search-result-list-element .col-9{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ds-person-search-result-list-element, ds-collection-search-result-list-element, ds-community-search-result-list-element{
+  .row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+ds-truncatable  .text-muted{
+  color: #2E2E2E !important;
+}
+
+.btn-link{
+  color: #003b49;
+  margin: 15px 0px;
+}
+
+
+.item-page-title-field {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+#collapsingNav {
+  padding-left: 30px;
+}
+
+.dropdown-toggle.dropdownLogin.px-1.ng-tns-c90-8 {
+  font-weight: bold;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: #003b49;
+  padding: 5px 7px;
+}
+
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+  background-color: #003b49;
+}
+
+.form-group {
+  margin-bottom: 2.2rem;
+  margin-top: 2.2rem;
+}
+
+.my-1.align-self-stretch.filter-checkbox{
+  margin-top: 0px !important;
+}
+
+.float-right.badge.badge-secondary.badge-pill.mt-1.ml-1{
+    background-color: #003b49;
+    margin-left: 10px;
+    padding: 4px 6px;
+    border-radius: 9px ;
+    margin-top: 0px;
+    min-width: 30px;
+}
+
+.font-weight-bold{
+  font-weight: bold !important;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+ds-filter-input-suggestions .form-control{
+  margin-top: 1rem;
+}
+
+.toggle-more-filters a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #003b49;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ds-search-range-filter{
+  .form-group{
+    margin-top: 0px;
+  }
+  a{
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: left;
+  }
+  .float-right.badge.badge-secondary.badge-pill.mt-1.ml-1 {
+    background-color: #003b49;
+    margin-left: 10px;
+    padding: 4px 6px;
+    border-radius: 9px;
+    margin-top: 0px;
+    min-width: 30px;
+  }
+}
+
+footer .container.p-4{
+  padding: 6rem 1rem 1.5rem !important;
+}
+
+footer .bottom-footer{
+  border-bottom: #336C6D 5rem solid;
+}
+
+ds-untyped-item{
+  altmetric-badge {
+    margin-right: 1.5rem;
+  }
+}
+
+ds-item-page-uri-linktext, ds-item-page-collections{
+  h5{
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+ds-item-page-cgiar, ds-item-page-donor{
+  .item-page-field.cgiar-initiative{
+    margin-top: 5rem;
+  }
+  h3{
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+ds-item-page-collections{
+  .simple-view-element{
+    margin-top: 5rem;
+  }
+}
+
+.dont-break-out.preserve-line-breaks{
+  font-size: 15px;
+}
+
+ds-item-search-result-list-element citations-badge .__dimensions_badge_embed__{
+  margin-bottom: 0rem;
+}
+
+.openaccess-img{
+  max-width: 10rem;
+}
+
+ds-log-in-container button.btn.btn-lg.btn-primary.btn-block.mt-2.text-white{
+  background-color: #003b49;
+}
+
+i.fa-brands.fa-2x.pr-1 {
+  margin-bottom: 25px;
+}
+
+li.admin-menu-header h4 {
+  color: #FFF;
+}
+
+ds-item-page {
+  altmetric-ebadge,citations-badge{
+    margin-bottom: 0px;
+  }
+}
+
+/* No estoy segura que también oculte el tipo de las entidades, tendríamos que probar */
+@media (max-width: 990px) {
+  ds-item-search-result-list-element, ds-person-search-result-list-element {
+      ds-themed-type-badge{
+        visibility: hidden;
+      }
+    }
+}
+
+
+.submit-icon,
+.dropdown-toggle,
+.loginLink,
+.dropdownLogin,
+.logoutLink,
+.dropdownLogout{
+    color: #003b49;
+}
+
+.ngx-gallery-active {
+  top: 95px !important;
+}
+
+
+img.ngx-gallery-preview-img.ngx-gallery-center.animation.ng-star-inserted.ngx-gallery-active {
+top: -95px !important
+}
+
+
+ds-item-page-social .item-page-field.cgiar-initiative{
+  margin-top: 2rem;
+}
+
+ds-edit-relationship {
+  ds-person-list-element .col-9.col-md-10{
+    max-width: 31rem !important
+  }
+  ds-listable-object-component-loader {
+    border: 0px;
+    padding: 0px;
+    border-radius: 0px;
+  }
+}
+
+/* -------------------------------------------------------- */
+/* no mostrar publicacion o person en la pagina del item */
+ds-themed-item-page-title-field ds-item-page-title-field h2.item-page-title-field .d-inline.ng-star-inserted {
+  visibility: hidden;
+  display: none !important;
+}
+
+/* -------------------------------------------------------- */
+/*centrar el bagde 'Non-discoverable' */
+ds-themed-badges.ng-star-inserted {
+  text-align: center;
+  margin-left: 5%;
+}
+
+span.badge.badge-danger {
+  padding: .35em .4em;
+  margin-bottom: 5px;
+}
+
+/* -------------------------------------------------------- */
+/* actualizar CSS, no se muestra el navbar */ 
+main.main-content {
+  margin-top: 125px;
+}

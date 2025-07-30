@@ -18,7 +18,7 @@ export class FooterComponent implements OnInit {
   /**
    * A boolean representing if to show or not the top footer container
    */
-  showTopFooter = false;
+  showTopFooter = true;
   showCookieSettings = false;
   showPrivacyPolicy = environment.info.enablePrivacyStatement;
   showEndUserAgreement = environment.info.enableEndUserAgreement;

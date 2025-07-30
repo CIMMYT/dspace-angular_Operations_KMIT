@@ -15,7 +15,34 @@ import {
 import {
   ItemPageAbstractFieldComponent
 } from './simple/field-components/specific-field/abstract/item-page-abstract-field.component';
-import { ItemPageUriFieldComponent } from './simple/field-components/specific-field/uri/item-page-uri-field.component';
+import {
+  ItemPageAPAFieldComponent
+} from './simple/field-components/specific-field/apa/item-page-apa-field.component';
+import {
+  ItemPageISOFieldComponent
+} from './simple/field-components/specific-field/iso/item-page-iso-field.component';
+import {
+  ItemPageUriCustomFieldComponent
+} from './simple/field-components/specific-field/uri-custom/item-page-uri-custom-field.component';
+import {
+  ItemPageUriLinktextComponent
+} from './simple/field-components/specific-field/uri-linktext/item-page-uri-linktext.component';
+import {
+  ItemPageRightsComponent
+} from './simple/field-components/specific-field/rights/item-page-rights.component';
+import {
+  ItemPageCGIARComponent
+} from './simple/field-components/specific-field/cgiar/item-page-cgiar.component';
+import {
+  ItemPageDonorComponent
+} from './simple/field-components/specific-field/donor/item-page-donor.component';
+import {
+  ItemPageSocialComponent
+} from './simple/field-components/specific-field/social/item-page-social.component';
+import { ItemPageUriFieldComponent } 
+from './simple/field-components/specific-field/uri/item-page-uri-field.component';
+import { ItemPageUriSearchComponent }
+from './simple/field-components/specific-field/uri-search-field/item-page-uri-search-field.component';
 import { ItemPageFieldComponent } from './simple/field-components/specific-field/item-page-field.component';
 import { CollectionsComponent } from './field-components/collections/collections.component';
 import { FullItemPageComponent } from './full/full-item-page.component';
@@ -78,7 +105,16 @@ const DECLARATIONS = [
   ItemPageAuthorFieldComponent,
   ItemPageDateFieldComponent,
   ItemPageAbstractFieldComponent,
+  ItemPageAPAFieldComponent,
+  ItemPageISOFieldComponent,
+  ItemPageUriCustomFieldComponent,
+  ItemPageUriLinktextComponent,
+  ItemPageRightsComponent,
+  ItemPageCGIARComponent,
+  ItemPageDonorComponent,
+  ItemPageSocialComponent,
   ItemPageUriFieldComponent,
+  ItemPageUriSearchComponent,
   ItemPageFieldComponent,
   CollectionsComponent,
   FullFileSectionComponent,

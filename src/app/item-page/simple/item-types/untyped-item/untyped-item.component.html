@@ -25,32 +25,126 @@
       <ds-themed-media-viewer [item]="object"></ds-themed-media-viewer>
     </div>
     <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
+
+    <div class="d-flex">
+      <altmetric-badge [uniqueDoi]="object?.firstMetadataValue('dc.identifier.doi')" [type]="'donut'"></altmetric-badge>
+      <citations-badge [uniqueDoi]="object?.firstMetadataValue('dc.identifier.doi')" [type]="'circle'"></citations-badge>
+    </div>
+
+
+    <!-- dc.type-->
+    <ds-item-page-uri-search-field [item]="object"
+      [fields]="['dc.type']"
+      [label]="'item.page.type'"
+      [type]="'dc.type'">
+    </ds-item-page-uri-search-field>
+  <!-- dc.type-->
+
+    <!-- dc.date.issued -->
+    <ds-item-page-uri-search-field [item]="object"
+      [fields]="['dc.date.issued']"
+      [label]="'item.page.date'"
+      [type]="'dc.date.issued'">
+    </ds-item-page-uri-search-field>
+    <!-- dc.date.issued
     <ds-item-page-date-field [item]="object"></ds-item-page-date-field>
+     -->
+     
     <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
       [itemType]="'Person'"
       [metadataFields]="['dc.contributor.author', 'dc.creator']"
       [label]="'relationships.isAuthorOf' | translate">
     </ds-themed-metadata-representation-list>
+
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.creator.corporate']"
+      [label]="'dc.creator.corporate' | translate">
+    </ds-themed-metadata-representation-list>
+
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.editor']"
+      [label]="'dc.contributor.editor' | translate">
+    </ds-themed-metadata-representation-list>
+
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.illustrator']"
+      [label]="'dc.contributor.illustrator' | translate">
+    </ds-themed-metadata-representation-list>
+
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.producer']"
+      [label]="'dc.contributor.producer' | translate">
+    </ds-themed-metadata-representation-list>
+
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.photographer']"
+      [label]="'dc.contributor.photographer' | translate">
+    </ds-themed-metadata-representation-list>
+    
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.other']"
+      [label]="'dc.contributor.other' | translate">
+    </ds-themed-metadata-representation-list>
+
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.writer']"
+      [label]="'dc.contributor.writer' | translate">
+    </ds-themed-metadata-representation-list>
+
+    <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.translator']"
+      [label]="'dc.contributor.translator' | translate">
+    </ds-themed-metadata-representation-list>
+
     <ds-generic-item-page-field [item]="object"
       [fields]="['journal.title']"
       [label]="'item.page.journal-title'">
     </ds-generic-item-page-field>
+
     <ds-generic-item-page-field [item]="object"
       [fields]="['journal.identifier.issn']"
       [label]="'item.page.journal-issn'">
     </ds-generic-item-page-field>
+
     <ds-generic-item-page-field [item]="object"
       [fields]="['journalvolume.identifier.name']"
       [label]="'item.page.volume-title'">
     </ds-generic-item-page-field>
-    <ds-generic-item-page-field [item]="object"
-      [fields]="['dc.publisher']"
-      [label]="'item.page.publisher'">
-    </ds-generic-item-page-field>
+
+    <ds-item-page-rights [item]="object"
+      [fields]="['dc.rights.accesslevel']"
+      [label]="'dc.rights.accesslevel' | translate">
+    </ds-item-page-rights>
+
+        <!--Social banner -->
+    <ds-item-page-social [item]="object"></ds-item-page-social>
   </div>
   <div class="col-xs-12 col-md-6">
+
+    <!-- Citations -->
+    <ds-item-page-apa-field [item]="object"> </ds-item-page-apa-field>
+    <ds-item-page-iso-field [item]="object"> </ds-item-page-iso-field>
+    <!-- Citations -->
+    
     <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>
+    
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.description']"
       [label]="'item.page.description'">
@@ -65,10 +159,71 @@
       [fields]="['dc.identifier.citation']"
       [label]="'item.page.citation'">
     </ds-generic-item-page-field>
+
     <ds-item-page-uri-field [item]="object"
       [fields]="['dc.identifier.uri']"
       [label]="'item.page.uri'">
     </ds-item-page-uri-field>
+
+    <!-- dc.rights-->
+      <ds-generic-item-page-field [item]="object"
+        [fields]="['dc.rights']"
+        [label]="'item.page.rights'">
+      </ds-generic-item-page-field>
+    <!-- dc.rights-->
+
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.source.journal']"
+      [label]="'item.page.journal'">
+    </ds-generic-item-page-field>
+
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.source.volume']"
+      [label]="'item.page.volume'">
+    </ds-generic-item-page-field>
+
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.source.issue']"
+      [label]="'item.page.issue'">
+    </ds-generic-item-page-field>
+
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.source.art']"
+      [label]="'item.page.art'">
+    </ds-generic-item-page-field>
+
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.coverage.place']"
+      [label]="'item.page.coverageplace'">
+    </ds-generic-item-page-field>
+
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.publisher']"
+      [label]="'item.page.publisher'">
+    </ds-generic-item-page-field>
+
+    <ds-item-page-uri-custom-field [item]="object"
+      [fields]="['dc.identifier.doi']"
+      [label]="'item.page.doi'"
+      [url]="'https://doi.org/'">
+    </ds-item-page-uri-custom-field>
+
+        <!-- dc.subject.agrovoc -->
+    <ds-item-page-uri-search-field [item]="object"
+      [fields]="['dc.subject.agrovoc']"
+      [label]="'search.filters.applied.f.subject_agrovoc'"
+      [type]="'dc.subject.agrovoc'"
+      [separator]="'; '">
+    </ds-item-page-uri-search-field>
+
+    <ds-item-page-uri-linktext [item]="object"
+      [fields]="['dc.relation.dataset']"
+      [label]="'item.page.uridataset'"
+      [linktext]="'item.page.uridataset.linkname' | translate">
+    </ds-item-page-uri-linktext>
+
+    <ds-item-page-cgiar [item]="object"></ds-item-page-cgiar>
+
     <ds-item-page-collections [item]="object"></ds-item-page-collections>
     <div>
       <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']" role="button" tabindex="0">
