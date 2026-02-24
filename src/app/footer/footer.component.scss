@@ -70,3 +70,16 @@
 }
 
 
+img.fao_banner {
+    height: auto !important;
+}
+
+
+div.cimmyt_banner {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente (opcional) */
+  img {
+    height: 50px!important
+  }
+}

@@ -5413,4 +5413,7 @@
   "dc.source.elocator":"Elocator",
   "dc.source.issue":"Issue number",
   "dc.identifier.isbn":"ISBN",
+  "search.filters.filter.ProgramOrAccelerator.head":"Program or Accelerator",
+  "search.filters.filter.ProgramOrAccelerator.label":"Program or Accelerator",
+  "search.filters.filter.ProgramOrAccelerator.placeholder":"Program or Accelerator"
 }

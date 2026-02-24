@@ -8021,5 +8021,8 @@
 "dc.type.publicationversion":"Versión de publicación",
   "dc.source.elocator":"Elocator",
   "dc.source.issue":"Número de revista",
-  "dc.identifier.isbn":"ISBN"
+  "dc.identifier.isbn":"ISBN",
+  "search.filters.filter.ProgramOrAccelerator.head":"Programa o Acelerador",
+  "search.filters.filter.ProgramOrAccelerator.label":"Programa o Acelerador",
+  "search.filters.filter.ProgramOrAccelerator.placeholder":"Programa o Acelerador"
 }

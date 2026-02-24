@@ -111,3 +111,30 @@
   font-size: 70%;
 }
 
+img.fao_header {
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    height: 17vh;
+    max-height: 300px;
+}
+
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+    img.fao_header {
+        top: 12%;
+        height: 22vh;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    img.fao_header {
+        top: 8%;
+        right: 50%;
+        transform: translateX(50%);
+        height: 18vh;
+    }
+}
