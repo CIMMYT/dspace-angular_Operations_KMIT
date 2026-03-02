@@ -96,8 +96,10 @@ export class FullItemPageComponent extends ItemPageComponent implements OnInit, 
   'dc.creator.aux',
   'person.additionalType',
   'person.name.variant',
-  'dc.relation.cgspacestatus'
+  'dc.relation.cgspacestatus',
+  'person.staff'
   ]
+  
   dctermsRegExp: RegExp = /dcterms.[a-z]+/; 
   relationRegExp: RegExp = /relation\.(is[A-Za-z]+)(\.latestForDiscovery)?/;
   

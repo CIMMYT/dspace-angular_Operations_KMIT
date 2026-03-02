@@ -5415,5 +5415,6 @@
   "dc.identifier.isbn":"ISBN",
   "search.filters.filter.ProgramOrAccelerator.head":"Program or Accelerator",
   "search.filters.filter.ProgramOrAccelerator.label":"Program or Accelerator",
-  "search.filters.filter.ProgramOrAccelerator.placeholder":"Program or Accelerator"
+  "search.filters.filter.ProgramOrAccelerator.placeholder":"Program or Accelerator",
+  "search.filters.applied.f.ProgramOrAccelerator":"Programa o Acelerador"
 }

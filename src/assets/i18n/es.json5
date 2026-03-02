@@ -7928,7 +7928,6 @@
   "search.filters.filter.ProgramAccelerator.label":"Programa o Acelerador",
   "search.filters.applied.f.ProgramAccelerator":"Programa o Acelerador",
   "search.filters.filter.ProgramAccelerator.placeholder":"Programa o Acelerador",
-  "search.filters.applied.f.ProgramAccelerator":"Programa o Acelerador",
   "person.affiliation.name":"Afiliación",
   "person.description.note":"Notas","dc.audience":"Audiencia",
 "dc.author":"-",
@@ -8024,5 +8023,6 @@
   "dc.identifier.isbn":"ISBN",
   "search.filters.filter.ProgramOrAccelerator.head":"Programa o Acelerador",
   "search.filters.filter.ProgramOrAccelerator.label":"Programa o Acelerador",
-  "search.filters.filter.ProgramOrAccelerator.placeholder":"Programa o Acelerador"
+  "search.filters.filter.ProgramOrAccelerator.placeholder":"Programa o Acelerador",
+  "search.filters.applied.f.ProgramOrAccelerator":"Programa o Acelerador"
 }
