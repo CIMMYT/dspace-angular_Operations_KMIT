@@ -1,0 +1,10 @@
+.cc-icon {
+  padding-top: 10px;
+  display: block;
+  transition: transform 0.2s ease-in-out; /* Efecto suave al pasar el mouse */
+}
+
+/* Un pequeño efecto visual opcional cuando pasen el cursor sobre el botón */
+.cc-icon:hover {
+  transform: scale(1.05);
+}

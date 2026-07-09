@@ -8024,5 +8024,6 @@
   "search.filters.filter.ProgramOrAccelerator.head":"Programa o Acelerador",
   "search.filters.filter.ProgramOrAccelerator.label":"Programa o Acelerador",
   "search.filters.filter.ProgramOrAccelerator.placeholder":"Programa o Acelerador",
-  "search.filters.applied.f.ProgramOrAccelerator":"Programa o Acelerador"
+  "search.filters.applied.f.ProgramOrAccelerator":"Programa o Acelerador",
+  "dcterms.license.uri":"Licencia CC" 
 }

@@ -7,7 +7,8 @@ import { MetadataValue } from '../../../../../core/shared/metadata.models';
 
 @Component({
   selector: 'ds-item-page-rights',
-  templateUrl: './item-page-rights.component.html'
+  templateUrl: './item-page-rights.component.html',
+  styleUrls: ['./item-page-rights.component.scss']
 })
 /**
  * This component can be used to represent any uri on a simple item page.
@@ -48,6 +49,25 @@ export class ItemPageRightsComponent extends ItemPageFieldComponent {
       }
     }
     return false;
+  }
+  validateCCRightsValue(metadataArray: MetadataValue[]): { type: string, url: string } | null {
+    if (!metadataArray) return null;
+
+    for (let metadataElement of metadataArray) {
+      const originalUrl = metadataElement.value?.trim() || '';
+      const valueLowerCase = originalUrl.toLowerCase();
+      
+      // La misma Regex para capturar el tipo de licencia
+      const ccMatch = valueLowerCase.match(/http:\/\/creativecommons\.org\/licenses\/([a-z\-]+)(?:\/|$)/);
+      
+      if (ccMatch && ccMatch[1]) {
+        return {
+          type: ccMatch[1], // Ej: 'by'
+          url: originalUrl  // Ej: 'http://creativecommons.org/licenses/by/3.0/us/'
+        };
+      }
+    }
+    return null;
   }
 }
 
