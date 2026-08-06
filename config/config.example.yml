@@ -47,11 +47,11 @@ ssr:
   # Whether to enable rendering of Search component on SSR.
   # If set to true the component will be included in the HTML returned from the server side rendering.
   # If set to false the component will not be included in the HTML returned from the server side rendering.
-  enableSearchComponent: false
+  enableSearchComponent: true
   # Whether to enable rendering of Browse component on SSR.
   # If set to true the component will be included in the HTML returned from the server side rendering.
   # If set to false the component will not be included in the HTML returned from the server side rendering.
-  enableBrowseComponent: false
+  enableBrowseComponent: true
   # Enable state transfer from the server-side application to the client-side application.
   # Defaults to true.
   # Note: When using an external application cache layer, it's recommended not to transfer the state to avoid caching it.
@@ -70,9 +70,9 @@ ssr:
 # NOTE: these settings define which (publicly available) REST API to use. They are usually
 # 'synced' with the 'dspace.server.url' setting in your backend's local.cfg.
 rest:
-  ssl: true
-  host: sandbox.dspace.org
-  port: 443
+  ssl: false
+  host: localhost
+  port: 8080
   # NOTE: Space is capitalized because 'namespace' is a reserved string in TypeScript
   nameSpace: /server
   # Provide a different REST url to be used during SSR execution. It must contain the whole url including protocol, server port and
@@ -170,13 +170,13 @@ notifications:
   rtl: false
   position:
     - top
-    - right
+    - center
   maxStack: 8
   # NOTE: after how many seconds notification is closed automatically. If set to zero notifications are not closed automatically
   timeOut: 5000 # 5 second
   clickToClose: true
   # NOTE: 'fade' | 'fromTop' | 'fromRight' | 'fromBottom' | 'fromLeft' | 'rotate' | 'scale'
-  animate: scale
+  animate: fromBottom
 
 # Submission settings
 submission:
@@ -252,97 +252,97 @@ languages:
     active: true
   - code: ar
     label: العربية
-    active: true
+    active: false
   - code: bn
     label: বাংলা
-    active: true
+    active: false
   - code: ca
     label: Català
-    active: true
+    active: false
   - code: cs
     label: Čeština
-    active: true
+    active: false
   - code: de
     label: Deutsch
-    active: true
+    active: false
   - code: el
     label: Ελληνικά
-    active: true
+    active: false
   - code: es
     label: Español
     active: true
   - code: fa
     label: فارسی
-    active: true
+    active: false
   - code: fi
     label: Suomi
-    active: true
+    active: false
   - code: fr
     label: Français
-    active: true
+    active: false
   - code: gd
     label: Gàidhlig
-    active: true
+    active: false
   - code: gu
     label: ગુજરાતી
-    active: true
+    active: false
   - code: hi
     label: हिंदी
-    active: true
+    active: false
   - code: hu
     label: Magyar
-    active: true
+    active: false
   - code: it
     label: Italiano
-    active: true
+    active: false
   - code: kk
     label: Қазақ
-    active: true
+    active: false
   - code: lv
     label: Latviešu
-    active: true
+    active: false
   - code: mr
     label: मराठी
-    active: true
+    active: false
   - code: nl
     label: Nederlands
-    active: true
+    active: false
   - code: pl
     label: Polski
-    active: true
+    active: false
   - code: pt-PT
     label: Português
-    active: true
+    active: false
   - code: pt-BR
     label: Português do Brasil
-    active: true
+    active: false
   - code: ru
     label: Русский
-    active: true
+    active: false
   - code: sr-lat
     label: Srpski (lat)
-    active: true
+    active: false
   - code: sr-cyr
     label: Српски
-    active: true
+    active: false
   - code: sv
     label: Svenska
-    active: true
+    active: false
   - code: ta
     label: தமிழ்
-    active: true
+    active: false
   - code: tr
     label: Türkçe
-    active: true
+    active: false
   - code: uk
     label: Yкраї́нська
-    active: true
+    active: false
   - code: vi
     label: Tiếng Việt
-    active: true
+    active: false
   - code: zh-TW
     label: 繁體中文
-    active: true
+    active: false
 
 
 
@@ -376,7 +376,7 @@ homePage:
     # This will always round to the nearest number from the list of page sizes. e.g. if you set it to 7 it'll use 10
     pageSize: 5
   # Enable or disable the Discover filters on the homepage
-  showDiscoverFilters: false
+  showDiscoverFilters: true
 
 # Item Config
 item:
@@ -483,15 +483,15 @@ bundle:
 # For images, this enables a gallery viewer where you can zoom or page through images.
 # For videos, this enables embedded video streaming
 mediaViewer:
-  image: false
-  video: false
+  image: true
+  video: true
 
 # Whether the end user agreement is required before users use the repository.
 # If enabled, the user will be required to accept the agreement before they can use the repository.
 # And whether the privacy statement/COAR notify support page should exist or not.
 info:
-  enableEndUserAgreement: true
-  enablePrivacyStatement: true
+  enableEndUserAgreement: false
+  enablePrivacyStatement: false
   enableCOARNotifySupport: true
   # Whether to show the cookie consent popup and the cookie settings footer link or not.
   enableCookieConsentPopup: true
@@ -499,8 +499,8 @@ info:
 # Whether to enable Markdown (https://commonmark.org/) and MathJax (https://www.mathjax.org/)
 # display in supported metadata fields. By default, only dc.description.abstract is supported.
 markdown:
-  enabled: false
-  mathjax: false
+  enabled: true
+  mathjax: true
 
 # Which vocabularies should be used for which search filters
 # and whether to show the filter in the search sidebar
@@ -508,7 +508,7 @@ markdown:
 vocabularies:
   - filter: 'subject'
     vocabulary: 'srsc'
-    enabled: true
+    enabled: false
 
 # Default collection/community sorting order at Advanced search, Create/update community and collection when there are not a query.
 comcolSelectionSort:
@@ -639,4 +639,4 @@ geospatialMapViewer:
 # Configuration for storing accessibility settings, used by the AccessibilitySettingsService
 accessibility:
   # The duration in days after which the accessibility settings cookie expires
-  cookieExpirationDuration: 7
+  cookieExpirationDuration: 3

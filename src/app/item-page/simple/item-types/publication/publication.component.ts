@@ -25,6 +25,7 @@ import { ItemPageUriFieldComponent } from '../../field-components/specific-field
 import { ThemedMetadataRepresentationListComponent } from '../../metadata-representation-list/themed-metadata-representation-list.component';
 import { RelatedItemsComponent } from '../../related-items/related-items-component';
 import { ItemComponent } from '../shared/item.component';
+import { ItemPageCcLicenseFieldComponent } from '../../field-components/specific-field/cc-license/item-page-cc-license-field.component';
 
 /**
  * Component that represents a publication Item page
@@ -45,6 +46,7 @@ import { ItemComponent } from '../shared/item.component';
     ItemPageAbstractFieldComponent,
     ItemPageDateFieldComponent,
     ItemPageUriFieldComponent,
+    ItemPageCcLicenseFieldComponent,
     MetadataFieldWrapperComponent,
     MiradorViewerComponent,
     RelatedItemsComponent,
