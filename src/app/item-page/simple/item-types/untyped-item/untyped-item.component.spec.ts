@@ -68,6 +68,7 @@ import { ItemPageDateFieldComponent } from '../../field-components/specific-fiel
 import { GenericItemPageFieldComponent } from '../../field-components/specific-field/generic/generic-item-page-field.component';
 import { ThemedItemPageTitleFieldComponent } from '../../field-components/specific-field/title/themed-item-page-field.component';
 import { ItemPageUriFieldComponent } from '../../field-components/specific-field/uri/item-page-uri-field.component';
+import { ItemPageUriCompoundFieldComponent } from '../../field-components/specific-field/uri-compound/item-page-uri-compound-field.component';
 import { ThemedMetadataRepresentationListComponent } from '../../metadata-representation-list/themed-metadata-representation-list.component';
 import {
   createRelationshipsObservable,
@@ -154,6 +155,7 @@ describe('UntypedItemComponent', () => {
           GenericItemPageFieldComponent,
           ItemPageAbstractFieldComponent,
           ItemPageUriFieldComponent,
+          ItemPageUriCompoundFieldComponent,
           CollectionsComponent,
         ],
       },

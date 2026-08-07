@@ -20,6 +20,7 @@ import { GenericItemPageFieldComponent } from '../../../../../../../app/item-pag
 import { GeospatialItemPageFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/geospatial/geospatial-item-page-field.component';
 import { ThemedItemPageTitleFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/title/themed-item-page-field.component';
 import { ItemPageUriFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/uri/item-page-uri-field.component';
+import { ItemPageUriCompoundFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/uri-compound/item-page-uri-compound-field.component';
 import { UntypedItemComponent as BaseComponent } from '../../../../../../../app/item-page/simple/item-types/untyped-item/untyped-item.component';
 import { ThemedMetadataRepresentationListComponent } from '../../../../../../../app/item-page/simple/metadata-representation-list/themed-metadata-representation-list.component';
 import { DsoEditMenuComponent } from '../../../../../../../app/shared/dso-page/dso-edit-menu/dso-edit-menu.component';
@@ -48,6 +49,7 @@ import { ThemedThumbnailComponent } from '../../../../../../../app/thumbnail/the
     ItemPageCcLicenseFieldComponent,
     ItemPageDateFieldComponent,
     ItemPageUriFieldComponent,
+    ItemPageUriCompoundFieldComponent,
     MetadataFieldWrapperComponent,
     MiradorViewerComponent,
     RouterLink,

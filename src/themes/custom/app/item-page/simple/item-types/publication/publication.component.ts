@@ -18,6 +18,7 @@ import { GenericItemPageFieldComponent } from '../../../../../../../app/item-pag
 import { GeospatialItemPageFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/geospatial/geospatial-item-page-field.component';
 import { ThemedItemPageTitleFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/title/themed-item-page-field.component';
 import { ItemPageUriFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/uri/item-page-uri-field.component';
+import { ItemPageUriCompoundFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/uri-compound/item-page-uri-compound-field.component';
 import { PublicationComponent as BaseComponent } from '../../../../../../../app/item-page/simple/item-types/publication/publication.component';
 import { ThemedMetadataRepresentationListComponent } from '../../../../../../../app/item-page/simple/metadata-representation-list/themed-metadata-representation-list.component';
 import { RelatedItemsComponent } from '../../../../../../../app/item-page/simple/related-items/related-items-component';
@@ -46,6 +47,7 @@ import { ItemPageCcLicenseFieldComponent } from '../../../../../../../app/item-p
     ItemPageAbstractFieldComponent,
     ItemPageDateFieldComponent,
     ItemPageUriFieldComponent,
+    ItemPageUriCompoundFieldComponent,
     MetadataFieldWrapperComponent,
     MiradorViewerComponent,
     RelatedItemsComponent,

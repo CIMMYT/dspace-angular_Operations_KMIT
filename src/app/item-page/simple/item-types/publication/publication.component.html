@@ -86,6 +86,11 @@
       [label]="'dcterms.bibliographicCitation.APA'"
       [enableMarkdown]="true">
     </ds-generic-item-page-field>
+    <ds-item-page-uri-compound-field [item]="object" 
+      [fields]="['dc.identifier.doi']"
+      [label]="'item.page.doi'"
+      [link]="'https://doi.org/'">
+    </ds-item-page-uri-compound-field>
     <ds-item-page-uri-field [item]="object"
       [fields]="['dc.identifier.uri']"
       [label]="'item.page.uri'">
@@ -109,6 +114,8 @@
     </ds-item-page-uri-field>
     <ds-item-page-cc-license-field [item]="object" [variant]="'full'" [ccLicenseUriField]="'dcterms.license.uri'" [ccLicenseNameField]="'dcterms.license'">
     </ds-item-page-cc-license-field>
+
+
     @if (geospatialItemPageFieldsEnabled) {
       <ds-geospatial-item-page-field [item]="object"
                                      [label]="'item.page.places'"
