@@ -82,8 +82,9 @@
       [label]="'item.page.subject'">
     </ds-generic-item-page-field>
     <ds-generic-item-page-field [item]="object"
-      [fields]="['dc.identifier.citation']"
-      [label]="'item.page.citation'">
+      [fields]="['dcterms.bibliographicCitation.APA']"
+      [label]="'dcterms.bibliographicCitation.APA'"
+      [enableMarkdown]="true">
     </ds-generic-item-page-field>
     <ds-item-page-uri-field [item]="object"
       [fields]="['dc.identifier.uri']"
