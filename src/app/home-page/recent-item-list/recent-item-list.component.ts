@@ -109,6 +109,7 @@ export class RecentItemListComponent implements OnInit, OnDestroy {
 
     this.itemRD$ = this.searchService.search(
       new PaginatedSearchOptions({
+        query: "entityType:Publication",
         pagination: this.paginationConfig,
         dsoTypes: [DSpaceObjectType.ITEM],
         sort: this.sortConfig,

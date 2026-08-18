@@ -11,9 +11,13 @@
           </li>
         }
       </ul>
-      <button (click)="onLoadMore()" class="btn btn-primary search-button mt-4 float-start" role="link" tabindex="0">
+      <!-- <button (click)="onLoadMore()" class="btn btn-primary search-button mt-4 float-start" role="link" tabindex="0">
         {{ 'vocabulary-treeview.load-more' | translate }} ...
-      </button>
+      </button> -->
+
+      <a class="btn btn-primary search-button mt-4 float-left ng-tns-c290-40"  [href]="'search?f.entityType=Publication,equals&spc.page=1&spc.sf=dc.date.issued&spc.sd=DESC'">
+          {{'vocabulary-treeview.load-more' | translate }} ...
+      </a> 
     </div>
   }
   @if (itemRD?.hasFailed) {
