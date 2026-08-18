@@ -6,6 +6,7 @@ import {
   OnDestroy,
   OnInit,
 } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   BehaviorSubject,
@@ -18,25 +19,29 @@ import {
   AppConfig,
 } from 'src/config/app-config.interface';
 
+import { DSONameService } from '../../core/breadcrumbs/dso-name.service';
 import {
   SortDirection,
   SortOptions,
 } from '../../core/cache/models/sort-options.model';
-import { CommunityDataService } from '../../core/data/community-data.service';
+import { CollectionDataService } from '../../core/data/collection-data.service';
 import { PaginatedList } from '../../core/data/paginated-list.model';
 import { RemoteData } from '../../core/data/remote-data';
 import { PaginationService } from '../../core/pagination/pagination.service';
-import { Community } from '../../core/shared/community.model';
+import { Collection } from '../../core/shared/collection.model';
 import { fadeInOut } from '../../shared/animations/fade';
 import { hasValue } from '../../shared/empty.util';
 import { ErrorComponent } from '../../shared/error/error.component';
 import { ThemedLoadingComponent } from '../../shared/loading/themed-loading.component';
-import { ObjectCollectionComponent } from '../../shared/object-collection/object-collection.component';
 import { PaginationComponentOptions } from '../../shared/pagination/pagination-component-options.model';
 import { VarDirective } from '../../shared/utils/var.directive';
 
+import { ButtonModule } from 'primeng/button';
+import { CarouselModule } from 'primeng/carousel';
+
+
 /**
- * this component renders the Top-Level Community list
+ * this component renders the Collection list shown on the home page as a carousel
  */
 @Component({
   selector: 'ds-base-top-level-community-list',
@@ -47,21 +52,23 @@ import { VarDirective } from '../../shared/utils/var.directive';
   imports: [
     AsyncPipe,
     ErrorComponent,
-    ObjectCollectionComponent,
+    RouterLink,
     ThemedLoadingComponent,
     TranslateModule,
     VarDirective,
+    CarouselModule,
+    ButtonModule,
   ],
 })
 
 export class TopLevelCommunityListComponent implements OnInit, OnDestroy {
   /**
-   * A list of remote data objects of all top communities
+   * A list of remote data objects of all collections
    */
-  communitiesRD$: BehaviorSubject<RemoteData<PaginatedList<Community>>> = new BehaviorSubject<RemoteData<PaginatedList<Community>>>({} as any);
+  collectionsRD$: BehaviorSubject<RemoteData<PaginatedList<Collection>>> = new BehaviorSubject<RemoteData<PaginatedList<Collection>>>({} as any);
 
   /**
-   * The pagination configuration
+   * The pagination configuration. Each "page" is one slide of the carousel.
    */
   config: PaginationComponentOptions;
 
@@ -71,19 +78,27 @@ export class TopLevelCommunityListComponent implements OnInit, OnDestroy {
   pageId = 'tl';
 
   /**
-   * The sorting configuration for the community list itself, and the optional RSS feed button
+   * The sorting configuration for the collection list
    */
   sortConfig: SortOptions;
-  rssSortConfig: SortOptions;
 
   /**
    * The subscription to the observable for the current page.
    */
   currentPageSubscription: Subscription;
 
+  /**
+   * Cache for the dot indicators, so the template doesn't rebuild the array on every change detection cycle
+   */
+  private pageNumbersCache: number[] = [];
+
+
+  responsiveOptions: any[] | undefined;
+
   constructor(
     @Inject(APP_CONFIG) protected appConfig: AppConfig,
-    private cds: CommunityDataService,
+    public dsoNameService: DSONameService,
+    private collectionDataService: CollectionDataService,
     private paginationService: PaginationService,
   ) {
     this.config = new PaginationComponentOptions();
@@ -91,16 +106,36 @@ export class TopLevelCommunityListComponent implements OnInit, OnDestroy {
     this.config.pageSize = appConfig.homePage.topLevelCommunityList.pageSize;
     this.config.currentPage = 1;
     this.sortConfig = new SortOptions('dc.title', SortDirection.ASC);
-    this.rssSortConfig = new SortOptions('dc.date.accessioned', SortDirection.DESC);
   }
 
   ngOnInit() {
     this.initPage();
+    this.responsiveOptions = [
+        {
+            breakpoint: '1400px',
+            numVisible: 2,
+            numScroll: 1
+        },
+        {
+            breakpoint: '1199px',
+            numVisible: 3,
+            numScroll: 1
+        },
+        {
+            breakpoint: '767px',
+            numVisible: 2,
+            numScroll: 1
+        },
+        {
+            breakpoint: '575px',
+            numVisible: 1,
+            numScroll: 1
+        }
+    ];
   }
 
-
   /**
-   * Update the list of top communities
+   * Update the list of collections
    */
   initPage() {
     const pagination$ = this.paginationService.getCurrentPagination(this.config.id, this.config);
@@ -108,19 +143,41 @@ export class TopLevelCommunityListComponent implements OnInit, OnDestroy {
 
     this.currentPageSubscription = observableCombineLatest([pagination$, sort$]).pipe(
       switchMap(([currentPagination, currentSort]) => {
-        return this.cds.findTop({
+        return this.collectionDataService.findAll({
           currentPage: currentPagination.currentPage,
           elementsPerPage: currentPagination.pageSize,
           sort: { field: currentSort.field, direction: currentSort.direction },
         });
       }),
     ).subscribe((results) => {
-      this.communitiesRD$.next(results);
+      this.collectionsRD$.next(results);
     });
   }
 
   /**
-   * Unsubscribe the top list subscription if it exists
+   * Move the carousel to the given page. Out of range values are ignored so the
+   * arrows can stay in the DOM (and keep their position) while disabled.
+   */
+  goToPage(page: number, totalPages: number) {
+    if (page < 1 || page > totalPages) {
+      return;
+    }
+    this.paginationService.updateRoute(this.config.id, { page }, {}, true);
+  }
+
+  /**
+   * Returns [1..totalPages] for the dot indicators, reusing the previous array
+   * when the amount of pages didn't change (OnPush friendly)
+   */
+  pageNumbers(totalPages: number): number[] {
+    if (this.pageNumbersCache.length !== totalPages) {
+      this.pageNumbersCache = Array.from({ length: totalPages }, (_, i) => i + 1);
+    }
+    return this.pageNumbersCache;
+  }
+
+  /**
+   * Unsubscribe the collection list subscription if it exists
    */
   private unsubscribe() {
     if (hasValue(this.currentPageSubscription)) {

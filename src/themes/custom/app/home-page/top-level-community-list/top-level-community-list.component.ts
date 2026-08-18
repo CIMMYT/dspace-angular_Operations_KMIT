@@ -8,6 +8,10 @@ import { ThemedLoadingComponent } from '../../../../../app/shared/loading/themed
 import { ObjectCollectionComponent } from '../../../../../app/shared/object-collection/object-collection.component';
 import { VarDirective } from '../../../../../app/shared/utils/var.directive';
 
+
+import { ButtonModule } from 'primeng/button';
+import { CarouselModule } from 'primeng/carousel';
+
 @Component({
   selector: 'ds-themed-top-level-community-list',
   // styleUrls: ['./top-level-community-list.component.scss'],
@@ -21,6 +25,8 @@ import { VarDirective } from '../../../../../app/shared/utils/var.directive';
     ThemedLoadingComponent,
     TranslateModule,
     VarDirective,
+    ButtonModule,
+    CarouselModule,
   ],
 })
 export class TopLevelCommunityListComponent extends BaseComponent {

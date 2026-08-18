@@ -1,22 +1,30 @@
-<ng-container *ngVar="(communitiesRD$ | async) as communitiesRD">
-  @if (communitiesRD?.hasSucceeded ) {
-    <div>
+<ng-container *ngVar="(collectionsRD$ | async) as collectionsRD">
+  @if (collectionsRD?.hasSucceeded) {
+    <div class="ds-collection-carousel">
       <h2>
-        {{'home.top-level-communities.head' | translate}}
+        {{'home.top-level-collections.head' | translate}}
       </h2>
-      <p class="lead">{{'home.top-level-communities.help' | translate}}</p>
-      <ds-viewable-collection
-        [config]="config"
-        [sortConfig]="sortConfig"
-        [showRSS]="rssSortConfig"
-        [objects]="communitiesRD$ | async"
-        [hideGear]="true">
-      </ds-viewable-collection>
+      <p class="lead">{{'home.top-level-collections.help' | translate}}</p>
+      @if ((collectionsRD.payload?.page?.length ?? 0) > 0) {
+        <p-carousel [value]="collectionsRD?.payload?.page" [numVisible]="4" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions" autoplayInterval="3000">
+          <ng-template let-collection #item>
+              <div class="border border-surface-200 dark:border-surface-700 rounded m-2 p-4">
+                  <a class="collection-card" [href]="'/collections/' +  collection.id">
+                      <span class="collection-card__accent" aria-hidden="true"></span>
+                      <span class="collection-card__title">{{ dsoNameService.getName(collection) }}</span>
+                  </a>
+              </div>
+          </ng-template>
+        </p-carousel>
+      } @else {
+        <p class="text-muted">{{'home.top-level-collections.empty' | translate}}</p>
+      }
+
     </div>
   }
-  @if (communitiesRD?.hasFailed ) {
-    <ds-error message="{{'error.top-level-communities' | translate}}"></ds-error>
+  @if (collectionsRD?.hasFailed ) {
+    <ds-error message="{{'error.top-level-collections' | translate}}"></ds-error>
   }
-  @if (communitiesRD?.isLoading ) {
-    <ds-loading message="{{'loading.top-level-communities' | translate}}"></ds-loading>
+  @if (collectionsRD?.isLoading ) {
+    <ds-loading message="{{'loading.top-level-collections' | translate}}"></ds-loading>
   }</ng-container>
