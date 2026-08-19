@@ -144,7 +144,8 @@ export class FullItemPageComponent extends ItemPageComponent implements OnInit, 
     'person.additionalType',
     'person.name.variant',
     'dc.relation.cgspacestatus',
-    'person.staff'
+    'person.staff',
+    'person.identifier.orcid',
   ]
   
   dctermsRegExp: RegExp = /dcterms.[a-z]+/; 
