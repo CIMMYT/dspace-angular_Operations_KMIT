@@ -64,6 +64,12 @@
       }
     </ds-truncatable>
     }
+    @if (dso.firstMetadataValue('dc.identifier.doi'); as doi) {
+        <div class="d-flex align-items-center gap-2 mt-2 item-metric-badges">
+          <ds-altmetric-badge [uniqueDoi]="doi" type="4" />
+          <ds-dimensions-badge [uniqueDoi]="doi" type="rectangle" />
+        </div>
+      }
   </div>
   <div class="col-1 col-md-1 text-right">
     <div class="d-flex">

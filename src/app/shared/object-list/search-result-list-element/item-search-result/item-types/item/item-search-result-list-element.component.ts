@@ -18,6 +18,8 @@ import { listableObjectComponent } from '../../../../../object-collection/shared
 import { TruncatableComponent } from '../../../../../truncatable/truncatable.component';
 import { TruncatablePartComponent } from '../../../../../truncatable/truncatable-part/truncatable-part.component';
 import { SearchResultListElementComponent } from '../../../search-result-list-element.component';
+import { AltmetricComponent } from './almetric/altmetric.component';
+import { CitationsComponent } from './citations/citations.component';
 
 @listableObjectComponent('PublicationSearchResult', ViewMode.ListElement)
 @listableObjectComponent(ItemSearchResult, ViewMode.ListElement)
@@ -33,6 +35,8 @@ import { SearchResultListElementComponent } from '../../../search-result-list-el
     ThemedThumbnailComponent,
     TruncatableComponent,
     TruncatablePartComponent,
+    AltmetricComponent,
+    CitationsComponent,
   ],
 })
 /**

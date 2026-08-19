@@ -14,6 +14,8 @@ import { ItemSearchResultListElementComponent as BaseComponent } from '../../../
 import { TruncatableComponent } from '../../../../../../../../../app/shared/truncatable/truncatable.component';
 import { TruncatablePartComponent } from '../../../../../../../../../app/shared/truncatable/truncatable-part/truncatable-part.component';
 import { ThemedThumbnailComponent } from '../../../../../../../../../app/thumbnail/themed-thumbnail.component';
+import { AltmetricComponent } from '../../../../../../../../../app/shared/object-list/search-result-list-element/item-search-result/item-types/item/almetric/altmetric.component';
+import { CitationsComponent } from '../../../../../../../../../app/shared/object-list/search-result-list-element/item-search-result/item-types/item/citations/citations.component';
 
 @listableObjectComponent('PublicationSearchResult', ViewMode.ListElement, Context.Any, 'custom')
 @listableObjectComponent(ItemSearchResult, ViewMode.ListElement, Context.Any, 'custom')
@@ -31,6 +33,8 @@ import { ThemedThumbnailComponent } from '../../../../../../../../../app/thumbna
     ThemedThumbnailComponent,
     TruncatableComponent,
     TruncatablePartComponent,
+    AltmetricComponent,
+    CitationsComponent,
   ],
 })
 export class ItemSearchResultListElementComponent extends BaseComponent {

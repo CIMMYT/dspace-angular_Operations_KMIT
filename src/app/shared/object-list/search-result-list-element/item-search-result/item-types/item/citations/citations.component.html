@@ -1,0 +1,17 @@
+<!--
+  - `doi()` validado contra el patrón oficial de DOI.
+  - `badgeStyle()` / `hideZeroCitations()` solo devuelven valores de la
+    allow-list; cuando valen null, Angular OMITE el atributo (equivalente a la
+    rama por defecto del ngSwitch original).
+  - Host con ngSkipHydration: badge.js puede mutar este subárbol sin romper
+    la hidratación de Angular.
+-->
+@if (doi(); as safeDoi) {
+  <div class="metric-badge metric-badge--dimensions">
+    <span class="__dimensions_badge_embed__"
+          [attr.data-doi]="safeDoi"
+          [attr.data-style]="badgeStyle()"
+          [attr.data-hide-zero-citations]="hideZeroCitations()">
+    </span>
+  </div>
+}

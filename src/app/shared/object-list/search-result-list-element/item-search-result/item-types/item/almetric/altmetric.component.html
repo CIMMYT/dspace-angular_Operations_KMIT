@@ -1,0 +1,24 @@
+<!--
+  Notas de seguridad:
+  - `doi()` ya está validado contra el patrón oficial de DOI (doi.util.ts);
+    ningún metadato malformado llega al script de Altmetric.
+  - `badgeType()` solo puede devolver valores de la allow-list BADGE_TYPES.
+  - El binding [attr.data-doi] es escapado automáticamente por Angular
+    (no se usa innerHTML ni bypassSecurityTrust*).
+
+  Nota SSR: este subárbol se renderiza igual en servidor y navegador
+  (placeholder inerte); el host lleva ngSkipHydration, por lo que la mutación
+  posterior del DOM por parte de embed.js no rompe la hidratación.
+
+  El @switch del componente original (4 ramas casi idénticas) se sustituye por
+  un único placeholder con data-badge-type calculado y validado.
+-->
+@if (doi(); as safeDoi) {
+  <div class="metric-badge metric-badge--altmetric">
+    <div class="altmetric-embed"
+         [attr.data-doi]="safeDoi"
+         [attr.data-badge-type]="badgeType()"
+         data-badge-popover="bottom">
+    </div>
+  </div>
+}
