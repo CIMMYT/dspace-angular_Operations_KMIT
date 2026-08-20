@@ -27,6 +27,10 @@ import { ThemedMetadataRepresentationListComponent } from '../../metadata-repres
 import { RelatedItemsComponent } from '../../related-items/related-items-component';
 import { ItemComponent } from '../shared/item.component';
 import { ItemPageCcLicenseFieldComponent } from '../../field-components/specific-field/cc-license/item-page-cc-license-field.component';
+import { AltmetricComponent } from '../../../../shared/object-list/search-result-list-element/item-search-result/item-types/item/almetric/altmetric.component';
+import { CitationsComponent } from '../../../../shared/object-list/search-result-list-element/item-search-result/item-types/item/citations/citations.component';
+import { ItemPageCGIARComponent } from '../../field-components/specific-field/cgiar/item-page-cgiar.component';
+
 
 /**
  * Component that represents a publication Item page
@@ -60,6 +64,9 @@ import { ItemPageCcLicenseFieldComponent } from '../../field-components/specific
     ThemedResultsBackButtonComponent,
     ThemedThumbnailComponent,
     TranslateModule,
+    AltmetricComponent,
+    CitationsComponent,
+    ItemPageCGIARComponent,
   ],
 })
 export class PublicationComponent extends ItemComponent {

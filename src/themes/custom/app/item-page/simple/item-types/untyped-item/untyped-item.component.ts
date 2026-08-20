@@ -28,6 +28,9 @@ import { MetadataFieldWrapperComponent } from '../../../../../../../app/shared/m
 import { listableObjectComponent } from '../../../../../../../app/shared/object-collection/shared/listable-object/listable-object.decorator';
 import { ThemedResultsBackButtonComponent } from '../../../../../../../app/shared/results-back-button/themed-results-back-button.component';
 import { ThemedThumbnailComponent } from '../../../../../../../app/thumbnail/themed-thumbnail.component';
+import { AltmetricComponent } from '../../../../../../../app/shared/object-list/search-result-list-element/item-search-result/item-types/item/almetric/altmetric.component';
+import { CitationsComponent } from '../../../../../../../app/shared/object-list/search-result-list-element/item-search-result/item-types/item/citations/citations.component';
+import { ItemPageCGIARComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/cgiar/item-page-cgiar.component';
 
 @listableObjectComponent(Item, ViewMode.StandalonePage, Context.Any, 'custom')
 @Component({
@@ -60,6 +63,9 @@ import { ThemedThumbnailComponent } from '../../../../../../../app/thumbnail/the
     ThemedResultsBackButtonComponent,
     ThemedThumbnailComponent,
     TranslateModule,
+    AltmetricComponent,
+    CitationsComponent,
+    ItemPageCGIARComponent,
   ],
 })
 export class UntypedItemComponent extends BaseComponent {

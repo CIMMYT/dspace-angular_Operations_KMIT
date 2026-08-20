@@ -78,6 +78,7 @@ import {
   mockRouteService,
 } from '../shared/item.component.spec';
 import { PublicationComponent } from './publication.component';
+import { ItemPageCGIARComponent } from '../../field-components/specific-field/cgiar/item-page-cgiar.component';
 
 const noMetadata = new MetadataMap();
 
@@ -139,7 +140,7 @@ describe('PublicationComponent', () => {
     }).overrideComponent(PublicationComponent, {
       add: { changeDetection: ChangeDetectionStrategy.Default },
       remove: {
-        imports: [ThemedResultsBackButtonComponent, MiradorViewerComponent, ThemedItemPageTitleFieldComponent, DsoEditMenuComponent, MetadataFieldWrapperComponent, ThemedThumbnailComponent, ThemedMediaViewerComponent, ThemedFileSectionComponent, ItemPageDateFieldComponent, ThemedMetadataRepresentationListComponent, GenericItemPageFieldComponent, RelatedItemsComponent, ItemPageAbstractFieldComponent, ItemPageUriFieldComponent, ItemPageUriCompoundFieldComponent, CollectionsComponent,
+        imports: [ThemedResultsBackButtonComponent, MiradorViewerComponent, ThemedItemPageTitleFieldComponent, DsoEditMenuComponent, MetadataFieldWrapperComponent, ThemedThumbnailComponent, ThemedMediaViewerComponent, ThemedFileSectionComponent, ItemPageDateFieldComponent, ThemedMetadataRepresentationListComponent, GenericItemPageFieldComponent, RelatedItemsComponent, ItemPageAbstractFieldComponent, ItemPageUriFieldComponent, ItemPageUriCompoundFieldComponent, ItemPageCGIARComponent, CollectionsComponent,
         ],
       },
     });

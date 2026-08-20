@@ -27,6 +27,9 @@ import { ItemPageUriFieldComponent } from '../../field-components/specific-field
 import { ItemPageUriCompoundFieldComponent } from '../../field-components/specific-field/uri-compound/item-page-uri-compound-field.component';
 import { ThemedMetadataRepresentationListComponent } from '../../metadata-representation-list/themed-metadata-representation-list.component';
 import { ItemComponent } from '../shared/item.component';
+import { AltmetricComponent } from '../../../../shared/object-list/search-result-list-element/item-search-result/item-types/item/almetric/altmetric.component';
+import { CitationsComponent } from '../../../../shared/object-list/search-result-list-element/item-search-result/item-types/item/citations/citations.component';
+import { ItemPageCGIARComponent } from '../../field-components/specific-field/cgiar/item-page-cgiar.component';
 
 /**
  * Component that represents a publication Item page
@@ -59,6 +62,9 @@ import { ItemComponent } from '../shared/item.component';
     ThemedResultsBackButtonComponent,
     ThemedThumbnailComponent,
     TranslateModule,
+    AltmetricComponent,
+    CitationsComponent,
+    ItemPageCGIARComponent,
   ],
 })
 export class UntypedItemComponent extends ItemComponent {}

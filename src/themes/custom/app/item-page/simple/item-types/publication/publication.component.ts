@@ -28,7 +28,9 @@ import { listableObjectComponent } from '../../../../../../../app/shared/object-
 import { ThemedResultsBackButtonComponent } from '../../../../../../../app/shared/results-back-button/themed-results-back-button.component';
 import { ThemedThumbnailComponent } from '../../../../../../../app/thumbnail/themed-thumbnail.component';
 import { ItemPageCcLicenseFieldComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/cc-license/item-page-cc-license-field.component';
-
+import { AltmetricComponent } from '../../../../../../../app/shared/object-list/search-result-list-element/item-search-result/item-types/item/almetric/altmetric.component';
+import { CitationsComponent } from '../../../../../../../app/shared/object-list/search-result-list-element/item-search-result/item-types/item/citations/citations.component';
+import { ItemPageCGIARComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/cgiar/item-page-cgiar.component';
 
 @listableObjectComponent('Publication', ViewMode.StandalonePage, Context.Any, 'custom')
 @Component({
@@ -60,6 +62,9 @@ import { ItemPageCcLicenseFieldComponent } from '../../../../../../../app/item-p
     ThemedThumbnailComponent,
     ItemPageCcLicenseFieldComponent,
     TranslateModule,
+    AltmetricComponent,
+    CitationsComponent,
+    ItemPageCGIARComponent,
   ],
 })
 export class PublicationComponent extends BaseComponent {

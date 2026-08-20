@@ -68,6 +68,7 @@ import { GenericItemPageFieldComponent } from '../../item-page/simple/field-comp
 import { ThemedItemPageTitleFieldComponent } from '../../item-page/simple/field-components/specific-field/title/themed-item-page-field.component';
 import { ItemPageUriFieldComponent } from '../../item-page/simple/field-components/specific-field/uri/item-page-uri-field.component';
 import { ItemPageUriCompoundFieldComponent } from '../../item-page/simple/field-components/specific-field/uri-compound/item-page-uri-compound-field.component';
+import { ItemPageCGIARComponent } from '../../item-page/simple/field-components/specific-field/cgiar/item-page-cgiar.component';
 import { PublicationComponent } from '../../item-page/simple/item-types/publication/publication.component';
 import { UntypedItemComponent } from '../../item-page/simple/item-types/untyped-item/untyped-item.component';
 import { ThemedMetadataRepresentationListComponent } from '../../item-page/simple/metadata-representation-list/themed-metadata-representation-list.component';
@@ -252,6 +253,7 @@ const ENTRY_COMPONENTS = [
     ItemPageAbstractFieldComponent,
     ItemPageUriFieldComponent,
     ItemPageUriCompoundFieldComponent,
+    ItemPageCGIARComponent,
     CollectionsComponent,
     ...ENTRY_COMPONENTS,
   ],
