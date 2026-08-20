@@ -31,6 +31,7 @@ import { ItemPageCcLicenseFieldComponent } from '../../../../../../../app/item-p
 import { AltmetricComponent } from '../../../../../../../app/shared/object-list/search-result-list-element/item-search-result/item-types/item/almetric/altmetric.component';
 import { CitationsComponent } from '../../../../../../../app/shared/object-list/search-result-list-element/item-search-result/item-types/item/citations/citations.component';
 import { ItemPageCGIARComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/cgiar/item-page-cgiar.component';
+import { ItemPageDonorComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/donor/item-page-donor.component';
 
 @listableObjectComponent('Publication', ViewMode.StandalonePage, Context.Any, 'custom')
 @Component({
@@ -65,6 +66,7 @@ import { ItemPageCGIARComponent } from '../../../../../../../app/item-page/simpl
     AltmetricComponent,
     CitationsComponent,
     ItemPageCGIARComponent,
+    ItemPageDonorComponent,
   ],
 })
 export class PublicationComponent extends BaseComponent {

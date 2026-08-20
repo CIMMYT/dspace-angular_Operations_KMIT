@@ -30,6 +30,7 @@ import { ItemPageCcLicenseFieldComponent } from '../../field-components/specific
 import { AltmetricComponent } from '../../../../shared/object-list/search-result-list-element/item-search-result/item-types/item/almetric/altmetric.component';
 import { CitationsComponent } from '../../../../shared/object-list/search-result-list-element/item-search-result/item-types/item/citations/citations.component';
 import { ItemPageCGIARComponent } from '../../field-components/specific-field/cgiar/item-page-cgiar.component';
+import { ItemPageDonorComponent } from '../../field-components/specific-field/donor/item-page-donor.component';
 
 
 /**
@@ -67,6 +68,7 @@ import { ItemPageCGIARComponent } from '../../field-components/specific-field/cg
     AltmetricComponent,
     CitationsComponent,
     ItemPageCGIARComponent,
+    ItemPageDonorComponent,
   ],
 })
 export class PublicationComponent extends ItemComponent {

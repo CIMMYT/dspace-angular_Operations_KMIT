@@ -30,6 +30,8 @@ import { ItemComponent } from '../shared/item.component';
 import { AltmetricComponent } from '../../../../shared/object-list/search-result-list-element/item-search-result/item-types/item/almetric/altmetric.component';
 import { CitationsComponent } from '../../../../shared/object-list/search-result-list-element/item-search-result/item-types/item/citations/citations.component';
 import { ItemPageCGIARComponent } from '../../field-components/specific-field/cgiar/item-page-cgiar.component';
+import { ItemPageDonorComponent } from '../../field-components/specific-field/donor/item-page-donor.component';
+
 
 /**
  * Component that represents a publication Item page
@@ -46,6 +48,7 @@ import { ItemPageCGIARComponent } from '../../field-components/specific-field/cg
     CollectionsComponent,
     DsoEditMenuComponent,
     GenericItemPageFieldComponent,
+    ItemPageDonorComponent,
     GeospatialItemPageFieldComponent,
     ItemPageAbstractFieldComponent,
     ItemPageCcLicenseFieldComponent,
