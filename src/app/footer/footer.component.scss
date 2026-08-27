@@ -1,10 +1,11 @@
 :host {
   footer {
-    background-color: var(--ds-footer-bg);
+    background-color: #336C6D;
     text-align: center;
     z-index: var(--ds-footer-z-index);
     border-top: var(--ds-footer-border);
     padding: var(--ds-footer-padding);
+    color: #ffffff;
 
     p {
       margin: 0;
@@ -16,49 +17,18 @@
 
 
     .top-footer {
-      background-color: var(--ds-top-footer-bg);
+      background-color: #336C6D;
       padding: var(--ds-footer-padding);
       margin: calc(var(--ds-footer-padding) * -1);
     }
 
     .bottom-footer {
-      .notify-enabled {
-        position: relative;
-        margin-top: 4px;
-
-        .coar-notify-support-route {
-          padding: 0 calc(var(--bs-spacer) / 2);
-          color: inherit;
-        }
-
-        .n-coar {
-          height: var(--ds-footer-n-coar-height);
-          margin-bottom: 8.5px;
-        }
-
-        @media screen and (min-width: map-get($grid-breakpoints, md))  {
-          position: absolute;
-          bottom: 4px;
-          right: 0;
-        }
-      }
       ul {
         li {
           display: inline-flex;
 
-          a, .btn-link {
-            padding: 0 calc(var(--bs-spacer) / 2);
-            color: inherit;
-            font-size: .875em;
-
-            &:focus {
-              box-shadow: none;
-              text-decoration: underline;
-            }
-
-            &:focus-visible {
-              box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-            }
+          a {
+            color: inherit
           }
 
           &:not(:last-child) {
@@ -71,12 +41,44 @@
         }
       }
     }
+  }
 
-    .btn {
-      box-shadow: none;
-    }
+  li.social_cimmyt {
+    display: flex;
+  }
+  ul.social_item i {
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  ul.social_item i.fa-facebook-f:hover {
+    color: #3b5998;
+  }
+  ul.social_item i.fa-twitter:hover {
+    color: #55acee;
+  }
+  ul.social_item i.fa-youtube:hover {
+    color: #FF0000;
+  }
+  ul.social_item i.fa-flickr:hover {
+    color: #0063dc;
+  }
+  ul.social_item i.fa-linkedin:hover {
+    color: #0e76a8;
   }
 }
 
 
+img.fao_banner {
+    height: auto !important;
+}
 
+
+div.cimmyt_banner {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente (opcional) */
+  img {
+    height: 2.8rem !important
+  }
+}
