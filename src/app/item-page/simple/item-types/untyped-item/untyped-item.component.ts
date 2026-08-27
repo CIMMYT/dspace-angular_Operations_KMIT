@@ -32,6 +32,7 @@ import { CitationsComponent } from '../../../../shared/object-list/search-result
 import { ItemPageCGIARComponent } from '../../field-components/specific-field/cgiar/item-page-cgiar.component';
 import { ItemPageDonorComponent } from '../../field-components/specific-field/donor/item-page-donor.component';
 import { ItemPageRightsComponent } from '../../field-components/specific-field/rigths/item-page-rights.component';
+import { ItemPageSocialComponent } from '../../field-components/specific-field/social-media/item-page-social.component';
 
 
 /**
@@ -70,6 +71,7 @@ import { ItemPageRightsComponent } from '../../field-components/specific-field/r
     CitationsComponent,
     ItemPageCGIARComponent,
     ItemPageRightsComponent,
+    ItemPageSocialComponent,
   ],
 })
 export class UntypedItemComponent extends ItemComponent {}

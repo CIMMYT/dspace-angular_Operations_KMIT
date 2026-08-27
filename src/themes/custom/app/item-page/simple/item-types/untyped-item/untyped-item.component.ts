@@ -33,6 +33,7 @@ import { CitationsComponent } from '../../../../../../../app/shared/object-list/
 import { ItemPageCGIARComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/cgiar/item-page-cgiar.component';
 import { ItemPageDonorComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/donor/item-page-donor.component';
 import { ItemPageRightsComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/rigths/item-page-rights.component';
+import { ItemPageSocialComponent } from '../../../../../../../app/item-page/simple/field-components/specific-field/social-media/item-page-social.component';
 
 @listableObjectComponent(Item, ViewMode.StandalonePage, Context.Any, 'custom')
 @Component({
@@ -70,6 +71,7 @@ import { ItemPageRightsComponent } from '../../../../../../../app/item-page/simp
     ItemPageCGIARComponent,
     ItemPageDonorComponent,
     ItemPageRightsComponent,
+    ItemPageSocialComponent,
   ],
 })
 export class UntypedItemComponent extends BaseComponent {
