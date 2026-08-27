@@ -31,6 +31,7 @@ import { AltmetricComponent } from '../../../../shared/object-list/search-result
 import { CitationsComponent } from '../../../../shared/object-list/search-result-list-element/item-search-result/item-types/item/citations/citations.component';
 import { ItemPageCGIARComponent } from '../../field-components/specific-field/cgiar/item-page-cgiar.component';
 import { ItemPageDonorComponent } from '../../field-components/specific-field/donor/item-page-donor.component';
+import { ItemPageRightsComponent } from '../../field-components/specific-field/rigths/item-page-rights.component';
 
 
 /**
@@ -68,6 +69,7 @@ import { ItemPageDonorComponent } from '../../field-components/specific-field/do
     AltmetricComponent,
     CitationsComponent,
     ItemPageCGIARComponent,
+    ItemPageRightsComponent,
   ],
 })
 export class UntypedItemComponent extends ItemComponent {}
