@@ -7444,5 +7444,11 @@
     "search.filters.filter.ProgramOrAccelerator.label":"Program or Accelerator",
     "search.filters.filter.ProgramOrAccelerator.placeholder":"Program or Accelerator",
     "search.filters.applied.f.ProgramOrAccelerator":"Programa o Acelerador",
-    "dcterms.license.uri":"Creative Commons licence" 
+    "dcterms.license.uri":"Creative Commons licence",
+    "browse.metadata.agrovoc":"AGROVOC",
+    "browse.metadata.agrovoc.breadcrumbs":"Search By AGROVOC",
+    "menu.section.browse_global_by_agrovoc":"By AGROVOC",
+  "browse.metadata.itemtype": "Publication Type",
+  "browse.metadata.itemtype.breadcrumbs":"Search By Publication Type",
+  "menu.section.browse_global_by_itemtype":"By Publication Type",
 }

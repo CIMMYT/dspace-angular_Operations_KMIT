@@ -32,6 +32,6 @@ export class ItemPageCGIARComponent extends ItemPageFieldComponent {
 
 
   validateCGIARMetadataContent(): boolean {
-   return (this.item.allMetadataValues(['dc.relation.CGIARinitiative','dc.relation.actionArea','dc.relation.funderName','dc.relation.impactArea']).length) > 0;
+   return (this.item.allMetadataValues(['dc.relation.CGIARinitiative','dc.relation.actionArea','dc.relation.impactArea', 'dc.relation.cgspaceuri', 'dc.relation.programAccelerator']).length) > 0;
   }
 }
