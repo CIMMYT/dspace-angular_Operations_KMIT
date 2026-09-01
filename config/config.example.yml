@@ -47,11 +47,11 @@ ssr:
   # Whether to enable rendering of Search component on SSR.
   # If set to true the component will be included in the HTML returned from the server side rendering.
   # If set to false the component will not be included in the HTML returned from the server side rendering.
-  enableSearchComponent: true
+  enableSearchComponent: false
   # Whether to enable rendering of Browse component on SSR.
   # If set to true the component will be included in the HTML returned from the server side rendering.
   # If set to false the component will not be included in the HTML returned from the server side rendering.
-  enableBrowseComponent: true
+  enableBrowseComponent: false
   # Enable state transfer from the server-side application to the client-side application.
   # Defaults to true.
   # Note: When using an external application cache layer, it's recommended not to transfer the state to avoid caching it.
@@ -170,13 +170,13 @@ notifications:
   rtl: false
   position:
     - top
-    - center
+    - right
   maxStack: 8
   # NOTE: after how many seconds notification is closed automatically. If set to zero notifications are not closed automatically
   timeOut: 5000 # 5 second
   clickToClose: true
   # NOTE: 'fade' | 'fromTop' | 'fromRight' | 'fromBottom' | 'fromLeft' | 'rotate' | 'scale'
-  animate: fromBottom
+  animate: scale
 
 # Submission settings
 submission:
@@ -252,97 +252,97 @@ languages:
     active: true
   - code: ar
     label: العربية
-    active: false
+    active: true
   - code: bn
     label: বাংলা
-    active: false
+    active: true
   - code: ca
     label: Català
-    active: false
+    active: true
   - code: cs
     label: Čeština
-    active: false
+    active: true
   - code: de
     label: Deutsch
-    active: false
+    active: true
   - code: el
     label: Ελληνικά
-    active: false
+    active: true
   - code: es
     label: Español
     active: true
   - code: fa
     label: فارسی
-    active: false
+    active: true
   - code: fi
     label: Suomi
-    active: false
+    active: true
   - code: fr
     label: Français
-    active: false
+    active: true
   - code: gd
     label: Gàidhlig
-    active: false
+    active: true
   - code: gu
     label: ગુજરાતી
-    active: false
+    active: true
   - code: hi
     label: हिंदी
-    active: false
+    active: true
   - code: hu
     label: Magyar
-    active: false
+    active: true
   - code: it
     label: Italiano
-    active: false
+    active: true
   - code: kk
     label: Қазақ
-    active: false
+    active: true
   - code: lv
     label: Latviešu
-    active: false
+    active: true
   - code: mr
     label: मराठी
-    active: false
+    active: true
   - code: nl
     label: Nederlands
-    active: false
+    active: true
   - code: pl
     label: Polski
-    active: false
+    active: true
   - code: pt-PT
     label: Português
-    active: false
+    active: true
   - code: pt-BR
     label: Português do Brasil
-    active: false
+    active: true
   - code: ru
     label: Русский
-    active: false
+    active: true
   - code: sr-lat
     label: Srpski (lat)
-    active: false
+    active: true
   - code: sr-cyr
     label: Српски
-    active: false
+    active: true
   - code: sv
     label: Svenska
-    active: false
+    active: true
   - code: ta
     label: தமிழ்
-    active: false
+    active: true
   - code: tr
     label: Türkçe
-    active: false
+    active: true
   - code: uk
     label: Yкраї́нська
-    active: false
+    active: true
   - code: vi
     label: Tiếng Việt
-    active: false
+    active: true
   - code: zh-TW
     label: 繁體中文
-    active: false
+    active: true
 
 
 
@@ -374,7 +374,7 @@ homePage:
   topLevelCommunityList:
     # No. of communities to list per page on the home page
     # This will always round to the nearest number from the list of page sizes. e.g. if you set it to 7 it'll use 10
-    pageSize: 5
+    pageSize: 10
   # Enable or disable the Discover filters on the homepage
   showDiscoverFilters: true
 
@@ -492,7 +492,7 @@ mediaViewer:
 info:
   enableEndUserAgreement: false
   enablePrivacyStatement: false
-  enableCOARNotifySupport: true
+  enableCOARNotifySupport: false
   # Whether to show the cookie consent popup and the cookie settings footer link or not.
   enableCookieConsentPopup: true
 
@@ -508,7 +508,7 @@ markdown:
 vocabularies:
   - filter: 'subject'
     vocabulary: 'srsc'
-    enabled: false
+    enabled: true
 
 # Default collection/community sorting order at Advanced search, Create/update community and collection when there are not a query.
 comcolSelectionSort:
@@ -525,7 +525,7 @@ comcolSelectionSort:
 search:
   # Settings to enable/disable or configure advanced search filters.
   advancedFilters:
-    enabled: false
+    enabled: true
     # List of filters to enable in "Advanced Search" dropdown
     filter: [ 'title', 'author', 'subject', 'entityType' ]
   #
@@ -639,4 +639,4 @@ geospatialMapViewer:
 # Configuration for storing accessibility settings, used by the AccessibilitySettingsService
 accessibility:
   # The duration in days after which the accessibility settings cookie expires
-  cookieExpirationDuration: 3
+  cookieExpirationDuration: 7

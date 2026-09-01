@@ -2,10 +2,16 @@ import { Component } from '@angular/core';
 
 import { ThemedComponent } from '../../shared/theme-support/themed.component';
 import { HomeNewsComponent } from './home-news.component';
+import { ButtonModule } from 'primeng/button';
+import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'ds-home-news',
   templateUrl: '../../shared/theme-support/themed.component.html',
+  imports: [
+    ButtonModule,
+    CarouselModule,
+  ],
 })
 
 /**
@@ -24,4 +30,9 @@ export class ThemedHomeNewsComponent extends ThemedComponent<HomeNewsComponent> 
     return import(`./home-news.component`);
   }
 
+  background: string[] = ['1.jpg', '2.jpg', '3.jpg', '4.jpg'];
+
+  get backgrounds(): string[] {
+    return this.background;
+  }
 }
