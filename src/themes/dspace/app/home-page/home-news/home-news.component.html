@@ -12,7 +12,7 @@
     </div>
   </div>
   <picture class="background-image">
-    <p-carousel [value]="backgrounds" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="5000" align="center">
+    <p-carousel [value]="backgrounds" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="10000" align="center">
       <ng-template let-bg pTemplate="item">
         <img [src]="'assets/dspace/images/' + bg" alt="Background image" class="w-100" class="background-element"/>
       </ng-template>

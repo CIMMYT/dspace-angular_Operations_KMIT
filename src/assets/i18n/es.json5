@@ -4124,7 +4124,7 @@
   "item.edit.return": "Atrás",
 
   // "item.edit.tabs.bitstreams.head": "Bitstreams",
-  "item.edit.tabs.bitstreams.head": "Archivos",
+  "item.edit.tabs.bitstreams.head": "Descargas",
 
   // "item.edit.tabs.bitstreams.title": "Item Edit - Bitstreams",
   "item.edit.tabs.bitstreams.title": "Edición de ítems: archivos",
@@ -11066,7 +11066,7 @@
 //---------------------------------------------------------
 
   "item.page.ISO": "Cita ISO",
-  "item.page.APA": "Cita APA",
+  "dcterms.bibliographicCitation.APA": "Cita APA",
   "item.page.type": "Tipo",
   "item.page.rights": "Copyright",
   "item.page.doi": "URL DOI",
@@ -11273,5 +11273,11 @@
   "browse.metadata.itemtype": "Tipo de publicación",
   "browse.metadata.itemtype.breadcrumbs":"Buscar por tipo de publicación",
   "menu.section.browse_global_by_itemtype":"Por tipo de publicación",
-  
+
+  "home.top-level-collections.head":"Lista de comunidades",
+  "home.top-level-collections.help":"",
+  "search.filters.filter.agrovoc.head":"AGROVOC",
+  "search.filters.filter.agrovoc.label":"Búscar por AGROVOC",
+  "search.filters.filter.agrovoc.placeholder":"AGROVOC",
+  "item.page.doi":"Identificador DOI", 
 }

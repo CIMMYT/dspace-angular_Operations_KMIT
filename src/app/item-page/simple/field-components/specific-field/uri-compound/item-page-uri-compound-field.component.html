@@ -1,10 +1,13 @@
-<ds-metadata-field-wrapper [label]="label">
-  @for (mdValue of mdValues(); track mdValue; let last = $last) {
-    <a class="dont-break-out" [href]="`${link}/${mdValue.value}`"). target="_blank" role="link" tabindex="0">
-      {{ mdValue.value }}
-    </a>
-    @if (!last) {
-      <span [innerHTML]="separator"></span>
+<div class="item-page-field">
+  <div class="simple-view-element">
+    <h4 class="simple-view-element-header">{{ label | translate }}</h4>
+    @for (mdValue of mdValues(); track mdValue; let last = $last) {
+      <a class="dont-break-out" [href]="`${link}/${mdValue.value}`"). target="_blank" role="link" tabindex="0">
+        {{ mdValue.value }}
+      </a>
+      @if (!last) {
+        <span [innerHTML]="separator"></span>
+      }
     }
-  }
-</ds-metadata-field-wrapper>
+  </div>
+</div>

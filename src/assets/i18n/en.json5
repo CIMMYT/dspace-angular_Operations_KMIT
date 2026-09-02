@@ -2717,7 +2717,7 @@
 
   "item.edit.return": "Back",
 
-  "item.edit.tabs.bitstreams.head": "Bitstreams",
+  "item.edit.tabs.bitstreams.head": "Downloads",
 
   "item.edit.tabs.bitstreams.title": "Item Edit - Bitstreams",
 
@@ -7246,7 +7246,7 @@
 //---------------------------------------------------------
    
   "item.page.ISO": "ISO citation",
-  "item.page.APA": "APA citation",
+  "dcterms.bibliographicCitation.APA": "APA citation",
   "item.page.type": "Type",
   "item.page.rights": "Copyright",
   "item.page.doi": "DOI",
@@ -7451,4 +7451,11 @@
   "browse.metadata.itemtype": "Publication Type",
   "browse.metadata.itemtype.breadcrumbs":"Search By Publication Type",
   "menu.section.browse_global_by_itemtype":"By Publication Type",
+  
+  "home.top-level-collections.head":"Community list",
+  "home.top-level-collections.help":"",
+  "search.filters.filter.agrovoc.head":"AGROVOC",
+  "search.filters.filter.agrovoc.label":"Search For AGROVOC",
+  "search.filters.filter.agrovoc.placeholder":"AGROVOC",
+  "item.page.doi":"DOI identifier", 
 }

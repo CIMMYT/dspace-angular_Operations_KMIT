@@ -7,14 +7,19 @@ import { Item } from '../../../../../core/shared/item.model';
 import { MetadataUriValuesComponent } from '../../../../field-components/metadata-uri-values/metadata-uri-values.component';
 import { ItemPageFieldComponent } from '../item-page-field.component';
 import { MetadataFieldWrapperComponent } from '../../../../../shared/metadata-field-wrapper/metadata-field-wrapper.component';
-
+import {
+  TranslateLoader,
+  TranslateModule,
+} from '@ngx-translate/core';
 
 @Component({
   selector: 'ds-item-page-uri-compound-field',
   templateUrl: './item-page-uri-compound-field.component.html',
+  styleUrls: ['./item-page-uri-compound-field.component.scss'],
   imports: [
     MetadataUriValuesComponent,
     MetadataFieldWrapperComponent,
+    TranslateModule,
   ],
 })
 /**
