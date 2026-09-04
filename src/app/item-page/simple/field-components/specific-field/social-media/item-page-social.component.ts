@@ -12,6 +12,7 @@ import { ItemPageUriFieldComponent } from '../uri/item-page-uri-field.component'
 @Component({
   selector: 'ds-item-page-social',
   templateUrl: './item-page-social.component.html',
+  styleUrls: ['./item-page-social.component.scss'],
   imports: [
     MetadataUriValuesComponent,
     GenericItemPageFieldComponent,

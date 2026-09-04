@@ -1,0 +1,44 @@
+/* Contenedor principal para alinear con flexbox */
+.social-share-container {
+  display: flex;
+  gap: 1px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Estructura del círculo perfecto y centrado del ícono */
+.share-circle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #ffffff; /* Color del ícono */
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Efecto hover suave */
+.share-circle-btn:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+  color: #ffffff;
+}
+
+/* 
+  Anulamos el padding-right original (pr-1) estrictamente en estos botones 
+  para evitar que el ícono quede descentrado dentro del círculo. 
+  También ajustamos el tamaño base de fa-2x para que encaje bien.
+*/
+.share-circle-btn i.pr-1 {
+  padding-right: 0 !important;
+  font-size: 24px; 
+}
+
+/* Colores de fondo por marca */
+.btn-x { background-color: #000000; }
+.btn-fb { background-color: #4267B2; }
+.btn-in { background-color: #0077B5; }
+.btn-men { background-color: #a60000; } /* Rojo institucional de Mendeley */
+.btn-mail { background-color: #7b7b7b; }

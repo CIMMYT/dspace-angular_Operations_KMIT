@@ -2,11 +2,11 @@
   @if (label) {
     <h5 class="simple-view-element-header">{{ label | translate }}</h5>
   }
-  <div class="simple-view-element-body">
-    <a title="Share on X " target="_blank" href="https://x.com/intent/tweet?url={{ itemIdentifier }}&amp;text={{ itemTitle }}}" class="ng-star-inserted"><i class="fa-brands fa-x-twitter fa-2x pr-1"></i></a>
-    <a title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ itemIdentifier }}" class="ng-star-inserted"><i class="fa-brands fa-facebook-square fa-2x pr-1"></i></a>
-    <a title="Share on LinkedIn" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ itemIdentifier }}" class="ng-star-inserted"><i  class="fa-brands fa-linkedin fa-2x pr-1"></i></a>
-    <a title="Add this article to your Mendeley library" target="_blank" href="https://www.mendeley.com/import/?url={{ itemIdentifier }}" class="ng-star-inserted"><i class="fa-brands fa-mendeley fa-2x pr-1"></i></a>
-    <a title="Share via e-mail" target="_blank" href="mailto:?&amp;body={{ itemIdentifier }}&amp;media=&amp;subject={{ itemTitle }}" class="ng-star-inserted"><i class="fa-solid fa-envelope fa-2x"></i></a>
+  <div class="simple-view-element-body social-share-container">
+    <a title="Share on X " target="_blank" href="https://x.com/intent/tweet?url={{ itemIdentifier }}&amp;text={{ itemTitle }}}" class="ng-star-inserted share-circle-btn btn-x"><i class="fa-brands fa-x-twitter fa-2x pr-1"></i></a>
+    <a title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ itemIdentifier }}" class="ng-star-inserted share-circle-btn btn-fb"><i class="fa-brands fa-facebook-square fa-2x pr-1"></i></a>
+    <a title="Share on LinkedIn" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ itemIdentifier }}" class="ng-star-inserted share-circle-btn btn-in"><i class="fa-brands fa-linkedin fa-2x pr-1"></i></a>
+    <a title="Add this article to your Mendeley library" target="_blank" href="https://www.mendeley.com/import/?url={{ itemIdentifier }}" class="ng-star-inserted share-circle-btn btn-men"><i class="fa-brands fa-mendeley fa-2x pr-1"></i></a>
+    <a title="Share via e-mail" target="_blank" href="mailto:?&amp;body={{ itemIdentifier }}&amp;media=&amp;subject={{ itemTitle }}" class="ng-star-inserted share-circle-btn btn-mail"><i class="fa-solid fa-envelope fa-2x"></i></a>
   </div>
 </div>

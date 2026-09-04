@@ -257,7 +257,6 @@ ds-truncatable  .text-muted{
 
 
 .item-page-title-field {
-  border-bottom: 1px solid #e1e1e1;
   margin-bottom: 15px;
   padding-bottom: 10px;
 }
@@ -387,9 +386,6 @@ ds-log-in-container button.btn.btn-lg.btn-primary.btn-block.mt-2.text-white{
   background-color: #003b49;
 }
 
-i.fa-brands.fa-2x.pr-1 {
-  margin-bottom: 25px;
-}
 
 li.admin-menu-header h4 {
   color: #FFF;
@@ -572,4 +568,75 @@ ds-item-page-uri-compound-field{
      .simple-view-element {
         margin-bottom: 15px;
     }
+}
+
+
+.d-flex.flex-row.item-tittle {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.button-dowload {
+    --btn-bg: #336c6d;    /* <-- CAMBIA EL COLOR DE FONDO AQUÍ */
+    --btn-color: #FFFFFF; /* <-- CAMBIA EL COLOR DE LETRA AQUÍ */
+}
+
+/* ========================================================= */
+/* ESTRUCTURA PRINCIPAL DEL BOTÓN                            */
+/* ========================================================= */
+.button-dowload {
+    display: inline-flex !important; /* Sobreescribe la clase d-block del HTML */
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espacio entre el ícono y el texto */
+    
+    background-color: var(--btn-bg) !important;
+    color: var(--btn-color) !important;
+    
+    padding: 8px 16px;
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+    text-decoration: none !important; /* Quita el subrayado del enlace */
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* Puedes adaptarlo a la fuente de tu sitio */
+    
+    /* ⚠️ TRUCO PARA EL TEXTO: Oculta los <span> internos originales (70198.pdf...) */
+    /*font-size: 0 !important; */
+    
+    /* Transición suave para cuando pases el mouse */
+    transition: filter 0.2s ease-in-out;
+}
+
+/* Efecto Hover: Oscurece ligeramente el fondo sin necesitar declarar otro color */
+.button-dowload:hover {
+    filter: brightness(0.9);
+}
+
+/* ========================================================= */
+/* 📄 ÍCONO DEL DOCUMENTO (Generado sin imágenes externas)   */
+/* ========================================================= */
+.button-dowload::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    /* El ícono hereda automáticamente el color de tu variable --btn-color */
+    background-color: var(--btn-color); 
+    
+    /* Usamos una máscara SVG para dibujar el archivo con la esquina doblada */
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z'/%3E%3C/svg%3E") no-repeat center / contain;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+/* ========================================================= */
+/* 🔤 TEXTO ESTÁTICO: "Download PDF"                         */
+/* ========================================================= */
+.button-dowload::after {
+    font-size: 14px; /* Restauramos el tamaño de fuente solo para este texto */
+    font-weight: 500;
+}
+
+
+.item-page-field.donor {
+  margin-top: 3rem;
 }
